@@ -1,18 +1,18 @@
 //
-//  Contacts.swift
+//  Detailed View.swift
 //  Loch
 //
-//  Created by A P on 30/1/2024.
+//  Created by A P on 31/1/2024.
 //
 
 import SwiftUI
 
-struct Contacts: View {
+struct Detailed_View: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    Contacts()
+    Detailed_View()
 }
