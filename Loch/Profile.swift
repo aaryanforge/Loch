@@ -9,24 +9,27 @@ import SwiftUI
 
 struct Profile: View {
     var body: some View {
-        VStack(alignment: .center){
-            HStack(alignment: .center){
-                Circle()
-                    .size(CGSize(width: 200, height: 200))
-                    .offset(CGSize(width: 65, height: 0))
+        VStack{
+            
+            NavigationView() {
+                NavigationLink {
+                    Settings()
+                } label: {
+                    Text("Settings")
+                        .position(CGPoint(x: 325, y: 10))
                 }
-            .padding()
             }
-        .padding()
-        
-//        NavigationView() {
-//            NavigationLink {
-//                Settings()
-//            } label: {
-//                Text("Settings")
-//                    .position(CGPoint(x: 350, y: 10))
-//            }
-//        }
+            Image("Connecting Image")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 150, height: 150)
+                .cornerRadius(150)
+                .shadow(radius: 3)
+            Text("Name")
+                .font(.title)
+                .fontWeight(.bold)
+            
+        }
     }
 }
 

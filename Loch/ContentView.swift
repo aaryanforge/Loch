@@ -27,16 +27,19 @@ struct ContentView: View {
                         Image(systemName: "newspaper.circle")
                         Text("Forums")
                     }
+                
                 Connect()
                     .tabItem{
                         Image(systemName: "shareplay")
                         Text("Connect")
                     }
+                
                 Contacts()
                     .tabItem{
                         Image(systemName: "person.2")
                         Text("Contacts")
                     }
+                
                 Profile()
                     .tabItem{
                         Image(systemName: "person.fill")

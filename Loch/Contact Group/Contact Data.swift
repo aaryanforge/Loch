@@ -14,5 +14,5 @@ struct contactData: Identifiable {
     let imageName: String
 }
 
-let contacts = [contactData(name: "Pala", imageName: "Connecting Image"), contactData(name: "Penghus", imageName: "Connecting Image"), contactData(name: "Shangkuan", imageName: "Connecting Image"), contactData(name: "Madau", imageName: "Connecting Image")]
+let contacts = [contactData(name: "Pala", imageName: "Aaryan"), contactData(name: "Penghus", imageName: "Peng"), contactData(name: "Shangkuan", imageName: "Thomas"), contactData(name: "Madau", imageName: "Mark")]
 
