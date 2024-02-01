@@ -11,8 +11,14 @@ import SwiftUI
 struct contactData: Identifiable {
     let id = UUID()
     let name: String
+    let nickname: String
     let imageName: String
+    let aboutMe: String
 }
 
-let contacts = [contactData(name: "Pala", imageName: "Aaryan"), contactData(name: "Penghus", imageName: "Peng"), contactData(name: "Shangkuan", imageName: "Thomas"), contactData(name: "Madau", imageName: "Mark")]
+let contacts = [contactData(name: "Aaryan", nickname: "Pala", imageName: "Aaryan", aboutMe: "Currently mewing and mogging"),
+                contactData(name: "Peng", nickname: "Penghus", imageName: "Peng", aboutMe: "I am Penghus Khan and I conquered all of asia"),
+                contactData(name: "Shangkuan", nickname: "Tommy", imageName: "Thomas", aboutMe: "I'm a USYD communist"),
+                contactData(name: "Madau", nickname: "Mak", imageName: "Mark", aboutMe: "Average UTS eshay"),
+]
 

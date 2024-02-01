@@ -13,7 +13,7 @@ struct Messages: View {
     var body: some View {
         NavigationView() {
             List(msgs) { msg in
-                NavigationLink(destination: Connect()) {
+                NavigationLink(destination: MessagesPage()) {
                     HStack(){
                         Image(msg.imageName)
                             .resizable()

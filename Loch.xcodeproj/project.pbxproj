@@ -23,6 +23,7 @@
 		E18669CA2B69BAEF00FEDDD9 /* Contact Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669C92B69BAEF00FEDDD9 /* Contact Data.swift */; };
 		E18669CE2B69BD5400FEDDD9 /* Detailed View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669CD2B69BD5400FEDDD9 /* Detailed View.swift */; };
 		E18669D12B69CDAB00FEDDD9 /* Messages Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669D02B69CDAB00FEDDD9 /* Messages Data.swift */; };
+		E18669D32B6A1C5800FEDDD9 /* MessagesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669D22B6A1C5800FEDDD9 /* MessagesPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		E18669C92B69BAEF00FEDDD9 /* Contact Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact Data.swift"; sourceTree = "<group>"; };
 		E18669CD2B69BD5400FEDDD9 /* Detailed View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Detailed View.swift"; sourceTree = "<group>"; };
 		E18669D02B69CDAB00FEDDD9 /* Messages Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Messages Data.swift"; sourceTree = "<group>"; };
+		E18669D22B6A1C5800FEDDD9 /* MessagesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 			children = (
 				E18669BD2B688B6B00FEDDD9 /* Messages.swift */,
 				E18669D02B69CDAB00FEDDD9 /* Messages Data.swift */,
+				E18669D22B6A1C5800FEDDD9 /* MessagesPage.swift */,
 			);
 			path = "Messages Group";
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				E18669C42B688B8C00FEDDD9 /* Contacts.swift in Sources */,
 				E18669D12B69CDAB00FEDDD9 /* Messages Data.swift in Sources */,
 				E18669C62B688B9700FEDDD9 /* Profile.swift in Sources */,
+				E18669D32B6A1C5800FEDDD9 /* MessagesPage.swift in Sources */,
 				E18669942B68853500FEDDD9 /* LochApp.swift in Sources */,
 				E18669CA2B69BAEF00FEDDD9 /* Contact Data.swift in Sources */,
 				E18669CE2B69BD5400FEDDD9 /* Detailed View.swift in Sources */,

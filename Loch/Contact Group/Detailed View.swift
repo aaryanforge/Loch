@@ -26,23 +26,41 @@ struct Detailed_View: View {
             Form {
                 HStack(){
                     Text("Name")
+                        .underline()
                     Spacer()
                     Text(contact.name)
                         .foregroundColor(.gray)
                         .font(.callout)
                 }
+                HStack(){
+                    Text("Nickname")
+                        .underline()
+                    Spacer()
+                    Text(contact.nickname)
+                        .foregroundColor(.gray)
+                        .font(.callout)
+                }
+                
+                Section {
+                    VStack(alignment: .leading) {
+                        Text("About Me:")
+                            .underline()
+                        
+                        Spacer()
+                        Text(contact.aboutMe)
+                            .foregroundColor(.black)
+                            .font(.callout)
+                    }
+                }
+                
                 Section {
                     Button(action: {
                         
                     }) {
                         Text("Send Message")
                     }
-                }
-                
+                } 
             }
-            
-            
-            
         }
     }
 }
