@@ -10,10 +10,21 @@ import SwiftUI
 struct Profile: View {
     @State private var abtMe: String = ""
     @State var aboutMeFinal: String = ""
+    @State var profName: String = ""
+    @State var profNick: String = ""
+    @State var profParent: String = "Parent: ur mom"
+    
+    var username = "Aaryan"
+
 
     var body: some View {
         
+        
+        
+        
         VStack{
+            
+            
             
 //            NavigationView() {
 //                NavigationLink {
@@ -29,22 +40,30 @@ struct Profile: View {
                 .frame(width: 150, height: 150)
                 .cornerRadius(150)
                 .shadow(radius: 3)
-            Text("Name")
+            Text(profName)
                 .font(.title)
                 .fontWeight(.bold)
-            Text("Nickname")
-            Text("Parent")
+                .task {
+                    profName = "e"
+                    profName = username
+                    
+                    for prof in profData {
+                        if prof.name == username {
+                            profName = "Name: " + prof.name
+                            profNick = "Nickname: " + prof.nickname
+                        }
+                    }
+
+                    
+                }
+            Text(profNick)
+            Text(profParent)
             
             TextField("About me", text: $abtMe, axis: .vertical)
                 .onSubmit {
                     aboutMeFinal = abtMe
-                    
-                    List(profData) { prof in
-                        if prof.name == "Aaryan" {
-                            //prof.aboutMe = aboutMeFinal
-                        }
-                    }
                 }
+                .lineLimit(3)
                 //.frame(width: 350, height: 30)
                 //.multilineTextAlignment(.center)
                 .background(
