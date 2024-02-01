@@ -11,7 +11,8 @@ import SwiftUI
 struct localData: Identifiable {
     let id = UUID()
     var name: String
+    var nickname: String
     var aboutMe: String
 }
 
-var profData = [localData(name: "Aaryan", aboutMe: "")]
+var profData = [localData(name: "Aaryan", nickname: "Pala", aboutMe: "")]
