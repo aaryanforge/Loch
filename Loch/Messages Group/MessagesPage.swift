@@ -29,7 +29,6 @@ struct MessagesPage: View {
                 messaged = true
             }
             .border(Color.black)
-        
     }
 }
 

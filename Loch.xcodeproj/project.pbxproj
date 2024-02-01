@@ -24,6 +24,8 @@
 		E18669CE2B69BD5400FEDDD9 /* Detailed View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669CD2B69BD5400FEDDD9 /* Detailed View.swift */; };
 		E18669D12B69CDAB00FEDDD9 /* Messages Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669D02B69CDAB00FEDDD9 /* Messages Data.swift */; };
 		E18669D32B6A1C5800FEDDD9 /* MessagesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669D22B6A1C5800FEDDD9 /* MessagesPage.swift */; };
+		E18669D62B6B37E100FEDDD9 /* Profile Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669D52B6B37E100FEDDD9 /* Profile Data.swift */; };
+		E18669D82B6B394C00FEDDD9 /* User Data Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669D72B6B394C00FEDDD9 /* User Data Module.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		E18669CD2B69BD5400FEDDD9 /* Detailed View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Detailed View.swift"; sourceTree = "<group>"; };
 		E18669D02B69CDAB00FEDDD9 /* Messages Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Messages Data.swift"; sourceTree = "<group>"; };
 		E18669D22B6A1C5800FEDDD9 /* MessagesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesPage.swift; sourceTree = "<group>"; };
+		E18669D52B6B37E100FEDDD9 /* Profile Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile Data.swift"; sourceTree = "<group>"; };
+		E18669D72B6B394C00FEDDD9 /* User Data Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User Data Module.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,7 @@
 		E18669922B68853500FEDDD9 /* Loch */ = {
 			isa = PBXGroup;
 			children = (
+				E18669D42B6B37CE00FEDDD9 /* Profile Group */,
 				E18669CF2B69CD7D00FEDDD9 /* Messages Group */,
 				E18669CC2B69BD3300FEDDD9 /* Contact Group */,
 				E18669932B68853500FEDDD9 /* LochApp.swift */,
@@ -122,8 +127,8 @@
 				E18669992B68853800FEDDD9 /* Preview Content */,
 				E18669BF2B688B7600FEDDD9 /* Forums.swift */,
 				E18669C12B688B8000FEDDD9 /* Connect.swift */,
-				E18669C52B688B9700FEDDD9 /* Profile.swift */,
 				E18669C72B688FB000FEDDD9 /* Settings.swift */,
+				E18669D72B6B394C00FEDDD9 /* User Data Module.swift */,
 			);
 			path = Loch;
 			sourceTree = "<group>";
@@ -171,6 +176,15 @@
 				E18669D22B6A1C5800FEDDD9 /* MessagesPage.swift */,
 			);
 			path = "Messages Group";
+			sourceTree = "<group>";
+		};
+		E18669D42B6B37CE00FEDDD9 /* Profile Group */ = {
+			isa = PBXGroup;
+			children = (
+				E18669C52B688B9700FEDDD9 /* Profile.swift */,
+				E18669D52B6B37E100FEDDD9 /* Profile Data.swift */,
+			);
+			path = "Profile Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +329,8 @@
 				E18669CE2B69BD5400FEDDD9 /* Detailed View.swift in Sources */,
 				E18669C02B688B7600FEDDD9 /* Forums.swift in Sources */,
 				E18669C22B688B8000FEDDD9 /* Connect.swift in Sources */,
+				E18669D82B6B394C00FEDDD9 /* User Data Module.swift in Sources */,
+				E18669D62B6B37E100FEDDD9 /* Profile Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
