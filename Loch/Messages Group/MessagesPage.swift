@@ -7,13 +7,16 @@
 
 import SwiftUI
 
+
 struct MessagesPage: View {
+        
+    var msg: messagesData
     
     var body: some View {
-        Text("")
+        Text(msg.name)
     }
 }
 
-#Preview {
-    MessagesPage()
-}
+//#Preview {
+  //  MessagesPage(dat: )
+//}

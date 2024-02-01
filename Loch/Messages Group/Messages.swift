@@ -7,13 +7,11 @@
 
 import SwiftUI
 
-
-
 struct Messages: View {
     var body: some View {
         NavigationView() {
             List(msgs) { msg in
-                NavigationLink(destination: MessagesPage()) {
+                NavigationLink(destination: MessagesPage(msg: msg)) {
                     HStack(){
                         Image(msg.imageName)
                             .resizable()
@@ -24,7 +22,6 @@ struct Messages: View {
                         VStack(alignment: .leading, spacing: 50) {
                             Text(msg.name)
                                 .font(.system(size: 21, weight: .medium, design: .default))
-                            
                         }
                     }
                 }
