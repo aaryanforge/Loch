@@ -18,7 +18,14 @@ struct Profile: View {
 
 
     var body: some View {
+        
+        
+        
+        
         VStack{
+            
+            
+            
 //            NavigationView() {
 //                NavigationLink {
 //                    Settings()
@@ -48,6 +55,15 @@ struct Profile: View {
                             print(prof.aboutMe)
                         }
                     }
+
+                    
+                }
+            Text(profNick)
+            Text(profParent)
+            
+            TextField("About me", text: $abtMe, axis: .vertical)
+                .onSubmit {
+                    aboutMeFinal = abtMe
                 }
             Text(profNick)
             Text(profParent)
