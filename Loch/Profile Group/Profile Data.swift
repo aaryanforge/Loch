@@ -13,6 +13,7 @@ struct localData: Identifiable {
     var name: String
     var nickname: String
     var aboutMe: String
+    var parent: String
 }
 
-var profData = [localData(name: "Aaryan", nickname: "Pala", aboutMe: "")]
+var profData = [localData(name: "Aaryan", nickname: "Pala", aboutMe: "", parent: "UR MOM")]

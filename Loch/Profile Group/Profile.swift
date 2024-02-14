@@ -12,10 +12,9 @@ struct Profile: View {
     @State var aboutMeFinal: String = ""
     @State var profName: String = ""
     @State var profNick: String = ""
-    @State var profParent: String = "Parent: ur mom"
+    @State var profParent: String = ""
     
     var username = "Aaryan"
-
 
     var body: some View {
         VStack{
@@ -44,29 +43,43 @@ struct Profile: View {
                         if prof.name == username {
                             profName = "Name: " + prof.name
                             profNick = "Nickname: " + prof.nickname
-                            prof.aboutMe = "kjhjkhkjhk"
+                            profParent = "Parent: " + prof.parent
+                            prof.aboutMe = ""
                             print(prof.aboutMe)
                         }
                     }
                 }
-            Text(profNick)
-            Text(profParent)
-            
-            TextField("About me", text: $abtMe, axis: .vertical)
-                .onSubmit {
-                    aboutMeFinal = abtMe
+            Form {
+                HStack(){
+                    Text(profNick)
+                        .font(.title)
                 }
-                .lineLimit(3)
-                //.frame(width: 350, height: 30)
-                //.multilineTextAlignment(.center)
-                .background(
-                    RoundedRectangle(cornerRadius: 5)
-                        .strokeBorder(Color.primary.opacity(0.25), lineWidth: 2))
-                    .padding()
-                
+                .padding()
+                HStack(){
+                    Text(profParent)
+                        .font(.title)
+                }
+                .padding()
+                HStack() {
+                    Text("About Me")
+                        .font(.title)
+                    TextField("About me", text: $abtMe, axis: .vertical)
+                        .onSubmit {
+                            aboutMeFinal = abtMe
+                        }
+                        .lineLimit(5)
+                        .background(
+                            RoundedRectangle(cornerRadius: 5)
+                                .strokeBorder(Color.primary.opacity(0.25), lineWidth: 2))
+                        .font(.title)
+                        .padding()
+                }
+                .padding()
+            }
         }
     }
 }
+        
 
 #Preview {
     Profile()

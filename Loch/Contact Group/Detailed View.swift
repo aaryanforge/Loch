@@ -69,9 +69,7 @@ struct Detailed_View: View {
                 }
                 
                 Section {
-                    Button(action: {
-                        
-                    }) {
+                    Button(action: { }) {
                         Text("Send Message")
                     }
                 } 
