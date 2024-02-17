@@ -45,7 +45,7 @@ struct MessagesPage: View {
         
         TextField("Message @" + msg.name, text: $txtMsg)
             .onSubmit {
-                var count = 0 ... Ms.count
+                let count = 0 ... Ms.count
                 for i in count {
                     if Ms[(i)].cMsg == "" {
                         Ms[(i)].cMsg = txtMsg
