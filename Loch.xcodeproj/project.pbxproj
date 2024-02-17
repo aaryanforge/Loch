@@ -26,7 +26,6 @@
 		E18669D32B6A1C5800FEDDD9 /* MessagesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669D22B6A1C5800FEDDD9 /* MessagesPage.swift */; };
 		E18669D62B6B37E100FEDDD9 /* Profile Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669D52B6B37E100FEDDD9 /* Profile Data.swift */; };
 		E18669D82B6B394C00FEDDD9 /* User Data Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669D72B6B394C00FEDDD9 /* User Data Module.swift */; };
-		E18669DC2B7C5D7C00FEDDD9 /* CurrentMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669DB2B7C5D7C00FEDDD9 /* CurrentMessages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +68,6 @@
 		E18669D22B6A1C5800FEDDD9 /* MessagesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesPage.swift; sourceTree = "<group>"; };
 		E18669D52B6B37E100FEDDD9 /* Profile Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile Data.swift"; sourceTree = "<group>"; };
 		E18669D72B6B394C00FEDDD9 /* User Data Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User Data Module.swift"; sourceTree = "<group>"; };
-		E18669DB2B7C5D7C00FEDDD9 /* CurrentMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentMessages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,7 +174,6 @@
 				E18669BD2B688B6B00FEDDD9 /* Messages.swift */,
 				E18669D02B69CDAB00FEDDD9 /* Messages Data.swift */,
 				E18669D22B6A1C5800FEDDD9 /* MessagesPage.swift */,
-				E18669DB2B7C5D7C00FEDDD9 /* CurrentMessages.swift */,
 			);
 			path = "Messages Group";
 			sourceTree = "<group>";
@@ -323,7 +320,6 @@
 				E18669962B68853500FEDDD9 /* ContentView.swift in Sources */,
 				E18669BE2B688B6B00FEDDD9 /* Messages.swift in Sources */,
 				E18669C82B688FB000FEDDD9 /* Settings.swift in Sources */,
-				E18669DC2B7C5D7C00FEDDD9 /* CurrentMessages.swift in Sources */,
 				E18669C42B688B8C00FEDDD9 /* Contacts.swift in Sources */,
 				E18669D12B69CDAB00FEDDD9 /* Messages Data.swift in Sources */,
 				E18669C62B688B9700FEDDD9 /* Profile.swift in Sources */,
