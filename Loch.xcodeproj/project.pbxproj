@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02EDC25A2B80710A00F63A29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView.swift */; };
+		02EDC25B2B80710A00F63A29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView.swift */; };
+		02EDC25C2B80710A00F63A29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView.swift */; };
 		E18669942B68853500FEDDD9 /* LochApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669932B68853500FEDDD9 /* LochApp.swift */; };
 		E18669962B68853500FEDDD9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669952B68853500FEDDD9 /* ContentView.swift */; };
 		E18669982B68853800FEDDD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E18669972B68853800FEDDD9 /* Assets.xcassets */; };
@@ -46,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02EDC2592B80710A00F63A29 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E18669902B68853500FEDDD9 /* Loch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18669932B68853500FEDDD9 /* LochApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LochApp.swift; sourceTree = "<group>"; };
 		E18669952B68853500FEDDD9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 				E18669C12B688B8000FEDDD9 /* Connect.swift */,
 				E18669C72B688FB000FEDDD9 /* Settings.swift */,
 				E18669D72B6B394C00FEDDD9 /* User Data Module.swift */,
+				02EDC2592B80710A00F63A29 /* LoginView.swift */,
 			);
 			path = Loch;
 			sourceTree = "<group>";
@@ -320,6 +325,7 @@
 				E18669962B68853500FEDDD9 /* ContentView.swift in Sources */,
 				E18669BE2B688B6B00FEDDD9 /* Messages.swift in Sources */,
 				E18669C82B688FB000FEDDD9 /* Settings.swift in Sources */,
+				02EDC25A2B80710A00F63A29 /* LoginView.swift in Sources */,
 				E18669C42B688B8C00FEDDD9 /* Contacts.swift in Sources */,
 				E18669D12B69CDAB00FEDDD9 /* Messages Data.swift in Sources */,
 				E18669C62B688B9700FEDDD9 /* Profile.swift in Sources */,
@@ -338,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02EDC25B2B80710A00F63A29 /* LoginView.swift in Sources */,
 				E18669A52B68853900FEDDD9 /* LochTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02EDC25C2B80710A00F63A29 /* LoginView.swift in Sources */,
 				E18669B12B68853900FEDDD9 /* LochUITestsLaunchTests.swift in Sources */,
 				E18669AF2B68853900FEDDD9 /* LochUITests.swift in Sources */,
 			);
