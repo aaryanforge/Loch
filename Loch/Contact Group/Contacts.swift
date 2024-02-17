@@ -21,7 +21,6 @@ struct Contacts: View {
             List(contacts) { contact in
                 NavigationLink(destination: Detailed_View(contact: contact)) {
                     HStack(){
-                        
                         Image(contact.imageName)
                             .resizable()
                             .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
@@ -29,9 +28,8 @@ struct Contacts: View {
                             .clipped()
                             .cornerRadius(50)
                         VStack(alignment: .leading, spacing: 50) {
-                            Text(contact.name + contact.id.description)
+                            Text(contact.name)
                                 .font(.system(size: 21, weight: .medium, design: .default))
-                            
                         }
                     }
                 }

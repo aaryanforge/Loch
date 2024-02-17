@@ -45,20 +45,18 @@ struct Detailed_View: View {
                     VStack(alignment: .leading) {
                         Text("About Me:")
                             .underline()
-                        
                         Spacer()
                         if contact.name == "Aaryan" {
                             Text(profData[0].aboutMe)
                                 .foregroundColor(.black)
                                 .font(.callout)
                                 .task {
-                                    for var prof in profData {
+                                    for prof in profData {
                                         print(prof.aboutMe) //tf glitch in the matrix - why isn't this showing the abbout me but in the other page it does despite them being the exact same data.
                                         print(prof.name)
                                         print("yesSIR")
                                         print(profData[0].aboutMe)
                                     }
-                                    
                                 }
                         } else {
                             Text(contact.aboutMe)
