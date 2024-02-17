@@ -45,7 +45,6 @@ struct Detailed_View: View {
                     VStack(alignment: .leading) {
                         Text("About Me:")
                             .underline()
-                        
                         Spacer()
                         if contact.name == "Aaryan" {
                             Text(profData[0].aboutMe)
@@ -58,7 +57,6 @@ struct Detailed_View: View {
                                         print("yesSIR")
                                         print(profData[0].aboutMe)
                                     }
-                                    
                                 }
                         } else {
                             Text(contact.aboutMe)

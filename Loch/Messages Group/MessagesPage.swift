@@ -22,26 +22,14 @@ struct MessagesPage: View {
     
     @State var Ms = [currentMsgs(cMsg: ""), currentMsgs(cMsg: ""), currentMsgs(cMsg: ""), currentMsgs(cMsg: ""), currentMsgs(cMsg: "")]
     
-    func makeTxt(txtMsg: String) -> Text {
-        return Text(txtMsg)
-    }
+    func makeTxt(txtMsg: String) -> Text { return Text(txtMsg) }
     
     var body: some View {
-        Section() {
-            Text(Ms[0].cMsg)
-        }
-        Section() {
-            Text(Ms[1].cMsg)
-        }
-        Section() {
-            Text(Ms[2].cMsg)
-        }
-        Section() {
-            Text(Ms[3].cMsg)
-        }
-        Section() {
-            Text(Ms[4].cMsg)
-        }
+        Section() { Text(Ms[0].cMsg) }
+        Section() { Text(Ms[1].cMsg) }
+        Section() { Text(Ms[2].cMsg) }
+        Section() { Text(Ms[3].cMsg) }
+        Section() { Text(Ms[4].cMsg) }
         
         TextField("Message @" + msg.name, text: $txtMsg)
             .onSubmit {
@@ -59,5 +47,5 @@ struct MessagesPage: View {
 }
 
 //#Preview {
-  //  MessagesPage(dat: )
+  //  MessagesPage()
 //}

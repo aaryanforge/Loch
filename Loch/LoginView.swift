@@ -48,12 +48,9 @@ struct LoginView: View {
                         .underline()
                 })
             }
-                .frame(maxWidth: .infinity)
+            .frame(maxWidth: .infinity)
         }
-            .padding(.leading)
-        
-        
-        
+        .padding(.leading)
     }
 }
 

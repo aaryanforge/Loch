@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct Profile: View {
     @State private var abtMe: String = ""
@@ -16,7 +17,10 @@ struct Profile: View {
     
     var username = "Aaryan"
 
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
     var body: some View {
+        
         VStack{
 //            NavigationView() {
 //                NavigationLink {
@@ -78,6 +82,15 @@ struct Profile: View {
             }
         }
     }
+}
+
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+  func application(_ application: UIApplication,
+                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+    FirebaseApp.configure()
+    return true
+  }
 }
         
 
