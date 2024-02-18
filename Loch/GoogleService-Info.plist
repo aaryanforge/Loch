@@ -3,28 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyD4lYzNAh3bol1X4yrASXYkWUPvQibykpk</string>
+	<string>AIzaSyCNAB4c-1mMhXaWeoXZ0tsFqkcFdeh9ubw</string>
 	<key>GCM_SENDER_ID</key>
-	<string>456205896121</string>
+	<string>456217715294</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>Test.Loch</string>
 	<key>PROJECT_ID</key>
-	<string>loch-d3ff3</string>
+	<string>lochness-4729f</string>
 	<key>STORAGE_BUCKET</key>
-	<string>loch-d3ff3.appspot.com</string>
+	<string>lochness-4729f.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
+	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<true/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:456205896121:ios:e902fdfe2aef5e1d348e68</string>
+	<string>1:456217715294:ios:072893dea21fdf77598acf</string>
 </dict>
 </plist>

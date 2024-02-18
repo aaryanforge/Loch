@@ -10,10 +10,14 @@ import SwiftUI
 struct MessageBlock: View {
     var message: Message?
     var body: some View {
-        VStack (alignment: .leading) {
+        LazyVStack (alignment: .leading) {
             if let message = message {
                 Image("Connecting Image")
-                    .mask(Circle().frame(width: 30))
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 30, height: 30)
+                    .background(in: RoundedRectangle(cornerRadius: 5.0))
+                    .clipped()
                     .overlay {
                         Text(message.timeStamp.formatted())
                             .font(.caption)

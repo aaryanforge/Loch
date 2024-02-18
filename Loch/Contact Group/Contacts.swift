@@ -16,8 +16,19 @@ import SwiftUI
 //}
 
 struct Contacts: View {
+    @State private var isAddingUser = false
     var body: some View {
         NavigationView() {
+            Image("Thomas")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 30, height: 30)
+                .sheet(isPresented: $isAddingUser, content: {
+                    AddContactSheet()
+                })
+                .onTapGesture {
+                    isAddingUser = true
+                }
             List(contacts) { contact in
                 NavigationLink(destination: Detailed_View(contact: contact)) {
                     HStack(){

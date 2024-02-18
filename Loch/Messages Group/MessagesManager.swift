@@ -8,20 +8,19 @@
 import Foundation
 import FirebaseFirestore
 
-class MessagesManager: ObservableObject {
+@MainActor class MessagesManager: ObservableObject {
     @Published private(set) var messages: [Message] = []
     let db = Firestore.firestore()
     
     init()  {
-        Task
-        {
+        Task {
             await getMessages()
         }
     }
     
     func getMessages() async {
         do {
-            let snapshot = try await db.collection("messages").getDocuments()
+            let snapshot = try await db.collection("messages").order(by: "timeStamp").getDocuments()
             for message in snapshot.documents {
                 try messages.append(message.data(as: Message.self))
             }

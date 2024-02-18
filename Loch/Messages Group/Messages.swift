@@ -10,6 +10,7 @@ import SwiftUI
 struct Messages: View {
     var body: some View {
         NavigationView() {
+            
             List(msgs) { msg in
                 NavigationLink(destination: MessagesPage(msg: msg)) {
                     HStack(){

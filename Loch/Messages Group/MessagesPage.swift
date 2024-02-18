@@ -20,10 +20,10 @@ struct MessagesPage: View {
     
     var body: some View {
         VStack (alignment: .leading) {
-            MessageBlock(message: Message(id: "1", body: "Hello, I'm Penghus Khan", sent: true, timeStamp: Date.now))
-            MessageBlock(message: Message(id: "2", body: "Hello, I'm Aaryan Pala", sent: false, timeStamp: Date.now))
-            MessageBlock(message: Message(id: "3", body: "Hello, I'm Marcus Aurelius", sent: false, timeStamp: Date.now))
-            MessageBlock(message: Message(id: "4", body: "Hello, I'm Gene Truong", sent: false, timeStamp: Date.now))
+//            MessageBlock(message: Message(body: "Hello, I'm Penghus Khan", sent: true, timeStamp: Date.now))
+//            MessageBlock(message: Message(id: UUID(2), body: "Hello, I'm Aaryan Pala", sent: false, timeStamp: Date.now))
+//            MessageBlock(message: Message(body: "Hello, I'm Marcus Aurelius", sent: false, timeStamp: Date.now))
+//            MessageBlock(message: Message(body: "Hello, I'm Gene Truong", sent: false, timeStamp: Date.now))
             ForEach(messagesManager.messages, id: \.id) { message in
                 MessageBlock(message: message)
             }

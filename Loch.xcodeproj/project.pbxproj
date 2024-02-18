@@ -12,6 +12,8 @@
 		022D32F72B80C6D1003CCFC1 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D32F62B80C6D1003CCFC1 /* Message.swift */; };
 		022D32F92B80C81D003CCFC1 /* MessageBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D32F82B80C81D003CCFC1 /* MessageBlock.swift */; };
 		022D32FB2B80CBCA003CCFC1 /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D32FA2B80CBCA003CCFC1 /* MessagesManager.swift */; };
+		0238BC1F2B81CB75006A00E9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0238BC1E2B81CB75006A00E9 /* User.swift */; };
+		0238BC212B81D1CB006A00E9 /* AddContactSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0238BC202B81D1CB006A00E9 /* AddContactSheet.swift */; };
 		02EDC25A2B80710A00F63A29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView.swift */; };
 		02EDC25B2B80710A00F63A29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView.swift */; };
 		02EDC25C2B80710A00F63A29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView.swift */; };
@@ -60,6 +62,8 @@
 		022D32F62B80C6D1003CCFC1 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		022D32F82B80C81D003CCFC1 /* MessageBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBlock.swift; sourceTree = "<group>"; };
 		022D32FA2B80CBCA003CCFC1 /* MessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
+		0238BC1E2B81CB75006A00E9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0238BC202B81D1CB006A00E9 /* AddContactSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactSheet.swift; sourceTree = "<group>"; };
 		02EDC2592B80710A00F63A29 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E18669902B68853500FEDDD9 /* Loch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18669932B68853500FEDDD9 /* LochApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LochApp.swift; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 				E18669C72B688FB000FEDDD9 /* Settings.swift */,
 				E18669D72B6B394C00FEDDD9 /* User Data Module.swift */,
 				02EDC2592B80710A00F63A29 /* LoginView.swift */,
+				0238BC1E2B81CB75006A00E9 /* User.swift */,
 			);
 			path = Loch;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				E18669C32B688B8C00FEDDD9 /* Contacts.swift */,
+				0238BC202B81D1CB006A00E9 /* AddContactSheet.swift */,
 				E18669C92B69BAEF00FEDDD9 /* Contact Data.swift */,
 				E18669CD2B69BD5400FEDDD9 /* Detailed View.swift */,
 			);
@@ -378,6 +384,8 @@
 				022D32F72B80C6D1003CCFC1 /* Message.swift in Sources */,
 				E18669D82B6B394C00FEDDD9 /* User Data Module.swift in Sources */,
 				E18669D62B6B37E100FEDDD9 /* Profile Data.swift in Sources */,
+				0238BC212B81D1CB006A00E9 /* AddContactSheet.swift in Sources */,
+				0238BC1F2B81CB75006A00E9 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,7 +551,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Loch/Preview Content\"";
-				DEVELOPMENT_TEAM = 8WQXU256NM;
+				DEVELOPMENT_TEAM = M4M438699Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -572,7 +580,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Loch/Preview Content\"";
-				DEVELOPMENT_TEAM = 8WQXU256NM;
+				DEVELOPMENT_TEAM = M4M438699Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
