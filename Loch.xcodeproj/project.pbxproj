@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		022D32F32B80C611003CCFC1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 022D32F22B80C611003CCFC1 /* FirebaseAuth */; };
+		022D32F52B80C619003CCFC1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 022D32F42B80C619003CCFC1 /* FirebaseFirestore */; };
+		022D32F72B80C6D1003CCFC1 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D32F62B80C6D1003CCFC1 /* Message.swift */; };
+		022D32F92B80C81D003CCFC1 /* MessageBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D32F82B80C81D003CCFC1 /* MessageBlock.swift */; };
+		022D32FB2B80CBCA003CCFC1 /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D32FA2B80CBCA003CCFC1 /* MessagesManager.swift */; };
 		02EDC25A2B80710A00F63A29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView.swift */; };
 		02EDC25B2B80710A00F63A29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView.swift */; };
 		02EDC25C2B80710A00F63A29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView.swift */; };
@@ -52,6 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		022D32F62B80C6D1003CCFC1 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		022D32F82B80C81D003CCFC1 /* MessageBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBlock.swift; sourceTree = "<group>"; };
+		022D32FA2B80CBCA003CCFC1 /* MessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
 		02EDC2592B80710A00F63A29 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E18669902B68853500FEDDD9 /* Loch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18669932B68853500FEDDD9 /* LochApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LochApp.swift; sourceTree = "<group>"; };
@@ -84,6 +92,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E18669E32B807E2000FEDDD9 /* FirebaseAnalyticsSwift in Frameworks */,
+				022D32F52B80C619003CCFC1 /* FirebaseFirestore in Frameworks */,
+				022D32F32B80C611003CCFC1 /* FirebaseAuth in Frameworks */,
 				E18669E12B807E2000FEDDD9 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +115,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		022D32F12B80C611003CCFC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E18669872B68853500FEDDD9 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +129,7 @@
 				E18669A32B68853900FEDDD9 /* LochTests */,
 				E18669AD2B68853900FEDDD9 /* LochUITests */,
 				E18669912B68853500FEDDD9 /* Products */,
+				022D32F12B80C611003CCFC1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -186,6 +204,9 @@
 				E18669BD2B688B6B00FEDDD9 /* Messages.swift */,
 				E18669D02B69CDAB00FEDDD9 /* Messages Data.swift */,
 				E18669D22B6A1C5800FEDDD9 /* MessagesPage.swift */,
+				022D32FA2B80CBCA003CCFC1 /* MessagesManager.swift */,
+				022D32F82B80C81D003CCFC1 /* MessageBlock.swift */,
+				022D32F62B80C6D1003CCFC1 /* Message.swift */,
 			);
 			path = "Messages Group";
 			sourceTree = "<group>";
@@ -218,6 +239,8 @@
 			packageProductDependencies = (
 				E18669E02B807E2000FEDDD9 /* FirebaseAnalytics */,
 				E18669E22B807E2000FEDDD9 /* FirebaseAnalyticsSwift */,
+				022D32F22B80C611003CCFC1 /* FirebaseAuth */,
+				022D32F42B80C619003CCFC1 /* FirebaseFirestore */,
 			);
 			productName = Loch;
 			productReference = E18669902B68853500FEDDD9 /* Loch.app */;
@@ -342,14 +365,17 @@
 				E18669C82B688FB000FEDDD9 /* Settings.swift in Sources */,
 				02EDC25A2B80710A00F63A29 /* LoginView.swift in Sources */,
 				E18669C42B688B8C00FEDDD9 /* Contacts.swift in Sources */,
+				022D32FB2B80CBCA003CCFC1 /* MessagesManager.swift in Sources */,
 				E18669D12B69CDAB00FEDDD9 /* Messages Data.swift in Sources */,
 				E18669C62B688B9700FEDDD9 /* Profile.swift in Sources */,
+				022D32F92B80C81D003CCFC1 /* MessageBlock.swift in Sources */,
 				E18669D32B6A1C5800FEDDD9 /* MessagesPage.swift in Sources */,
 				E18669942B68853500FEDDD9 /* LochApp.swift in Sources */,
 				E18669CA2B69BAEF00FEDDD9 /* Contact Data.swift in Sources */,
 				E18669CE2B69BD5400FEDDD9 /* Detailed View.swift in Sources */,
 				E18669C02B688B7600FEDDD9 /* Forums.swift in Sources */,
 				E18669C22B688B8000FEDDD9 /* Connect.swift in Sources */,
+				022D32F72B80C6D1003CCFC1 /* Message.swift in Sources */,
 				E18669D82B6B394C00FEDDD9 /* User Data Module.swift in Sources */,
 				E18669D62B6B37E100FEDDD9 /* Profile Data.swift in Sources */,
 			);
@@ -696,6 +722,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		022D32F22B80C611003CCFC1 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E18669DF2B807E2000FEDDD9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		022D32F42B80C619003CCFC1 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E18669DF2B807E2000FEDDD9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
 		E18669E02B807E2000FEDDD9 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E18669DF2B807E2000FEDDD9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

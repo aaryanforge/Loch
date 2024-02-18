@@ -8,16 +8,11 @@
 import Foundation
 import SwiftUI
 
-struct messagesData: Identifiable {
-    let id = UUID()
+struct messagesData: Identifiable, Codable {
+    let id: String
     let name: String
     let imageName: String
 }
 
-let msgs = [
-    messagesData(name: "Pala", imageName: "Connecting Image"),
-    messagesData(name: "Penghus", imageName: "Connecting Image"),
-    messagesData(name: "Shangkuan", imageName: "Connecting Image"),
-    messagesData(name: "Madau", imageName: "Connecting Image"),
-]
+let msgs: [messagesData] = [messagesData(id: "1", name: "phonker", imageName: "Connecting Image")]
 
