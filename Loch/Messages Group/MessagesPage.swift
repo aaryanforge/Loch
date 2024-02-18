@@ -7,45 +7,30 @@
 
 import SwiftUI
 
-
-
 struct currentMsgs {
     var cMsg: String
 }
 
 struct MessagesPage: View {
-        
     var msg: messagesData
+    @StateObject private var messagesManager = MessagesManager()
     @State private var txtMsg: String = ""
-    @State var currentMsg: String = ""
-    var count = 1 ... 10
-    
-    @State var Ms = [currentMsgs(cMsg: ""), currentMsgs(cMsg: ""), currentMsgs(cMsg: ""), currentMsgs(cMsg: ""), currentMsgs(cMsg: "")]
-    
-    func makeTxt(txtMsg: String) -> Text { return Text(txtMsg) }
     
     var body: some View {
-        Section() { Text(Ms[0].cMsg) }
-        Section() { Text(Ms[1].cMsg) }
-        Section() { Text(Ms[2].cMsg) }
-        Section() { Text(Ms[3].cMsg) }
-        Section() { Text(Ms[4].cMsg) }
-        
-        TextField("Message @" + msg.name, text: $txtMsg)
-            .onSubmit {
-                let count = 0 ... Ms.count
-                for i in count {
-                    if Ms[(i)].cMsg == "" {
-                        Ms[(i)].cMsg = txtMsg
-                        break
-                    }
-                }
-                currentMsg = txtMsg
+        VStack (alignment: .leading) {
+//            MessageBlock(message: Message(body: "Hello, I'm Penghus Khan", sent: true, timeStamp: Date.now))
+//            MessageBlock(message: Message(id: UUID(2), body: "Hello, I'm Aaryan Pala", sent: false, timeStamp: Date.now))
+//            MessageBlock(message: Message(body: "Hello, I'm Marcus Aurelius", sent: false, timeStamp: Date.now))
+//            MessageBlock(message: Message(body: "Hello, I'm Gene Truong", sent: false, timeStamp: Date.now))
+            ForEach(messagesManager.messages, id: \.id) { message in
+                MessageBlock(message: message)
             }
-            .border(Color.black)
+            TextField("Message @" + msg.name, text: $txtMsg)
+                .onSubmit {
+                    txtMsg = ""
+                }
+                .border(Color.black)
+        }
+        
     }
 }
-
-//#Preview {
-  //  MessagesPage()
-//}

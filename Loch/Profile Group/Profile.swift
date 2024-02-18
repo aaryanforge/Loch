@@ -16,8 +16,6 @@ struct Profile: View {
     @State var profParent: String = ""
     
     var username = "Aaryan"
-
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
     var body: some View {
         
@@ -83,16 +81,6 @@ struct Profile: View {
         }
     }
 }
-
-
-class AppDelegate: NSObject, UIApplicationDelegate {
-  func application(_ application: UIApplication,
-                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-    FirebaseApp.configure()
-    return true
-  }
-}
-        
 
 #Preview {
     Profile()

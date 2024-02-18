@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0263AD5A2B81F82500F2C72F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0263AD592B81F82500F2C72F /* FirebaseFirestore */; };
+		0263AD5C2B81F98000F2C72F /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263AD5B2B81F98000F2C72F /* UserModel.swift */; };
+		0263AD5E2B81FA1900F2C72F /* MessgeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263AD5D2B81FA1900F2C72F /* MessgeModel.swift */; };
+		0263AD602B81FAB100F2C72F /* AddNewMessageSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263AD5F2B81FAB100F2C72F /* AddNewMessageSheetView.swift */; };
+		0263AD622B81FAFB00F2C72F /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263AD612B81FAFB00F2C72F /* MessagesManager.swift */; };
+		0263AD642B81FB2C00F2C72F /* MessagesBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263AD632B81FB2C00F2C72F /* MessagesBlockView.swift */; };
 		02EDC25A2B80710A00F63A29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView.swift */; };
 		02EDC25B2B80710A00F63A29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView.swift */; };
 		02EDC25C2B80710A00F63A29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView.swift */; };
@@ -52,6 +58,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0263AD5B2B81F98000F2C72F /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		0263AD5D2B81FA1900F2C72F /* MessgeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessgeModel.swift; sourceTree = "<group>"; };
+		0263AD5F2B81FAB100F2C72F /* AddNewMessageSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewMessageSheetView.swift; sourceTree = "<group>"; };
+		0263AD612B81FAFB00F2C72F /* MessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
+		0263AD632B81FB2C00F2C72F /* MessagesBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesBlockView.swift; sourceTree = "<group>"; };
 		02EDC2592B80710A00F63A29 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E18669902B68853500FEDDD9 /* Loch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18669932B68853500FEDDD9 /* LochApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LochApp.swift; sourceTree = "<group>"; };
@@ -85,6 +96,7 @@
 			files = (
 				E18669E32B807E2000FEDDD9 /* FirebaseAnalyticsSwift in Frameworks */,
 				E18669E12B807E2000FEDDD9 /* FirebaseAnalytics in Frameworks */,
+				0263AD5A2B81F82500F2C72F /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,13 +117,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0263AD582B81F82500F2C72F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E18669872B68853500FEDDD9 = {
 			isa = PBXGroup;
 			children = (
+				0263AD5B2B81F98000F2C72F /* UserModel.swift */,
 				E18669922B68853500FEDDD9 /* Loch */,
 				E18669A32B68853900FEDDD9 /* LochTests */,
 				E18669AD2B68853900FEDDD9 /* LochUITests */,
 				E18669912B68853500FEDDD9 /* Products */,
+				0263AD582B81F82500F2C72F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,6 +197,7 @@
 				E18669C32B688B8C00FEDDD9 /* Contacts.swift */,
 				E18669C92B69BAEF00FEDDD9 /* Contact Data.swift */,
 				E18669CD2B69BD5400FEDDD9 /* Detailed View.swift */,
+				0263AD5F2B81FAB100F2C72F /* AddNewMessageSheetView.swift */,
 			);
 			path = "Contact Group";
 			sourceTree = "<group>";
@@ -186,6 +208,9 @@
 				E18669BD2B688B6B00FEDDD9 /* Messages.swift */,
 				E18669D02B69CDAB00FEDDD9 /* Messages Data.swift */,
 				E18669D22B6A1C5800FEDDD9 /* MessagesPage.swift */,
+				0263AD5D2B81FA1900F2C72F /* MessgeModel.swift */,
+				0263AD612B81FAFB00F2C72F /* MessagesManager.swift */,
+				0263AD632B81FB2C00F2C72F /* MessagesBlockView.swift */,
 			);
 			path = "Messages Group";
 			sourceTree = "<group>";
@@ -218,6 +243,7 @@
 			packageProductDependencies = (
 				E18669E02B807E2000FEDDD9 /* FirebaseAnalytics */,
 				E18669E22B807E2000FEDDD9 /* FirebaseAnalyticsSwift */,
+				0263AD592B81F82500F2C72F /* FirebaseFirestore */,
 			);
 			productName = Loch;
 			productReference = E18669902B68853500FEDDD9 /* Loch.app */;
@@ -338,8 +364,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E18669962B68853500FEDDD9 /* ContentView.swift in Sources */,
+				0263AD622B81FAFB00F2C72F /* MessagesManager.swift in Sources */,
 				E18669BE2B688B6B00FEDDD9 /* Messages.swift in Sources */,
 				E18669C82B688FB000FEDDD9 /* Settings.swift in Sources */,
+				0263AD642B81FB2C00F2C72F /* MessagesBlockView.swift in Sources */,
 				02EDC25A2B80710A00F63A29 /* LoginView.swift in Sources */,
 				E18669C42B688B8C00FEDDD9 /* Contacts.swift in Sources */,
 				E18669D12B69CDAB00FEDDD9 /* Messages Data.swift in Sources */,
@@ -347,7 +375,10 @@
 				E18669D32B6A1C5800FEDDD9 /* MessagesPage.swift in Sources */,
 				E18669942B68853500FEDDD9 /* LochApp.swift in Sources */,
 				E18669CA2B69BAEF00FEDDD9 /* Contact Data.swift in Sources */,
+				0263AD5E2B81FA1900F2C72F /* MessgeModel.swift in Sources */,
+				0263AD5C2B81F98000F2C72F /* UserModel.swift in Sources */,
 				E18669CE2B69BD5400FEDDD9 /* Detailed View.swift in Sources */,
+				0263AD602B81FAB100F2C72F /* AddNewMessageSheetView.swift in Sources */,
 				E18669C02B688B7600FEDDD9 /* Forums.swift in Sources */,
 				E18669C22B688B8000FEDDD9 /* Connect.swift in Sources */,
 				E18669D82B6B394C00FEDDD9 /* User Data Module.swift in Sources */,
@@ -696,6 +727,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0263AD592B81F82500F2C72F /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E18669DF2B807E2000FEDDD9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
 		E18669E02B807E2000FEDDD9 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E18669DF2B807E2000FEDDD9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

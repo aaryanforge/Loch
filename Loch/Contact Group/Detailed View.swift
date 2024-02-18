@@ -5,6 +5,7 @@
 //  Created by A P on 31/1/2024.
 //
 
+
 import SwiftUI
 
 struct Detailed_View: View {
@@ -50,14 +51,14 @@ struct Detailed_View: View {
                             Text(profData[0].aboutMe)
                                 .foregroundColor(.black)
                                 .font(.callout)
-                                .task {
-                                    for prof in profData {
-                                        print(prof.aboutMe) //tf glitch in the matrix - why isn't this showing the abbout me but in the other page it does despite them being the exact same data.
-                                        print(prof.name)
-                                        print("yesSIR")
-                                        print(profData[0].aboutMe)
-                                    }
-                                }
+//                                .task {
+//                                    for prof in profData {
+//                                        print(prof.aboutMe) //tf glitch in the matrix - why isn't this showing the abbout me but in the other page it does despite them being the exact same data.
+//                                        print(prof.name)
+//                                        print("yesSIR")
+//                                        print(profData[0].aboutMe)
+//                                    }
+//                                }
                         } else {
                             Text(contact.aboutMe)
                                 .foregroundColor(.black)
@@ -70,7 +71,7 @@ struct Detailed_View: View {
                     Button(action: { }) {
                         Text("Send Message")
                     }
-                } 
+                }
             }
         }
     }
