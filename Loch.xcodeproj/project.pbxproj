@@ -39,6 +39,7 @@
 		E18669DE2B807CCB00FEDDD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E18669DD2B807CCB00FEDDD9 /* GoogleService-Info.plist */; };
 		E18669E12B807E2000FEDDD9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E18669E02B807E2000FEDDD9 /* FirebaseAnalytics */; };
 		E18669E32B807E2000FEDDD9 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E18669E22B807E2000FEDDD9 /* FirebaseAnalyticsSwift */; };
+		E18669E62B8190CB00FEDDD9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E18669E52B8190CB00FEDDD9 /* FirebaseAuth */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,8 +97,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E18669E32B807E2000FEDDD9 /* FirebaseAnalyticsSwift in Frameworks */,
+<<<<<<< Updated upstream
 				022D32F52B80C619003CCFC1 /* FirebaseFirestore in Frameworks */,
 				022D32F32B80C611003CCFC1 /* FirebaseAuth in Frameworks */,
+=======
+				E18669E62B8190CB00FEDDD9 /* FirebaseAuth in Frameworks */,
+>>>>>>> Stashed changes
 				E18669E12B807E2000FEDDD9 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,7 +138,11 @@
 				E18669A32B68853900FEDDD9 /* LochTests */,
 				E18669AD2B68853900FEDDD9 /* LochUITests */,
 				E18669912B68853500FEDDD9 /* Products */,
+<<<<<<< Updated upstream
 				022D32F12B80C611003CCFC1 /* Frameworks */,
+=======
+				E18669E42B8190CB00FEDDD9 /* Frameworks */,
+>>>>>>> Stashed changes
 			);
 			sourceTree = "<group>";
 		};
@@ -226,6 +235,13 @@
 			path = "Profile Group";
 			sourceTree = "<group>";
 		};
+		E18669E42B8190CB00FEDDD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -245,8 +261,12 @@
 			packageProductDependencies = (
 				E18669E02B807E2000FEDDD9 /* FirebaseAnalytics */,
 				E18669E22B807E2000FEDDD9 /* FirebaseAnalyticsSwift */,
+<<<<<<< Updated upstream
 				022D32F22B80C611003CCFC1 /* FirebaseAuth */,
 				022D32F42B80C619003CCFC1 /* FirebaseFirestore */,
+=======
+				E18669E52B8190CB00FEDDD9 /* FirebaseAuth */,
+>>>>>>> Stashed changes
 			);
 			productName = Loch;
 			productReference = E18669902B68853500FEDDD9 /* Loch.app */;
@@ -749,6 +769,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E18669DF2B807E2000FEDDD9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalyticsSwift;
+		};
+		E18669E52B8190CB00FEDDD9 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E18669DF2B807E2000FEDDD9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
