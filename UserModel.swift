@@ -12,4 +12,5 @@ struct User: Codable {
     @DocumentID var email: String?
     let username: String
     let password: String
+    let chatRooms: [String?]
 }

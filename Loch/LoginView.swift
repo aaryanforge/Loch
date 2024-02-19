@@ -24,6 +24,8 @@ struct LoginView: View {
                         .bold()
                     
                     TextField("Username", text: $username)
+                        .autocorrectionDisabled()
+                        .textInputAutocapitalization(.none)
                     Rectangle()
                         .frame(width: 280, height: 1)
                         .padding(.bottom)
@@ -34,6 +36,8 @@ struct LoginView: View {
                     .bold()
                 
                 TextField("Email", text: $email)
+                    .autocorrectionDisabled()
+                    .textInputAutocapitalization(.none)
                 Rectangle()
                     .frame(width: 280, height: 1)
                     .padding(.bottom)
@@ -44,6 +48,8 @@ struct LoginView: View {
                     .bold()
                 
                 SecureField("Password", text: $password)
+                    .autocorrectionDisabled()
+                    .textInputAutocapitalization(.none)
                 Rectangle()
                     .frame(width: 280, height: 1)
                     .padding(.bottom)
@@ -61,9 +67,12 @@ struct LoginView: View {
                                 if let previousUser = user {
                                     if previousUser.exists {
                                         do {
-                                            let storedPassword = try previousUser.data(as: User.self).password
-                                            if storedPassword == password {
-                                                isSignedOn = true
+                                            
+                                            loggedInUser = try previousUser.data(as: User.self)
+                                            if let user = loggedInUser {
+                                                if user.password == password {
+                                                    isSignedOn = true
+                                                }
                                             }
                                         } catch {
                                             print(error)
@@ -102,6 +111,7 @@ struct LoginView: View {
                                             "username": username,
                                             "password": password,
                                         ])
+                                        
                                         isSignedOn = true
                                     }
                                 }

@@ -21,3 +21,5 @@ let msgs = [
     messagesData(name: "Madau", imageName: "Connecting Image"),
 ]
 
+var loggedInUser: User? = nil
+

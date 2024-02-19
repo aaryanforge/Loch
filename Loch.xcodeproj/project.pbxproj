@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02458AA12B82FF0500E5AA1F /* MessageRoomsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02458AA02B82FF0500E5AA1F /* MessageRoomsManager.swift */; };
 		0263AD5A2B81F82500F2C72F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0263AD592B81F82500F2C72F /* FirebaseFirestore */; };
 		0263AD5C2B81F98000F2C72F /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263AD5B2B81F98000F2C72F /* UserModel.swift */; };
 		0263AD5E2B81FA1900F2C72F /* MessgeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263AD5D2B81FA1900F2C72F /* MessgeModel.swift */; };
@@ -58,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02458AA02B82FF0500E5AA1F /* MessageRoomsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRoomsManager.swift; sourceTree = "<group>"; };
 		0263AD5B2B81F98000F2C72F /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		0263AD5D2B81FA1900F2C72F /* MessgeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessgeModel.swift; sourceTree = "<group>"; };
 		0263AD5F2B81FAB100F2C72F /* AddNewMessageSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewMessageSheetView.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 			children = (
 				E18669BD2B688B6B00FEDDD9 /* Messages.swift */,
 				E18669D02B69CDAB00FEDDD9 /* Messages Data.swift */,
+				02458AA02B82FF0500E5AA1F /* MessageRoomsManager.swift */,
 				E18669D22B6A1C5800FEDDD9 /* MessagesPage.swift */,
 				0263AD5D2B81FA1900F2C72F /* MessgeModel.swift */,
 				0263AD612B81FAFB00F2C72F /* MessagesManager.swift */,
@@ -379,6 +382,7 @@
 				0263AD5C2B81F98000F2C72F /* UserModel.swift in Sources */,
 				E18669CE2B69BD5400FEDDD9 /* Detailed View.swift in Sources */,
 				0263AD602B81FAB100F2C72F /* AddNewMessageSheetView.swift in Sources */,
+				02458AA12B82FF0500E5AA1F /* MessageRoomsManager.swift in Sources */,
 				E18669C02B688B7600FEDDD9 /* Forums.swift in Sources */,
 				E18669C22B688B8000FEDDD9 /* Connect.swift in Sources */,
 				E18669D82B6B394C00FEDDD9 /* User Data Module.swift in Sources */,
@@ -561,7 +565,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Test.Loch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Loch.LochSafety;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -590,7 +594,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Test.Loch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Loch.LochSafety;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

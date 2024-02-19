@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseFirestore
 
 struct currentMsgs {
     var cMsg: String
@@ -13,6 +14,8 @@ struct currentMsgs {
 
 struct MessagesPage: View {
     var msg: messagesData
+    let db = Firestore.firestore()
+    
     @StateObject private var messagesManager = MessagesManager()
     @State private var txtMsg: String = ""
     
@@ -27,6 +30,11 @@ struct MessagesPage: View {
             }
             TextField("Message @" + msg.name, text: $txtMsg)
                 .onSubmit {
+                    db.collection("messages").addDocument(data: [
+                        "body": txtMsg,
+                        "sent": true,
+                        "timeStamp": Date.now,
+                    ])
                     txtMsg = ""
                 }
                 .border(Color.black)
