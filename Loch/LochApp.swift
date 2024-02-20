@@ -8,6 +8,7 @@
 import SwiftUI
 import FirebaseCore
 import FirebaseFirestore
+import SwiftData
 
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
@@ -28,6 +29,7 @@ struct LochApp: App {
     WindowGroup {
       NavigationView {
         LoginView()
+              .modelContainer(for: UserModel.self)
       }
     }
   }

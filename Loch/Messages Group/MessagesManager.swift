@@ -7,12 +7,16 @@
 
 import Foundation
 import FirebaseFirestore
+import SwiftUI
 
 @MainActor class MessagesManager: ObservableObject {
-    @Published private(set) var messages: [Message] = []
-    let db = Firestore.firestore()
     
-    init()  {
+    let chatRoomId: String
+    let db = Firestore.firestore()
+    @Published private(set) var messages: [Message] = []
+    
+    init(chatRoomId: String)  {
+        self.chatRoomId = chatRoomId
         Task {
             await getMessages()
         }
@@ -20,10 +24,13 @@ import FirebaseFirestore
     
     func getMessages() async {
         do {
-            let snapshot = try await db.collection("messages").order(by: "timeStamp").getDocuments()
-            for message in snapshot.documents {
-                try messages.append(message.data(as: Message.self))
-            }
+            // for chatRoom in loggedInUser.chatRooms {
+                let snapshot = try await db.collection("chatRoom").document(chatRoomId).collection("messages").order(by: "timeStamp").getDocuments()
+                for message in snapshot.documents {
+                    try messages.append(message.data(as: Message.self))
+                }
+            //}
+            
         } catch {
             print("ERR: \(error)")
         }
