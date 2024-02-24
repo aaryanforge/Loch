@@ -6,32 +6,52 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct Messages: View {
+    
+    @Query private var loggedInUser: [UserModel]
+    @MainActor func getMessageRooms(user: UserModel) -> [ChatRoom] {
+        return MessageRoomsManager(user: user).getMessageRooms()
+    }
+    
+    //?? User(email: "", username: "", password: "", chatRooms: [])
     var body: some View {
-        NavigationView() {
+        NavigationView {
             
-            List(msgs) { msg in
-                NavigationLink(destination: MessagesPage(msg: msg)) {
-                    HStack(){
-                        Image(msg.imageName)
+            
+            List(getMessageRooms(user: loggedInUser[0])) { chatRoom in
+                Text(chatRoom.name)
+                //if let roomId = chatRoom.id {
+                
+                NavigationLink(destination: MessagesPage(chatRoom: chatRoom)) {
+                    HStack() {
+                        Image("Connecting Image")
                             .resizable()
-                            .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+                            .aspectRatio(contentMode: .fit)
                             .frame(width: 60, height: 60)
                             .clipped()
                             .cornerRadius(50)
                         VStack(alignment: .leading, spacing: 50) {
-                            Text(msg.name)
+                            Text(chatRoom.name)
                                 .font(.system(size: 21, weight: .medium, design: .default))
                         }
                     }
                 }
+                //}
             }
-            .navigationTitle("Messages")
+                .navigationTitle("Messages")
+//            }
         }
+//            .task {
+//                if let loggedInUser = loggedInUser {
+//                    chatRooms = ChatRoom(id: loggedInUser.chatRooms, name: 
+//                }
+//            }
     }
 }
 
-#Preview {
-    Messages()
-}
+//#Preview {
+//    Messages()
+//}
+

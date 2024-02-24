@@ -34,7 +34,7 @@ struct Contacts: View {
                     HStack(){
                         Image(contact.imageName)
                             .resizable()
-                            .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+                            .aspectRatio(contentMode: .fit)
                             .frame(width: 60, height: 60)
                             .clipped()
                             .cornerRadius(50)
@@ -50,6 +50,3 @@ struct Contacts: View {
     }
 }
 
-#Preview {
-    Contacts()
-}
