@@ -10,10 +10,25 @@
 		02458AA12B82FF0500E5AA1F /* MessageRoomsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02458AA02B82FF0500E5AA1F /* MessageRoomsManager.swift */; };
 		0263AD5A2B81F82500F2C72F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0263AD592B81F82500F2C72F /* FirebaseFirestore */; };
 		0263AD5C2B81F98000F2C72F /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263AD5B2B81F98000F2C72F /* UserModel.swift */; };
-		0263AD5E2B81FA1900F2C72F /* MessgeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263AD5D2B81FA1900F2C72F /* MessgeModel.swift */; };
+		0263AD5E2B81FA1900F2C72F /* ChatsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263AD5D2B81FA1900F2C72F /* ChatsModel.swift */; };
 		0263AD602B81FAB100F2C72F /* AddNewMessageSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263AD5F2B81FAB100F2C72F /* AddNewMessageSheetView.swift */; };
 		0263AD622B81FAFB00F2C72F /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263AD612B81FAFB00F2C72F /* MessagesManager.swift */; };
-		0263AD642B81FB2C00F2C72F /* MessagesBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263AD632B81FB2C00F2C72F /* MessagesBlockView.swift */; };
+		0263AD642B81FB2C00F2C72F /* ChatsBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263AD632B81FB2C00F2C72F /* ChatsBlockView.swift */; };
+		02DC16202B8A2141007D45AF /* ConnectSendDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC161F2B8A2141007D45AF /* ConnectSendDetailView.swift */; };
+		02DC16222B8A216D007D45AF /* ConnectReceiveDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC16212B8A216D007D45AF /* ConnectReceiveDetailView.swift */; };
+		02DC16242B8A21C8007D45AF /* ChatsHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC16232B8A21C8007D45AF /* ChatsHeadView.swift */; };
+		02DC16262B8A21DF007D45AF /* ChatsTailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC16252B8A21DF007D45AF /* ChatsTailView.swift */; };
+		02DC16282B8A21F8007D45AF /* ForumHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC16272B8A21F8007D45AF /* ForumHeadView.swift */; };
+		02DC162A2B8A2205007D45AF /* ForumTailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC16292B8A2205007D45AF /* ForumTailView.swift */; };
+		02DC162C2B8A225F007D45AF /* ProfileDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC162B2B8A225F007D45AF /* ProfileDetailView.swift */; };
+		02DC162E2B8A2703007D45AF /* ChatsToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC162D2B8A2703007D45AF /* ChatsToolbarView.swift */; };
+		02DC16302B8A2726007D45AF /* ChatsMainLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC162F2B8A2726007D45AF /* ChatsMainLoad.swift */; };
+		02DC16322B8A2748007D45AF /* ChatsDetailLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC16312B8A2748007D45AF /* ChatsDetailLoad.swift */; };
+		02DC16342B8A277C007D45AF /* ForumBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC16332B8A277C007D45AF /* ForumBlockView.swift */; };
+		02DC16362B8A2795007D45AF /* ForumMainLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC16352B8A2795007D45AF /* ForumMainLoad.swift */; };
+		02DC16382B8A27A5007D45AF /* ForumToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC16372B8A27A5007D45AF /* ForumToolbarView.swift */; };
+		02DC163A2B8A27CC007D45AF /* ContactsMainLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC16392B8A27CC007D45AF /* ContactsMainLoad.swift */; };
+		02DC163C2B8A27E9007D45AF /* ProfileMainLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC163B2B8A27E9007D45AF /* ProfileMainLoad.swift */; };
 		02EDC25A2B80710A00F63A29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView.swift */; };
 		02EDC25B2B80710A00F63A29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView.swift */; };
 		02EDC25C2B80710A00F63A29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView.swift */; };
@@ -24,17 +39,14 @@
 		E18669A52B68853900FEDDD9 /* LochTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669A42B68853900FEDDD9 /* LochTests.swift */; };
 		E18669AF2B68853900FEDDD9 /* LochUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669AE2B68853900FEDDD9 /* LochUITests.swift */; };
 		E18669B12B68853900FEDDD9 /* LochUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669B02B68853900FEDDD9 /* LochUITestsLaunchTests.swift */; };
-		E18669BE2B688B6B00FEDDD9 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669BD2B688B6B00FEDDD9 /* Messages.swift */; };
-		E18669C02B688B7600FEDDD9 /* Forums.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669BF2B688B7600FEDDD9 /* Forums.swift */; };
-		E18669C22B688B8000FEDDD9 /* Connect.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669C12B688B8000FEDDD9 /* Connect.swift */; };
-		E18669C42B688B8C00FEDDD9 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669C32B688B8C00FEDDD9 /* Contacts.swift */; };
-		E18669C62B688B9700FEDDD9 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669C52B688B9700FEDDD9 /* Profile.swift */; };
+		E18669BE2B688B6B00FEDDD9 /* ChatsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669BD2B688B6B00FEDDD9 /* ChatsMainView.swift */; };
+		E18669C02B688B7600FEDDD9 /* ForumMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669BF2B688B7600FEDDD9 /* ForumMainView.swift */; };
+		E18669C22B688B8000FEDDD9 /* ConnectMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669C12B688B8000FEDDD9 /* ConnectMainView.swift */; };
+		E18669C42B688B8C00FEDDD9 /* ContactsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669C32B688B8C00FEDDD9 /* ContactsMainView.swift */; };
+		E18669C62B688B9700FEDDD9 /* ProfileMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669C52B688B9700FEDDD9 /* ProfileMainView.swift */; };
 		E18669C82B688FB000FEDDD9 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669C72B688FB000FEDDD9 /* Settings.swift */; };
-		E18669CA2B69BAEF00FEDDD9 /* Contact Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669C92B69BAEF00FEDDD9 /* Contact Data.swift */; };
-		E18669CE2B69BD5400FEDDD9 /* Detailed View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669CD2B69BD5400FEDDD9 /* Detailed View.swift */; };
-		E18669D32B6A1C5800FEDDD9 /* MessagesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669D22B6A1C5800FEDDD9 /* MessagesPage.swift */; };
-		E18669D62B6B37E100FEDDD9 /* Profile Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669D52B6B37E100FEDDD9 /* Profile Data.swift */; };
-		E18669D82B6B394C00FEDDD9 /* User Data Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669D72B6B394C00FEDDD9 /* User Data Module.swift */; };
+		E18669CE2B69BD5400FEDDD9 /* ContactsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669CD2B69BD5400FEDDD9 /* ContactsDetailView.swift */; };
+		E18669D32B6A1C5800FEDDD9 /* ChatsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669D22B6A1C5800FEDDD9 /* ChatsDetailView.swift */; };
 		E18669DE2B807CCB00FEDDD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E18669DD2B807CCB00FEDDD9 /* GoogleService-Info.plist */; };
 		E18669E12B807E2000FEDDD9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E18669E02B807E2000FEDDD9 /* FirebaseAnalytics */; };
 		E18669E32B807E2000FEDDD9 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E18669E22B807E2000FEDDD9 /* FirebaseAnalyticsSwift */; };
@@ -60,10 +72,25 @@
 /* Begin PBXFileReference section */
 		02458AA02B82FF0500E5AA1F /* MessageRoomsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRoomsManager.swift; sourceTree = "<group>"; };
 		0263AD5B2B81F98000F2C72F /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		0263AD5D2B81FA1900F2C72F /* MessgeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessgeModel.swift; sourceTree = "<group>"; };
+		0263AD5D2B81FA1900F2C72F /* ChatsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsModel.swift; sourceTree = "<group>"; };
 		0263AD5F2B81FAB100F2C72F /* AddNewMessageSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewMessageSheetView.swift; sourceTree = "<group>"; };
 		0263AD612B81FAFB00F2C72F /* MessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
-		0263AD632B81FB2C00F2C72F /* MessagesBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesBlockView.swift; sourceTree = "<group>"; };
+		0263AD632B81FB2C00F2C72F /* ChatsBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsBlockView.swift; sourceTree = "<group>"; };
+		02DC161F2B8A2141007D45AF /* ConnectSendDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectSendDetailView.swift; sourceTree = "<group>"; };
+		02DC16212B8A216D007D45AF /* ConnectReceiveDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectReceiveDetailView.swift; sourceTree = "<group>"; };
+		02DC16232B8A21C8007D45AF /* ChatsHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsHeadView.swift; sourceTree = "<group>"; };
+		02DC16252B8A21DF007D45AF /* ChatsTailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsTailView.swift; sourceTree = "<group>"; };
+		02DC16272B8A21F8007D45AF /* ForumHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumHeadView.swift; sourceTree = "<group>"; };
+		02DC16292B8A2205007D45AF /* ForumTailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumTailView.swift; sourceTree = "<group>"; };
+		02DC162B2B8A225F007D45AF /* ProfileDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailView.swift; sourceTree = "<group>"; };
+		02DC162D2B8A2703007D45AF /* ChatsToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsToolbarView.swift; sourceTree = "<group>"; };
+		02DC162F2B8A2726007D45AF /* ChatsMainLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsMainLoad.swift; sourceTree = "<group>"; };
+		02DC16312B8A2748007D45AF /* ChatsDetailLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsDetailLoad.swift; sourceTree = "<group>"; };
+		02DC16332B8A277C007D45AF /* ForumBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumBlockView.swift; sourceTree = "<group>"; };
+		02DC16352B8A2795007D45AF /* ForumMainLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumMainLoad.swift; sourceTree = "<group>"; };
+		02DC16372B8A27A5007D45AF /* ForumToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumToolbarView.swift; sourceTree = "<group>"; };
+		02DC16392B8A27CC007D45AF /* ContactsMainLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsMainLoad.swift; sourceTree = "<group>"; };
+		02DC163B2B8A27E9007D45AF /* ProfileMainLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainLoad.swift; sourceTree = "<group>"; };
 		02EDC2592B80710A00F63A29 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E18669902B68853500FEDDD9 /* Loch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18669932B68853500FEDDD9 /* LochApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LochApp.swift; sourceTree = "<group>"; };
@@ -75,17 +102,14 @@
 		E18669AA2B68853900FEDDD9 /* LochUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LochUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18669AE2B68853900FEDDD9 /* LochUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LochUITests.swift; sourceTree = "<group>"; };
 		E18669B02B68853900FEDDD9 /* LochUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LochUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E18669BD2B688B6B00FEDDD9 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
-		E18669BF2B688B7600FEDDD9 /* Forums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forums.swift; sourceTree = "<group>"; };
-		E18669C12B688B8000FEDDD9 /* Connect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connect.swift; sourceTree = "<group>"; };
-		E18669C32B688B8C00FEDDD9 /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
-		E18669C52B688B9700FEDDD9 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		E18669BD2B688B6B00FEDDD9 /* ChatsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsMainView.swift; sourceTree = "<group>"; };
+		E18669BF2B688B7600FEDDD9 /* ForumMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumMainView.swift; sourceTree = "<group>"; };
+		E18669C12B688B8000FEDDD9 /* ConnectMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectMainView.swift; sourceTree = "<group>"; };
+		E18669C32B688B8C00FEDDD9 /* ContactsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsMainView.swift; sourceTree = "<group>"; };
+		E18669C52B688B9700FEDDD9 /* ProfileMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainView.swift; sourceTree = "<group>"; };
 		E18669C72B688FB000FEDDD9 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		E18669C92B69BAEF00FEDDD9 /* Contact Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact Data.swift"; sourceTree = "<group>"; };
-		E18669CD2B69BD5400FEDDD9 /* Detailed View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Detailed View.swift"; sourceTree = "<group>"; };
-		E18669D22B6A1C5800FEDDD9 /* MessagesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesPage.swift; sourceTree = "<group>"; };
-		E18669D52B6B37E100FEDDD9 /* Profile Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile Data.swift"; sourceTree = "<group>"; };
-		E18669D72B6B394C00FEDDD9 /* User Data Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User Data Module.swift"; sourceTree = "<group>"; };
+		E18669CD2B69BD5400FEDDD9 /* ContactsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDetailView.swift; sourceTree = "<group>"; };
+		E18669D22B6A1C5800FEDDD9 /* ChatsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsDetailView.swift; sourceTree = "<group>"; };
 		E18669DD2B807CCB00FEDDD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,15 +148,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		02DC161D2B8A207E007D45AF /* Forum Group */ = {
+			isa = PBXGroup;
+			children = (
+				E18669BF2B688B7600FEDDD9 /* ForumMainView.swift */,
+				02DC16272B8A21F8007D45AF /* ForumHeadView.swift */,
+				02DC16332B8A277C007D45AF /* ForumBlockView.swift */,
+				02DC16292B8A2205007D45AF /* ForumTailView.swift */,
+				02DC16372B8A27A5007D45AF /* ForumToolbarView.swift */,
+				02DC16352B8A2795007D45AF /* ForumMainLoad.swift */,
+			);
+			path = "Forum Group";
+			sourceTree = "<group>";
+		};
+		02DC161E2B8A2090007D45AF /* Connect Group */ = {
+			isa = PBXGroup;
+			children = (
+				E18669C12B688B8000FEDDD9 /* ConnectMainView.swift */,
+				02DC161F2B8A2141007D45AF /* ConnectSendDetailView.swift */,
+				02DC16212B8A216D007D45AF /* ConnectReceiveDetailView.swift */,
+			);
+			path = "Connect Group";
+			sourceTree = "<group>";
+		};
 		E18669872B68853500FEDDD9 = {
 			isa = PBXGroup;
 			children = (
-				0263AD5B2B81F98000F2C72F /* UserModel.swift */,
 				E18669922B68853500FEDDD9 /* Loch */,
+				E18669992B68853800FEDDD9 /* Preview Content */,
 				E18669A32B68853900FEDDD9 /* LochTests */,
 				E18669AD2B68853900FEDDD9 /* LochUITests */,
 				E18669912B68853500FEDDD9 /* Products */,
 				0263AD582B81F82500F2C72F /* Frameworks */,
+				E18669DD2B807CCB00FEDDD9 /* GoogleService-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,19 +197,17 @@
 		E18669922B68853500FEDDD9 /* Loch */ = {
 			isa = PBXGroup;
 			children = (
+				0263AD5B2B81F98000F2C72F /* UserModel.swift */,
+				E18669CF2B69CD7D00FEDDD9 /* Chats group */,
+				02DC161D2B8A207E007D45AF /* Forum Group */,
+				02DC161E2B8A2090007D45AF /* Connect Group */,
+				E18669CC2B69BD3300FEDDD9 /* Contacts Group */,
 				E18669D42B6B37CE00FEDDD9 /* Profile Group */,
-				E18669CF2B69CD7D00FEDDD9 /* Messages Group */,
-				E18669CC2B69BD3300FEDDD9 /* Contact Group */,
 				E18669932B68853500FEDDD9 /* LochApp.swift */,
 				E18669952B68853500FEDDD9 /* ContentView.swift */,
-				E18669DD2B807CCB00FEDDD9 /* GoogleService-Info.plist */,
-				E18669972B68853800FEDDD9 /* Assets.xcassets */,
-				E18669992B68853800FEDDD9 /* Preview Content */,
-				E18669BF2B688B7600FEDDD9 /* Forums.swift */,
-				E18669C12B688B8000FEDDD9 /* Connect.swift */,
 				E18669C72B688FB000FEDDD9 /* Settings.swift */,
-				E18669D72B6B394C00FEDDD9 /* User Data Module.swift */,
 				02EDC2592B80710A00F63A29 /* LoginView.swift */,
+				E18669972B68853800FEDDD9 /* Assets.xcassets */,
 			);
 			path = Loch;
 			sourceTree = "<group>";
@@ -191,35 +237,41 @@
 			path = LochUITests;
 			sourceTree = "<group>";
 		};
-		E18669CC2B69BD3300FEDDD9 /* Contact Group */ = {
+		E18669CC2B69BD3300FEDDD9 /* Contacts Group */ = {
 			isa = PBXGroup;
 			children = (
-				E18669C32B688B8C00FEDDD9 /* Contacts.swift */,
-				E18669C92B69BAEF00FEDDD9 /* Contact Data.swift */,
-				E18669CD2B69BD5400FEDDD9 /* Detailed View.swift */,
+				E18669C32B688B8C00FEDDD9 /* ContactsMainView.swift */,
+				E18669CD2B69BD5400FEDDD9 /* ContactsDetailView.swift */,
+				02DC16392B8A27CC007D45AF /* ContactsMainLoad.swift */,
 				0263AD5F2B81FAB100F2C72F /* AddNewMessageSheetView.swift */,
 			);
-			path = "Contact Group";
+			path = "Contacts Group";
 			sourceTree = "<group>";
 		};
-		E18669CF2B69CD7D00FEDDD9 /* Messages Group */ = {
+		E18669CF2B69CD7D00FEDDD9 /* Chats group */ = {
 			isa = PBXGroup;
 			children = (
-				E18669BD2B688B6B00FEDDD9 /* Messages.swift */,
-				02458AA02B82FF0500E5AA1F /* MessageRoomsManager.swift */,
-				E18669D22B6A1C5800FEDDD9 /* MessagesPage.swift */,
-				0263AD5D2B81FA1900F2C72F /* MessgeModel.swift */,
+				E18669BD2B688B6B00FEDDD9 /* ChatsMainView.swift */,
+				02DC16232B8A21C8007D45AF /* ChatsHeadView.swift */,
+				E18669D22B6A1C5800FEDDD9 /* ChatsDetailView.swift */,
+				0263AD632B81FB2C00F2C72F /* ChatsBlockView.swift */,
+				02DC162D2B8A2703007D45AF /* ChatsToolbarView.swift */,
+				02DC16252B8A21DF007D45AF /* ChatsTailView.swift */,
+				02DC162F2B8A2726007D45AF /* ChatsMainLoad.swift */,
+				02DC16312B8A2748007D45AF /* ChatsDetailLoad.swift */,
+				0263AD5D2B81FA1900F2C72F /* ChatsModel.swift */,
 				0263AD612B81FAFB00F2C72F /* MessagesManager.swift */,
-				0263AD632B81FB2C00F2C72F /* MessagesBlockView.swift */,
+				02458AA02B82FF0500E5AA1F /* MessageRoomsManager.swift */,
 			);
-			path = "Messages Group";
+			path = "Chats group";
 			sourceTree = "<group>";
 		};
 		E18669D42B6B37CE00FEDDD9 /* Profile Group */ = {
 			isa = PBXGroup;
 			children = (
-				E18669C52B688B9700FEDDD9 /* Profile.swift */,
-				E18669D52B6B37E100FEDDD9 /* Profile Data.swift */,
+				E18669C52B688B9700FEDDD9 /* ProfileMainView.swift */,
+				02DC162B2B8A225F007D45AF /* ProfileDetailView.swift */,
+				02DC163B2B8A27E9007D45AF /* ProfileMainLoad.swift */,
 			);
 			path = "Profile Group";
 			sourceTree = "<group>";
@@ -363,26 +415,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02DC16362B8A2795007D45AF /* ForumMainLoad.swift in Sources */,
+				02DC16202B8A2141007D45AF /* ConnectSendDetailView.swift in Sources */,
+				02DC16322B8A2748007D45AF /* ChatsDetailLoad.swift in Sources */,
+				02DC163A2B8A27CC007D45AF /* ContactsMainLoad.swift in Sources */,
 				E18669962B68853500FEDDD9 /* ContentView.swift in Sources */,
 				0263AD622B81FAFB00F2C72F /* MessagesManager.swift in Sources */,
-				E18669BE2B688B6B00FEDDD9 /* Messages.swift in Sources */,
+				02DC163C2B8A27E9007D45AF /* ProfileMainLoad.swift in Sources */,
+				E18669BE2B688B6B00FEDDD9 /* ChatsMainView.swift in Sources */,
 				E18669C82B688FB000FEDDD9 /* Settings.swift in Sources */,
-				0263AD642B81FB2C00F2C72F /* MessagesBlockView.swift in Sources */,
+				0263AD642B81FB2C00F2C72F /* ChatsBlockView.swift in Sources */,
+				02DC16242B8A21C8007D45AF /* ChatsHeadView.swift in Sources */,
 				02EDC25A2B80710A00F63A29 /* LoginView.swift in Sources */,
-				E18669C42B688B8C00FEDDD9 /* Contacts.swift in Sources */,
-				E18669C62B688B9700FEDDD9 /* Profile.swift in Sources */,
-				E18669D32B6A1C5800FEDDD9 /* MessagesPage.swift in Sources */,
+				E18669C42B688B8C00FEDDD9 /* ContactsMainView.swift in Sources */,
+				02DC16342B8A277C007D45AF /* ForumBlockView.swift in Sources */,
+				E18669C62B688B9700FEDDD9 /* ProfileMainView.swift in Sources */,
+				E18669D32B6A1C5800FEDDD9 /* ChatsDetailView.swift in Sources */,
 				E18669942B68853500FEDDD9 /* LochApp.swift in Sources */,
-				E18669CA2B69BAEF00FEDDD9 /* Contact Data.swift in Sources */,
-				0263AD5E2B81FA1900F2C72F /* MessgeModel.swift in Sources */,
+				02DC16302B8A2726007D45AF /* ChatsMainLoad.swift in Sources */,
+				02DC162A2B8A2205007D45AF /* ForumTailView.swift in Sources */,
+				0263AD5E2B81FA1900F2C72F /* ChatsModel.swift in Sources */,
 				0263AD5C2B81F98000F2C72F /* UserModel.swift in Sources */,
-				E18669CE2B69BD5400FEDDD9 /* Detailed View.swift in Sources */,
+				E18669CE2B69BD5400FEDDD9 /* ContactsDetailView.swift in Sources */,
 				0263AD602B81FAB100F2C72F /* AddNewMessageSheetView.swift in Sources */,
+				02DC162C2B8A225F007D45AF /* ProfileDetailView.swift in Sources */,
+				02DC16382B8A27A5007D45AF /* ForumToolbarView.swift in Sources */,
 				02458AA12B82FF0500E5AA1F /* MessageRoomsManager.swift in Sources */,
-				E18669C02B688B7600FEDDD9 /* Forums.swift in Sources */,
-				E18669C22B688B8000FEDDD9 /* Connect.swift in Sources */,
-				E18669D82B6B394C00FEDDD9 /* User Data Module.swift in Sources */,
-				E18669D62B6B37E100FEDDD9 /* Profile Data.swift in Sources */,
+				02DC16222B8A216D007D45AF /* ConnectReceiveDetailView.swift in Sources */,
+				02DC16282B8A21F8007D45AF /* ForumHeadView.swift in Sources */,
+				E18669C02B688B7600FEDDD9 /* ForumMainView.swift in Sources */,
+				02DC16262B8A21DF007D45AF /* ChatsTailView.swift in Sources */,
+				E18669C22B688B8000FEDDD9 /* ConnectMainView.swift in Sources */,
+				02DC162E2B8A2703007D45AF /* ChatsToolbarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

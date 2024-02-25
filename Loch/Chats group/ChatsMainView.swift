@@ -5,6 +5,8 @@
 //  Created by A P on 30/1/2024.
 //
 
+
+
 import SwiftUI
 import SwiftData
 
@@ -55,3 +57,10 @@ struct Messages: View {
 //    Messages()
 //}
 
+struct ChatsMainView: View {
+    var body: some View {
+        VStack {
+            ChatsDetailView()
+        }
+    }
+}
