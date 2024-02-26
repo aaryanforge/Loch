@@ -11,44 +11,14 @@
 
 import SwiftUI
 
-//struct MessageBlock: View {
-//    var message: Message?
-//    var body: some View {
-//        LazyVStack (alignment: .leading) {
-//            if let message = message {
-//                Image("Connecting Image")
-//                    .resizable()
-//                    .aspectRatio(contentMode: .fit)
-//                    .frame(width: 30, height: 30)
-//                    .background(in: RoundedRectangle(cornerRadius: 5.0))
-//                    .clipped()
-//                    .overlay {
-//                        Text(message.timeStamp.formatted())
-//                            .font(.caption)
-//                            .offset(x: 40)
-//                    }
-//                Text(message.body)
-//                    .font(.caption)
-//                    .foregroundStyle(.gray)
-//                Text(message.sent ? "Me": "Pala")
-//                    .font(.caption2)
-//            } else {
-//                Text("No messages from this person")
-//            }
-//        }
-//        .padding([.top, .bottom], 10)
-//        .frame(maxWidth: .infinity)
-//    }
-//}
-//
-//#Preview {
-//    MessageBlock()
-//}
-
 struct ChatsBlockView: View {
     var body: some View {
         VStack {
             // Mary's work
         }
     }
+}
+
+#Preview {
+    ChatsBlockView()
 }

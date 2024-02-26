@@ -7,15 +7,7 @@
 
 import SwiftUI
 
-//func displayedMessage(name: String) -> Text {
-//    var user = Text("")
-//
-//    user = Text(name)
-//        .font(.headline)
-//    return user
-//}
-
-struct Contacts: View {
+struct ContactsMainView: View {
     @State private var isAddingUser = false
     var body: some View {
         NavigationView() {
@@ -23,23 +15,17 @@ struct Contacts: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 30, height: 30)
-                .sheet(isPresented: $isAddingUser, content: {
-                    AddContactSheet()
-                })
-                .onTapGesture {
-                    isAddingUser = true
-                }
-            List(contacts) { contact in
-                NavigationLink(destination: Detailed_View(contact: contact)) {
+            List {
+                NavigationLink(destination: ContactsDetailView()) {
                     HStack(){
-                        Image(contact.imageName)
+                        Image("Connecting Image")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 60, height: 60)
                             .clipped()
                             .cornerRadius(50)
                         VStack(alignment: .leading, spacing: 50) {
-                            Text(contact.name)
+                            Text("Contact Name")
                                 .font(.system(size: 21, weight: .medium, design: .default))
                         }
                     }
@@ -50,3 +36,6 @@ struct Contacts: View {
     }
 }
 
+#Preview {
+    ContactsMainView()
+}

@@ -7,12 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02458AA12B82FF0500E5AA1F /* MessageRoomsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02458AA02B82FF0500E5AA1F /* MessageRoomsManager.swift */; };
 		0263AD5A2B81F82500F2C72F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0263AD592B81F82500F2C72F /* FirebaseFirestore */; };
 		0263AD5C2B81F98000F2C72F /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263AD5B2B81F98000F2C72F /* UserModel.swift */; };
-		0263AD5E2B81FA1900F2C72F /* ChatsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263AD5D2B81FA1900F2C72F /* ChatsModel.swift */; };
-		0263AD602B81FAB100F2C72F /* AddNewMessageSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263AD5F2B81FAB100F2C72F /* AddNewMessageSheetView.swift */; };
-		0263AD622B81FAFB00F2C72F /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263AD612B81FAFB00F2C72F /* MessagesManager.swift */; };
 		0263AD642B81FB2C00F2C72F /* ChatsBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263AD632B81FB2C00F2C72F /* ChatsBlockView.swift */; };
 		02DC16202B8A2141007D45AF /* ConnectSendDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC161F2B8A2141007D45AF /* ConnectSendDetailView.swift */; };
 		02DC16222B8A216D007D45AF /* ConnectReceiveDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC16212B8A216D007D45AF /* ConnectReceiveDetailView.swift */; };
@@ -44,7 +40,6 @@
 		E18669C22B688B8000FEDDD9 /* ConnectMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669C12B688B8000FEDDD9 /* ConnectMainView.swift */; };
 		E18669C42B688B8C00FEDDD9 /* ContactsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669C32B688B8C00FEDDD9 /* ContactsMainView.swift */; };
 		E18669C62B688B9700FEDDD9 /* ProfileMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669C52B688B9700FEDDD9 /* ProfileMainView.swift */; };
-		E18669C82B688FB000FEDDD9 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669C72B688FB000FEDDD9 /* Settings.swift */; };
 		E18669CE2B69BD5400FEDDD9 /* ContactsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669CD2B69BD5400FEDDD9 /* ContactsDetailView.swift */; };
 		E18669D32B6A1C5800FEDDD9 /* ChatsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669D22B6A1C5800FEDDD9 /* ChatsDetailView.swift */; };
 		E18669DE2B807CCB00FEDDD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E18669DD2B807CCB00FEDDD9 /* GoogleService-Info.plist */; };
@@ -70,11 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02458AA02B82FF0500E5AA1F /* MessageRoomsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRoomsManager.swift; sourceTree = "<group>"; };
 		0263AD5B2B81F98000F2C72F /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		0263AD5D2B81FA1900F2C72F /* ChatsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsModel.swift; sourceTree = "<group>"; };
-		0263AD5F2B81FAB100F2C72F /* AddNewMessageSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewMessageSheetView.swift; sourceTree = "<group>"; };
-		0263AD612B81FAFB00F2C72F /* MessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
 		0263AD632B81FB2C00F2C72F /* ChatsBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsBlockView.swift; sourceTree = "<group>"; };
 		02DC161F2B8A2141007D45AF /* ConnectSendDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectSendDetailView.swift; sourceTree = "<group>"; };
 		02DC16212B8A216D007D45AF /* ConnectReceiveDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectReceiveDetailView.swift; sourceTree = "<group>"; };
@@ -107,7 +98,6 @@
 		E18669C12B688B8000FEDDD9 /* ConnectMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectMainView.swift; sourceTree = "<group>"; };
 		E18669C32B688B8C00FEDDD9 /* ContactsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsMainView.swift; sourceTree = "<group>"; };
 		E18669C52B688B9700FEDDD9 /* ProfileMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainView.swift; sourceTree = "<group>"; };
-		E18669C72B688FB000FEDDD9 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		E18669CD2B69BD5400FEDDD9 /* ContactsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDetailView.swift; sourceTree = "<group>"; };
 		E18669D22B6A1C5800FEDDD9 /* ChatsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsDetailView.swift; sourceTree = "<group>"; };
 		E18669DD2B807CCB00FEDDD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -205,7 +195,6 @@
 				E18669D42B6B37CE00FEDDD9 /* Profile Group */,
 				E18669932B68853500FEDDD9 /* LochApp.swift */,
 				E18669952B68853500FEDDD9 /* ContentView.swift */,
-				E18669C72B688FB000FEDDD9 /* Settings.swift */,
 				02EDC2592B80710A00F63A29 /* LoginView.swift */,
 				E18669972B68853800FEDDD9 /* Assets.xcassets */,
 			);
@@ -243,7 +232,6 @@
 				E18669C32B688B8C00FEDDD9 /* ContactsMainView.swift */,
 				E18669CD2B69BD5400FEDDD9 /* ContactsDetailView.swift */,
 				02DC16392B8A27CC007D45AF /* ContactsMainLoad.swift */,
-				0263AD5F2B81FAB100F2C72F /* AddNewMessageSheetView.swift */,
 			);
 			path = "Contacts Group";
 			sourceTree = "<group>";
@@ -259,9 +247,6 @@
 				02DC16252B8A21DF007D45AF /* ChatsTailView.swift */,
 				02DC162F2B8A2726007D45AF /* ChatsMainLoad.swift */,
 				02DC16312B8A2748007D45AF /* ChatsDetailLoad.swift */,
-				0263AD5D2B81FA1900F2C72F /* ChatsModel.swift */,
-				0263AD612B81FAFB00F2C72F /* MessagesManager.swift */,
-				02458AA02B82FF0500E5AA1F /* MessageRoomsManager.swift */,
 			);
 			path = "Chats group";
 			sourceTree = "<group>";
@@ -420,10 +405,8 @@
 				02DC16322B8A2748007D45AF /* ChatsDetailLoad.swift in Sources */,
 				02DC163A2B8A27CC007D45AF /* ContactsMainLoad.swift in Sources */,
 				E18669962B68853500FEDDD9 /* ContentView.swift in Sources */,
-				0263AD622B81FAFB00F2C72F /* MessagesManager.swift in Sources */,
 				02DC163C2B8A27E9007D45AF /* ProfileMainLoad.swift in Sources */,
 				E18669BE2B688B6B00FEDDD9 /* ChatsMainView.swift in Sources */,
-				E18669C82B688FB000FEDDD9 /* Settings.swift in Sources */,
 				0263AD642B81FB2C00F2C72F /* ChatsBlockView.swift in Sources */,
 				02DC16242B8A21C8007D45AF /* ChatsHeadView.swift in Sources */,
 				02EDC25A2B80710A00F63A29 /* LoginView.swift in Sources */,
@@ -434,13 +417,10 @@
 				E18669942B68853500FEDDD9 /* LochApp.swift in Sources */,
 				02DC16302B8A2726007D45AF /* ChatsMainLoad.swift in Sources */,
 				02DC162A2B8A2205007D45AF /* ForumTailView.swift in Sources */,
-				0263AD5E2B81FA1900F2C72F /* ChatsModel.swift in Sources */,
 				0263AD5C2B81F98000F2C72F /* UserModel.swift in Sources */,
 				E18669CE2B69BD5400FEDDD9 /* ContactsDetailView.swift in Sources */,
-				0263AD602B81FAB100F2C72F /* AddNewMessageSheetView.swift in Sources */,
 				02DC162C2B8A225F007D45AF /* ProfileDetailView.swift in Sources */,
 				02DC16382B8A27A5007D45AF /* ForumToolbarView.swift in Sources */,
-				02458AA12B82FF0500E5AA1F /* MessageRoomsManager.swift in Sources */,
 				02DC16222B8A216D007D45AF /* ConnectReceiveDetailView.swift in Sources */,
 				02DC16282B8A21F8007D45AF /* ForumHeadView.swift in Sources */,
 				E18669C02B688B7600FEDDD9 /* ForumMainView.swift in Sources */,
