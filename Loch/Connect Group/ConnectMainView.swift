@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct Connect: View {
+struct ConnectMainView: View {
     @State var searching = "Searching"
     @State var timer: Timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: false) { tim in }
     @State var isSearching = false
@@ -42,5 +42,5 @@ struct Connect: View {
 }
 
 #Preview {
-    Connect()
+    ConnectMainView()
 }

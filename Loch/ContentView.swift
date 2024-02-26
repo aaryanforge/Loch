@@ -16,31 +16,31 @@ struct ContentView: View {
     var body: some View {
         VStack {
             TabView() {
-                Messages()
+                ChatsMainView()
                     .tabItem{
                         Image(systemName: "message")
                         Text("Messages")
                     }
 
-                Forums()
+                ForumMainView()
                     .tabItem{
                         Image(systemName: "newspaper.circle")
                         Text("Forums")
                     }
                 
-                Connect()
+                ConnectMainView()
                     .tabItem{
                         Image(systemName: "shareplay")
                         Text("Connect")
                     }
                 
-                Contacts()
+                ContactsMainView()
                     .tabItem{
                         Image(systemName: "person.2")
                         Text("Contacts")
                     }
                 
-                Profile()
+                ProfileMainView()
                     .tabItem{
                         Image(systemName: "person.fill")
                         Text("Profile")
