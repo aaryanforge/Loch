@@ -12,8 +12,15 @@
 import SwiftUI
 
 struct ChatsTailView: View {
+    
+    @State private var newTextMessage: String = ""
+    
     var body: some View {
-        Text("Hello, World!")
+        TextField(
+            "New Text message",
+            text: $newTextMessage
+        )
+        .autocorrectionDisabled(false)
     }
 }
 
