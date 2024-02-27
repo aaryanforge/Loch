@@ -15,6 +15,11 @@ struct ChatsTailView: View {
     
     @State private var newTextMessage: String = ""
     
+    var newMessage = ChatTextMessage(
+        sender: 0,
+        messageContents: "placeholder"
+    )
+    
     var body: some View {
         TextField(
             "New Text message",

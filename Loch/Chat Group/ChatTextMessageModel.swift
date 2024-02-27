@@ -12,7 +12,7 @@ import SwiftData
     var sender: UUID
     var messageContents: String
     
-    init(sender: UUID, messageContents: String) {
+    init(sender: Int, messageContents: String) {
         self.sender = sender
         self.messageContents = messageContents
     }
