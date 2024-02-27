@@ -17,6 +17,7 @@ struct LochApp: App {
       NavigationView {
         LoginView()
       }
+      .modelContainer(for: [])
     }
   }
 }
