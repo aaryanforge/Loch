@@ -5,6 +5,10 @@
 //  Created by A P on 31/1/2024.
 //
 
+// Goal: Load from cache messages and dipslay them in ChatsBlockView
+// For: Mark
+// Due: Thursday 29 Thu
+
 import SwiftUI
 
 struct ChatsDetailView: View {
