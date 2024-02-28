@@ -17,7 +17,7 @@ struct LochApp: App {
       NavigationView {
         LoginView()
       }
-      .modelContainer(for: [])
+      .modelContainer(for: [ChatTextMessage.self])
     }
   }
 }
