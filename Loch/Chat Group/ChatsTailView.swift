@@ -10,10 +10,20 @@
 // Due: 29 Thu Feb
 
 import SwiftUI
+import SwiftData
 
 struct ChatsTailView: View {
     
+    @Environment(\.modelContext) private var context
     @State private var newTextMessage: String = ""
+    
+    func cacheNewMessage() {
+        var newMessage = ChatTextMessage(
+            senderID: UUID().uuidString,
+            messageContents: newTextMessage
+        )
+        context.insert(newMessage)
+    }
     
     var body: some View {
         TextField(
