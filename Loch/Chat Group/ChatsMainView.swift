@@ -13,13 +13,18 @@ import SwiftData
 struct ChatsMainView: View {
     var body: some View {
         VStack {
-            List {
-                ChatsDetailView()
-                ChatsDetailView()
-                ChatsDetailView()
+            NavigationView {
+                NavigationLink("") {
+                    ChatsDetailView()
+                }
+                }
+                NavigationLink("") {
+                    ChatsDetailView()
+                }
+                NavigationLink("") {
+                    ChatsDetailView()
+                }
                 /* More chats down the line */
-            }
-            
         }
     }
 }

@@ -28,7 +28,7 @@
 		4DC026502B8DF0C5005A1291 /* ChatsTailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026452B8DF0C4005A1291 /* ChatsTailView.swift */; };
 		4DC026512B8DF0C5005A1291 /* ChatsBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026462B8DF0C4005A1291 /* ChatsBlockView.swift */; };
 		4DC026522B8DF0C5005A1291 /* ChatsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026472B8DF0C4005A1291 /* ChatsDetailView.swift */; };
-		4DC026532B8DF0C5005A1291 /* ChatTextMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026482B8DF0C4005A1291 /* ChatTextMessageModel.swift */; };
+		4DC026532B8DF0C5005A1291 /* ChatsTextMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026482B8DF0C4005A1291 /* ChatsTextMessageModel.swift */; };
 		4DC026542B8DF0C5005A1291 /* ChatsToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026492B8DF0C4005A1291 /* ChatsToolbarView.swift */; };
 		4DC026552B8DF0C5005A1291 /* MessageBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC0264A2B8DF0C5005A1291 /* MessageBlock.swift */; };
 		4DC026562B8DF0C5005A1291 /* ChatsDetailLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC0264B2B8DF0C5005A1291 /* ChatsDetailLoad.swift */; };
@@ -87,7 +87,7 @@
 		4DC026452B8DF0C4005A1291 /* ChatsTailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsTailView.swift; sourceTree = "<group>"; };
 		4DC026462B8DF0C4005A1291 /* ChatsBlockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsBlockView.swift; sourceTree = "<group>"; };
 		4DC026472B8DF0C4005A1291 /* ChatsDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsDetailView.swift; sourceTree = "<group>"; };
-		4DC026482B8DF0C4005A1291 /* ChatTextMessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTextMessageModel.swift; sourceTree = "<group>"; };
+		4DC026482B8DF0C4005A1291 /* ChatsTextMessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsTextMessageModel.swift; sourceTree = "<group>"; };
 		4DC026492B8DF0C4005A1291 /* ChatsToolbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsToolbarView.swift; sourceTree = "<group>"; };
 		4DC0264A2B8DF0C5005A1291 /* MessageBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageBlock.swift; sourceTree = "<group>"; };
 		4DC0264B2B8DF0C5005A1291 /* ChatsDetailLoad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsDetailLoad.swift; sourceTree = "<group>"; };
@@ -180,7 +180,7 @@
 				4DC026442B8DF0C4005A1291 /* ChatsMainView.swift */,
 				4DC026452B8DF0C4005A1291 /* ChatsTailView.swift */,
 				4DC026492B8DF0C4005A1291 /* ChatsToolbarView.swift */,
-				4DC026482B8DF0C4005A1291 /* ChatTextMessageModel.swift */,
+				4DC026482B8DF0C4005A1291 /* ChatsTextMessageModel.swift */,
 				4DC0264C2B8DF0C5005A1291 /* Message.swift */,
 				4DC0264A2B8DF0C5005A1291 /* MessageBlock.swift */,
 				4DE136432B8F526B000507ED /* MessageContentViewModel.swift */,
@@ -421,7 +421,7 @@
 				02DC163A2B8A27CC007D45AF /* ContactsMainLoad.swift in Sources */,
 				E18669962B68853500FEDDD9 /* ContentView.swift in Sources */,
 				02DC163C2B8A27E9007D45AF /* ProfileMainLoad.swift in Sources */,
-				4DC026532B8DF0C5005A1291 /* ChatTextMessageModel.swift in Sources */,
+				4DC026532B8DF0C5005A1291 /* ChatsTextMessageModel.swift in Sources */,
 				02EDC25A2B80710A00F63A29 /* LoginView.swift in Sources */,
 				E18669C42B688B8C00FEDDD9 /* ContactsMainView.swift in Sources */,
 				02DC16342B8A277C007D45AF /* ForumBlockView.swift in Sources */,
