@@ -11,10 +11,14 @@ import SwiftData
 @Model class ChatTextMessage {
     var senderID: String
     var messageContents: String
+    var timeStamp: Date
+    var readReceipt: Date
     
     init(senderID: String, messageContents: String) {
         self.senderID = senderID
         self.messageContents = messageContents
+        self.timeStamp = Date.now
+        self.readReceipt = Date.now
     }
 }
 
