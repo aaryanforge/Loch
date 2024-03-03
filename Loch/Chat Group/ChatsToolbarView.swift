@@ -14,12 +14,10 @@ import SwiftUI
 struct ChatsToolbarView: View {
 
     var body: some View {
-        ZStack (alingment: .trailing) {
-            // text input field, 
+        
+            // text input field,
             ChatsTailView()
-        }
-        .padding(10)
-        .frame(idealHeight:80, maxHeight: 80)
+
     }
 }
 

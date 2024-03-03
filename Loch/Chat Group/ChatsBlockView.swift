@@ -11,7 +11,9 @@
 
 import SwiftUI
 import SwiftData
+
 struct ChatsBlockView: View {
+    
     var body: some View {
         VStack {
             // Mary's work

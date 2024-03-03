@@ -34,25 +34,29 @@ struct ChatsTailView: View {
     }
     
     var body: some View {
-         TextField(
-            "Message...", 
-            text: $newTextMessage
-        )
-        .padding(20)
-        .foregroundColor(.white)
-        .background(.grey, in: RoundeRectangle (cornerRadius: 20, style: .continuous))
-        .autocorrectionDisabled(false)
-
-        Button(action: {
-            Task {
-                await cacheNewMessage()
-            }
-        }, label: {
-            //is there any way to call the await elsewhere or does it have to be in this function?
-            Image (systemname: "arrowtriangle.forward.fill") 
+        ZStack (alingment: .trailing) {
+            TextField(
+                "Message...", 
+                text: $newTextMessage
+            )
+            .padding(20)
             .foregroundColor(.white)
-        })
-        .padding()
+            .background(.grey, in: RoundeRectangle (cornerRadius: 20, style: .continuous))
+            .autocorrectionDisabled(false)
+
+            Button(action: {
+                Task {
+                    await cacheNewMessage()
+                }
+            }, label: {
+                //is there any way to call the await elsewhere or does it have to be in this function?
+                Image (systemname: "arrowtriangle.forward.fill") 
+                .foregroundColor(.white)
+            })
+            .padding()
+        }
+        .padding(10)
+        .frame(idealHeight:80, maxHeight: 80)
     }
 }
 

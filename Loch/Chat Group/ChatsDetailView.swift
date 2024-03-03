@@ -26,6 +26,7 @@ struct ChatsDetailView: View {
                 /* Maxmimum of three chats, unless you pay up*/
             }
             // mark was here - loading the messages
+            // mary - we would need to distinguish between our messages and their messages no?
             ForEach(messages) { message in
                 VStack {
                     Text(message.messageContents)
