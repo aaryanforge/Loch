@@ -34,20 +34,25 @@ struct ChatsTailView: View {
     }
     
     var body: some View {
-        TextField(
-            "New Text message",
+         TextField(
+            "Message...", 
             text: $newTextMessage
         )
+        .padding(20)
+        .foregroundColor(.white)
+        .background(.grey, in: RoundeRectangle (cornerRadius: 20, style: .continuous))
         .autocorrectionDisabled(false)
 
-        // create some send button here to activate cacheNewMessage function
         Button(action: {
             Task {
                 await cacheNewMessage()
             }
         }, label: {
-            Text("<Send Message>") // replace with actual button UI
+            //is there any way to call the await elsewhere or does it have to be in this function?
+            Image (systemname: "arrowtriangle.forward.fill") 
+            .foregroundColor(.white)
         })
+        .padding()
     }
 }
 
