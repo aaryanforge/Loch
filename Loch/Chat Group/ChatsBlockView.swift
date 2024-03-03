@@ -12,11 +12,40 @@
 import SwiftUI
 import SwiftData
 
-struct ChatsBlockView: View {
-    
+struct YourMessage: View {
     var body: some View {
-        VStack {
-            // Mary's work
+        ZStack(alignment: .trailing) {
+            Text("I want food")
+                .padding(10)
+                .frame(maxWidth: .infinity, alignment: .trailing)
+
+        }
+        .background(.green.opacity(0.5), in: RoundedRectangle(cornerRadius: 15, style: .continuous))
+    }
+}
+
+struct TheirMessage: View {
+    var body: some View {
+        ZStack(alignment: .leading) {
+            Text("Placeholder")
+                .padding(10)
+                .frame(maxWidth: .infinity, alignment: .leading)
+
+        }
+        .background(.blue.opacity(0.5), in: RoundedRectangle(cornerRadius: 15, style: .continuous))
+    }
+}
+
+struct ChatsBlockView: View {
+
+    var body: some View {
+        ScrollView {
+            LazyVStack {
+                YourMessage()
+                TheirMessage()
+
+            }
+            .padding()
         }
     }
 }
