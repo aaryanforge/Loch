@@ -15,6 +15,7 @@ import SwiftData
 struct YourMessage: View {
     var body: some View {
         ZStack(alignment: .trailing) {
+            // Need to change text based on messages
             Text("I want food")
                 .padding(10)
                 .frame(maxWidth: .infinity, alignment: .trailing)
@@ -27,6 +28,7 @@ struct YourMessage: View {
 struct TheirMessage: View {
     var body: some View {
         ZStack(alignment: .leading) {
+             // Need to change text based on messages
             Text("Placeholder")
                 .padding(10)
                 .frame(maxWidth: .infinity, alignment: .leading)
