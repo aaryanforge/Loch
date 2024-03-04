@@ -20,7 +20,15 @@ struct YourMessage: View {
                 .frame(maxWidth: .infinity, alignment: .trailing)
 
         }
-        .background(.green.opacity(0.5), in: RoundedRectangle(cornerRadius: 15, style: .continuous))
+        .background(.green.opacity(0.5))
+        .clipShape(
+            .rect(
+                topLeadingRadius: 15,
+                bottomLeadingRadius: 15,
+                bottomTrailingRadius: 0,
+                topTrailingRadius: 15
+            )
+        )
     }
 }
 
@@ -32,7 +40,15 @@ struct TheirMessage: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
 
         }
-        .background(.blue.opacity(0.5), in: RoundedRectangle(cornerRadius: 15, style: .continuous))
+        .background(.blue.opacity(0.5))
+        .clipShape(
+            .rect(
+                topLeadingRadius: 15,
+                bottomLeadingRadius: 0,
+                bottomTrailingRadius: 15,
+                topTrailingRadius: 15
+            )
+        )
     }
 }
 
