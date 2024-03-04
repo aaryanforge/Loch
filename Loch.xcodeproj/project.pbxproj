@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		023F08DD2B92997F0029C08B /* Preview Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023F08DC2B92997F0029C08B /* Preview Content.swift */; };
 		0263AD5A2B81F82500F2C72F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0263AD592B81F82500F2C72F /* FirebaseFirestore */; };
 		0263AD5C2B81F98000F2C72F /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263AD5B2B81F98000F2C72F /* UserModel.swift */; };
 		02DC16202B8A2141007D45AF /* ConnectSendDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC161F2B8A2141007D45AF /* ConnectSendDetailView.swift */; };
@@ -69,6 +70,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		023F08DC2B92997F0029C08B /* Preview Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Preview Content.swift"; sourceTree = "<group>"; };
 		0263AD5B2B81F98000F2C72F /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		02DC161F2B8A2141007D45AF /* ConnectSendDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectSendDetailView.swift; sourceTree = "<group>"; };
 		02DC16212B8A216D007D45AF /* ConnectReceiveDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectReceiveDetailView.swift; sourceTree = "<group>"; };
@@ -192,7 +194,6 @@
 			isa = PBXGroup;
 			children = (
 				E18669922B68853500FEDDD9 /* Loch */,
-				E18669992B68853800FEDDD9 /* Preview Content */,
 				E18669A32B68853900FEDDD9 /* LochTests */,
 				E18669AD2B68853900FEDDD9 /* LochUITests */,
 				E18669912B68853500FEDDD9 /* Products */,
@@ -214,6 +215,7 @@
 		E18669922B68853500FEDDD9 /* Loch */ = {
 			isa = PBXGroup;
 			children = (
+				E18669992B68853800FEDDD9 /* Preview Content */,
 				0263AD5B2B81F98000F2C72F /* UserModel.swift */,
 				4DC026582B8DF0D3005A1291 /* Chat Group */,
 				02DC161D2B8A207E007D45AF /* Forum Group */,
@@ -224,6 +226,7 @@
 				E18669952B68853500FEDDD9 /* ContentView.swift */,
 				02EDC2592B80710A00F63A29 /* LoginView.swift */,
 				E18669972B68853800FEDDD9 /* Assets.xcassets */,
+				023F08DC2B92997F0029C08B /* Preview Content.swift */,
 			);
 			path = Loch;
 			sourceTree = "<group>";
@@ -358,7 +361,7 @@
 				};
 			};
 			buildConfigurationList = E186698B2B68853500FEDDD9 /* Build configuration list for PBXProject "Loch" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -425,6 +428,7 @@
 				02EDC25A2B80710A00F63A29 /* LoginView.swift in Sources */,
 				E18669C42B688B8C00FEDDD9 /* ContactsMainView.swift in Sources */,
 				02DC16342B8A277C007D45AF /* ForumBlockView.swift in Sources */,
+				023F08DD2B92997F0029C08B /* Preview Content.swift in Sources */,
 				E18669C62B688B9700FEDDD9 /* ProfileMainView.swift in Sources */,
 				E18669942B68853500FEDDD9 /* LochApp.swift in Sources */,
 				02DC162A2B8A2205007D45AF /* ForumTailView.swift in Sources */,

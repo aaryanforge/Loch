@@ -15,14 +15,14 @@ struct ChatsMainView: View {
         VStack {
             NavigationView {
                 NavigationLink("") {
-                    ChatsDetailView()
+                    //ChatsDetailView()
                 }
                 }
                 NavigationLink("") {
-                    ChatsDetailView()
+                    //ChatsDetailView()
                 }
                 NavigationLink("") {
-                    ChatsDetailView()
+                    //ChatsDetailView()
                 }
                 /* More chats down the line */
         }

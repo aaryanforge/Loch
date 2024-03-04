@@ -10,6 +10,7 @@
 // Due: Thursday 29 Thu
 
 import SwiftUI
+import SwiftData
 
 struct ChatsDetailView: View {
 
@@ -23,7 +24,6 @@ struct ChatsDetailView: View {
                 ChatsBlockView()
                 ChatsBlockView()
                 ChatsBlockView()
-                /* Maxmimum of three chats, unless you pay up*/
             }
             // mark was here - loading the messages
             ForEach(messages) { message in

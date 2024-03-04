@@ -16,6 +16,7 @@ struct ChatsTailView: View {
     
     @Environment(\.modelContext) private var context
     @State private var newTextMessage: String = ""
+//<<<<<<< Updated upstream
     @StateObject var ChatMessageContentVM = MessageContentViewModel()
 
     func cacheNewMessage() async {
@@ -23,7 +24,7 @@ struct ChatsTailView: View {
         // guard that the message classification is a 1, else cache message
         
         var messageClassification = await ChatMessageContentVM.getData(newTextMessage)
-
+        
         if (messageClassification == "0") {
             var newMessage = ChatTextMessage(
                 senderID: UUID().uuidString,
@@ -31,6 +32,16 @@ struct ChatsTailView: View {
             )
             context.insert(newMessage)
         }
+        //=======
+    }
+    
+    func cacheNewMessage() {
+        let newMessage = ChatTextMessage(
+            senderID: UUID().uuidString,
+            messageContents: newTextMessage
+        )
+        context.insert(newMessage)
+//>>>>>>> Stashed changes
     }
     
     var body: some View {
