@@ -34,7 +34,7 @@
 		4DC026552B8DF0C5005A1291 /* MessageBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC0264A2B8DF0C5005A1291 /* MessageBlock.swift */; };
 		4DC026562B8DF0C5005A1291 /* ChatsDetailLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC0264B2B8DF0C5005A1291 /* ChatsDetailLoad.swift */; };
 		4DC026572B8DF0C5005A1291 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC0264C2B8DF0C5005A1291 /* Message.swift */; };
-		4DE136442B8F526B000507ED /* MessageContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE136432B8F526B000507ED /* MessageContentViewModel.swift */; };
+		4DE136442B8F526B000507ED /* ChatsContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE136432B8F526B000507ED /* ChatsContentViewModel.swift */; };
 		E18669942B68853500FEDDD9 /* LochApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669932B68853500FEDDD9 /* LochApp.swift */; };
 		E18669962B68853500FEDDD9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669952B68853500FEDDD9 /* ContentView.swift */; };
 		E18669982B68853800FEDDD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E18669972B68853800FEDDD9 /* Assets.xcassets */; };
@@ -94,7 +94,7 @@
 		4DC0264A2B8DF0C5005A1291 /* MessageBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageBlock.swift; sourceTree = "<group>"; };
 		4DC0264B2B8DF0C5005A1291 /* ChatsDetailLoad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsDetailLoad.swift; sourceTree = "<group>"; };
 		4DC0264C2B8DF0C5005A1291 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		4DE136432B8F526B000507ED /* MessageContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageContentViewModel.swift; sourceTree = "<group>"; };
+		4DE136432B8F526B000507ED /* ChatsContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsContentViewModel.swift; sourceTree = "<group>"; };
 		E18669902B68853500FEDDD9 /* Loch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18669932B68853500FEDDD9 /* LochApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LochApp.swift; sourceTree = "<group>"; };
 		E18669952B68853500FEDDD9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -185,7 +185,7 @@
 				4DC026482B8DF0C4005A1291 /* ChatsTextMessageModel.swift */,
 				4DC0264C2B8DF0C5005A1291 /* Message.swift */,
 				4DC0264A2B8DF0C5005A1291 /* MessageBlock.swift */,
-				4DE136432B8F526B000507ED /* MessageContentViewModel.swift */,
+				4DE136432B8F526B000507ED /* ChatsContentViewModel.swift */,
 			);
 			path = "Chat Group";
 			sourceTree = "<group>";
@@ -433,7 +433,7 @@
 				E18669942B68853500FEDDD9 /* LochApp.swift in Sources */,
 				02DC162A2B8A2205007D45AF /* ForumTailView.swift in Sources */,
 				0263AD5C2B81F98000F2C72F /* UserModel.swift in Sources */,
-				4DE136442B8F526B000507ED /* MessageContentViewModel.swift in Sources */,
+				4DE136442B8F526B000507ED /* ChatsContentViewModel.swift in Sources */,
 				E18669CE2B69BD5400FEDDD9 /* ContactsDetailView.swift in Sources */,
 				4DC026502B8DF0C5005A1291 /* ChatsTailView.swift in Sources */,
 				4DC026522B8DF0C5005A1291 /* ChatsDetailView.swift in Sources */,

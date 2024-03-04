@@ -5,6 +5,7 @@
 //  Created by Phoenix Liu on 25/2/2024.
 //
 
+
 struct ChatsDetailLoad {
     
 }
