@@ -16,18 +16,29 @@ struct ChatsTailView: View {
     
     @Environment(\.modelContext) private var context
     @State private var newTextMessage: String = ""
+<<<<<<< HEAD
 //<<<<<<< Updated upstream
     @StateObject var ChatMessageContentVM = MessageContentViewModel()
-
+  
+=======
+    @StateObject private var ChatMessageContentVM = MessageContentViewModel()
+    
+>>>>>>> 5177bd7de10db11a9475639a9595a1e8e92d03a2
     func cacheNewMessage() async {
         // use URLSession API call to see whether to cache the message or not
         // guard that the message classification is a 1, else cache message
         
+<<<<<<< HEAD
         var messageClassification = await ChatMessageContentVM.getData(newTextMessage)
+=======
+        await ChatMessageContentVM.getData(messageContents: newTextMessage)
+        
+        let messageClassification: String? = ChatMessageContentVM.classification
+>>>>>>> 5177bd7de10db11a9475639a9595a1e8e92d03a2
         
         if (messageClassification == "0") {
-            var newMessage = ChatTextMessage(
-                senderID: UUID().uuidString,
+            let newMessage = ChatTextMessage(
+                senderID: UUID().uuidString, // TODO: change this to the UUID of the current user
                 messageContents: newTextMessage
             )
             context.insert(newMessage)
@@ -45,20 +56,30 @@ struct ChatsTailView: View {
     }
     
     var body: some View {
-        TextField(
-            "New Text message",
-            text: $newTextMessage
-        )
-        .autocorrectionDisabled(false)
+        ZStack (alingment: .trailing) {
+            TextField(
+                "Message...", 
+                text: $newTextMessage
+            )
+            .padding(20)
+            .foregroundColor(.white)
+            .background(.green.opactiy(0.2), in: RoundeRectangle (cornerRadius: 20, style: .continuous))
+            .autocorrectionDisabled(false)
 
-        // create some send button here to activate cacheNewMessage function
-        Button(action: {
-            Task {
-                await cacheNewMessage()
-            }
-        }, label: {
-            Text("<Send Message>") // replace with actual button UI
-        })
+            Button(action: {
+                Task {
+                    await cacheNewMessage()
+                }
+            }, label: {
+                //is there any way to call the await elsewhere or does it have to be in this function?
+                Image (systemname: "arrowtriangle.forward.fill") 
+                .foregroundColor(.white)
+            })
+            .padding()
+        }
+        .padding(10)
+        .background(.green.opacity(0.5))
+        .frame(idealHeight:80, maxHeight: 80)
     }
 }
 

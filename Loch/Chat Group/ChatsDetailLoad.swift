@@ -9,3 +9,7 @@
 struct ChatsDetailLoad {
     
 }
+
+#Preview {
+    ChatsDetailLoad()
+}

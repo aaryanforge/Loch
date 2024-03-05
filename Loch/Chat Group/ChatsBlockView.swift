@@ -11,10 +11,16 @@
 
 import SwiftUI
 import SwiftData
+
 struct ChatsBlockView: View {
+
     var body: some View {
-        VStack {
-            // Mary's work
+        ScrollView {
+            LazyVStack {
+                //mary - the mark's code in chatsdetailedview should be here as it iterates in a loop
+                ChatsDetailView()
+            }
+            .padding()
         }
     }
 }
