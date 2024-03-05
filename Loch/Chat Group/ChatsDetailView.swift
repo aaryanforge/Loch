@@ -12,6 +12,10 @@
 import SwiftUI
 
 struct ChatsDetailView: View {
+
+    // mark was here - loading the messages using Query attribute
+    @Query private var messages: [ChatTextMessage]
+    
     var body: some View {
         VStack {
             ChatsHeadView()
@@ -20,6 +24,12 @@ struct ChatsDetailView: View {
                 ChatsBlockView()
                 ChatsBlockView()
                 /* Maxmimum of three chats, unless you pay up*/
+            }
+            // mark was here - loading the messages
+            ForEach(messages) { message in
+                VStack {
+                    Text(message.messageContents)
+                }
             }
             ChatsTailView()
         }

@@ -8,29 +8,65 @@
 import Foundation
 import SwiftData
 
-class ChatsContentViewModel: ObservableObject {
+/*
+The View Model is usually where we typically store programming logic and data handling logic.
+ObservableObject - closesly looked at by SwiftUI and updates views when it is updated
+Codable - enables JSON encoding and decoding
+*/
+
+// TODO: rename this file to ChatMessageContentViewModel as well as the class
+
+class MessageContentViewModel: ObservableObject {
     
     private struct Returned: Codable { // JSON container
         // properties match JSON keys
+        var classification: String
+        var input: String?
     }
-   
-    var urlString = ""
-    func getData() async {
-        print("Getting data from \(urlString)")
-        
-        // create a URL
+
+    @Published var urlString = "127.0.0.1:5000/"//localhost + the message content
+
+    func getData(messageContents: String) async {
+        print("~ Getting data from \(urlString)")
+
+        urlString += _parseMessageContents(messageContents)
+
+        // create a url string to a special URL type
         guard let url = URL(string: urlString) else {
-            print("ERROR: Could not create URL from \(urlString)")
+            print("!! ERROR: Could not create URL from \(urlString)")
             return
         }
         
+        // grab JSON data from internet
         do {
-            let (data, response) = try await URLSession.shared.data(from: url)
+            let (data, _) = try await URLSession.shared.data(from: url)
             
-            // create data structures here
-            
+            // try to decode JSON data into our own data structures
+            guard let returned = try? JSONDecoder().decode(Returned.self, from: data) else {
+                print("!! JSON ERROR: Could not decode returned JSON data \(urlString)")
+                return
+            }
+            print("~ JSON returned! classification: \(returned.classification), input: \(returned.input)")
+
+            // return classification
+            return returned.classification
+
         } catch {
-            print("ERROR: Could not get data from \(urlString)")
+            print("!! ERROR: Could not get data from \(urlString)")
         }
+    }
+
+    // converts normal text to URL text params | e.g. mark is cool -> mark-is-cool
+    private func _parseMessageContents(_ messageContents: String) -> String {
+        messageContents = messageContents.trimmingCharacters(in: .whitespaces)
+
+        if (messageContents == "") {
+            return messageContents
+        }
+
+        let splitMessage = messageContents.split(separator: " ")
+        let newMessage = splitMessage.joined(separator: "-")
+
+        return newMessage
     }
 }
