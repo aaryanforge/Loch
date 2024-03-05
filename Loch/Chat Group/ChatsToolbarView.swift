@@ -7,7 +7,7 @@
 
 // Goal: Code and style toolbar that appears when user clicks on chat block
 // For: Mary
-// Due: Wednesday 28th Feb
+// Due: Thurs 7th Mar
 
 import SwiftUI
 

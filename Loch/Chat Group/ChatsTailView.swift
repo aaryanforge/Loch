@@ -17,7 +17,7 @@ struct ChatsTailView: View {
     @Environment(\.modelContext) private var context
     @State private var newTextMessage: String = ""
     @StateObject var ChatMessageContentVM = MessageContentViewModel()
-
+  
     func cacheNewMessage() async {
         // use URLSession API call to see whether to cache the message or not
         // guard that the message classification is a 1, else cache message
@@ -25,6 +25,7 @@ struct ChatsTailView: View {
         var messageClassification = await ChatMessageContentVM.getData(newTextMessage)
 
         if (messageClassification == "0") {
+          
             var newMessage = ChatTextMessage(
                 senderID: UUID().uuidString,
                 messageContents: newTextMessage
