@@ -10,6 +10,7 @@
 // Due: Thursday 29 Mar
 
 import SwiftUI
+import SwiftData
 
 struct ChatsDetailView: View {
 
