@@ -26,7 +26,7 @@ class ChatsContentViewModel: ObservableObject {
 
     @Published var urlString = "127.0.0.1:5000/"//localhost + the message content
 
-    func getData(messageContents: String) async {
+    func getData(messageContents: String) async -> String {
         print("~ Getting data from \(urlString)")
 
         urlString += _parseMessageContents(messageContents)
@@ -34,7 +34,7 @@ class ChatsContentViewModel: ObservableObject {
         // create a url string to a special URL type
         guard let url = URL(string: urlString) else {
             print("!! ERROR: Could not create URL from \(urlString)")
-            return
+            return "0"
         }
         
         // grab JSON data from internet
@@ -44,9 +44,11 @@ class ChatsContentViewModel: ObservableObject {
             // try to decode JSON data into our own data structures
             guard let returned = try? JSONDecoder().decode(Returned.self, from: data) else {
                 print("!! JSON ERROR: Could not decode returned JSON data \(urlString)")
-                return
+                return "0"
             }
-            print("~ JSON returned! classification: \(returned.classification), input: \(returned.input)")
+            
+            print("~ JSON returned! classification: \(returned.classification), input: \(returned.input ?? "")")
+            
 
             // return classification
             return returned.classification
@@ -58,13 +60,13 @@ class ChatsContentViewModel: ObservableObject {
 
     // converts normal text to URL text params | e.g. mark is cool -> mark-is-cool
     private func _parseMessageContents(_ messageContents: String) -> String {
-        messageContents = messageContents.trimmingCharacters(in: .whitespaces)
+        var trimmedMessageContents = messageContents.trimmingCharacters(in: .whitespaces)
 
-        if (messageContents == "") {
-            return messageContents
+        if (trimmedMessageContents == "") {
+            return trimmedMessageContents
         }
 
-        let splitMessage = messageContents.split(separator: " ")
+        let splitMessage = trimmedMessageContents.split(separator: " ")
         let newMessage = splitMessage.joined(separator: "-")
 
         return newMessage

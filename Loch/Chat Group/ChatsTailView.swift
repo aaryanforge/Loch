@@ -7,7 +7,7 @@
 
 // Goal: Create a textfield that sends the user messages and cache to memory
 // For: Mark
-// Due: 29 Thu Feb
+// Due: Thu 29 Feb
 
 import SwiftUI
 import SwiftData
@@ -16,35 +16,22 @@ struct ChatsTailView: View {
     
     @Environment(\.modelContext) private var context
     @State private var newTextMessage: String = ""
-//<<<<<<< Updated upstream
-//=======
-//<<<<<<< Updated upstream
     @StateObject var ChatMessageContentVM = ChatsContentViewModel()
-
-//    context.insert([MessageBeingTyped])
+  
     func cacheNewMessage() async {
         // use URLSession API call to see whether to cache the message or not
         // guard that the message classification is a 1, else cache message
         
-        var messageClassification = await ChatMessageContentVM.getData(newTextMessage)
-        
+        var messageClassification = await ChatMessageContentVM.getData(messageContents: newTextMessage)
+
         if messageClassification == "0" {
+          
             var newMessage = ChatTextMessage(
                 senderID: UUID().uuidString,
                 messageContents: newTextMessage
             )
             context.insert(newMessage)
         }
-        //=======
-    }
-//>>>>>>> Stashed changes
-    
-    func cacheNewMessage() {
-        var newMessage = ChatTextMessage(
-            senderID: UUID().uuidString,
-            messageContents: newTextMessage
-        )
-        context.insert(newMessage)
     }
     
     var body: some View {
@@ -53,6 +40,15 @@ struct ChatsTailView: View {
             text: $newTextMessage
         )
         .autocorrectionDisabled(false)
+
+        // create some send button here to activate cacheNewMessage function
+        Button(action: {
+            Task {
+                await cacheNewMessage()
+            }
+        }, label: {
+            Text("<Send Message>") // replace with actual button UI
+        })
     }
 }
 
