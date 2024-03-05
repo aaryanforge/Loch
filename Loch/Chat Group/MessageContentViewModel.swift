@@ -8,7 +8,7 @@
 import Foundation
 import SwiftData
 
-class MessageContentViewModel: ObservableObject {
+class ChatsContentViewModel: ObservableObject {
     
     private struct Returned: Codable { // JSON container
         // properties match JSON keys

@@ -19,7 +19,7 @@ struct ChatsTailView: View {
 //<<<<<<< Updated upstream
 //=======
 //<<<<<<< Updated upstream
-    @StateObject var ChatMessageContentVM = MessageContentViewModel()
+    @StateObject var ChatMessageContentVM = ChatsContentViewModel()
 
 //    context.insert([MessageBeingTyped])
     func cacheNewMessage() async {
@@ -28,7 +28,7 @@ struct ChatsTailView: View {
         
         var messageClassification = await ChatMessageContentVM.getData(newTextMessage)
         
-        if (messageClassification == "0") {
+        if messageClassification == "0" {
             var newMessage = ChatTextMessage(
                 senderID: UUID().uuidString,
                 messageContents: newTextMessage
