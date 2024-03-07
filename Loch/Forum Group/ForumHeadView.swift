@@ -13,12 +13,10 @@ func newPost() { print ("newPost") }
 
 struct ForumHeadView: View {
     var body: some View {
-        ZStack (alingment: .leading) {
-            Text(
-                "Forums", 
-            )
-            .padding()
-            .font(.system(size: 20,weight: .bold, design: .default))
+        HStack {
+            Text("Forums")
+            .padding(10)
+            .font(.system(size: 25,weight: .bold, design: .default))
             .foregroundColor(.white)
 
             Spacer()
@@ -26,28 +24,27 @@ struct ForumHeadView: View {
             // search button
             Button(action: {
                 Task {
-                    search()
+                    search() // FILL OUT FUNCTION AT TOP
                 }
             }, label: {
-                Image (systemname: "arrowtriangle.forward.fill") 
+                Image(systemName: "magnifyingglass")
                 .foregroundColor(.white)
             })
-            .padding()
 
             //new post button
             Button(action: {
                 Task {
-                    newPost()
+                    newPost() // FILL OUT FUNCTION AT TOP
                 }
             }, label: {
-                Image (systemname: "arrowtriangle.forward.fill") 
+                Image(systemName: "plus")
                 .foregroundColor(.white)
             })
-            .padding()
+            .padding(10)
         }
         .padding(10)
         .background(.green)
-        .frame(idealHeight:80, maxHeight: 80)
+        .frame(idealHeight:80)
     }
 }
 
