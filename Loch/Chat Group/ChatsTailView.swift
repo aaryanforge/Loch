@@ -56,6 +56,7 @@ struct ChatsTailView: View {
             .padding()
         }
         .padding(10)
+        .background(.green.opacity(0.5))
         .frame(idealHeight:80, maxHeight: 80)
     }
 }

@@ -12,56 +12,13 @@
 import SwiftUI
 import SwiftData
 
-struct YourMessage: View {
-    var body: some View {
-        ZStack(alignment: .trailing) {
-            // Need to change text based on messages
-            Text("I want food")
-                .padding(10)
-                .frame(maxWidth: .infinity, alignment: .trailing)
-
-        }
-        .background(.green.opacity(0.5))
-        .clipShape(
-            .rect(
-                topLeadingRadius: 15,
-                bottomLeadingRadius: 15,
-                bottomTrailingRadius: 0,
-                topTrailingRadius: 15
-            )
-        )
-    }
-}
-
-struct TheirMessage: View {
-    var body: some View {
-        ZStack(alignment: .leading) {
-             // Need to change text based on messages
-            Text("Placeholder")
-                .padding(10)
-                .frame(maxWidth: .infinity, alignment: .leading)
-
-        }
-        .background(.blue.opacity(0.5))
-        .clipShape(
-            .rect(
-                topLeadingRadius: 15,
-                bottomLeadingRadius: 0,
-                bottomTrailingRadius: 15,
-                topTrailingRadius: 15
-            )
-        )
-    }
-}
-
 struct ChatsBlockView: View {
 
     var body: some View {
         ScrollView {
             LazyVStack {
-                YourMessage()
-                TheirMessage()
-
+                //mary - the mark's code in chatsdetailedview should be here as it iterates in a loop
+                ChatsDetailView()
             }
             .padding()
         }
