@@ -16,17 +16,16 @@ Codable - enables JSON encoding and decoding
 
 // TODO: rename this file to ChatMessageContentViewModel as well as the class
 
-class MessageContentViewModel: ObservableObject {
+class ChatsContentViewModel: ObservableObject {
     
     private struct Returned: Codable { // JSON container
         // properties match JSON keys
         var classification: String
-        var input: String
+        var input: String?
     }
 
     @Published var urlString = "127.0.0.1:5000/"//localhost + the message content
-    @Published var classification = ""
-    
+
     func getData(messageContents: String) async {
         print("~ Getting data from \(urlString)")
 
@@ -47,7 +46,10 @@ class MessageContentViewModel: ObservableObject {
                 print("!! JSON ERROR: Could not decode returned JSON data \(urlString)")
                 return
             }
-            self.classification = returned.classification
+            print("~ JSON returned! classification: \(returned.classification), input: \(returned.input)")
+
+            // return classification
+            return returned.classification
 
         } catch {
             print("!! ERROR: Could not get data from \(urlString)")
@@ -56,13 +58,13 @@ class MessageContentViewModel: ObservableObject {
 
     // converts normal text to URL text params | e.g. mark is cool -> mark-is-cool
     private func _parseMessageContents(_ messageContents: String) -> String {
-        let content = messageContents.trimmingCharacters(in: .whitespaces)
+        messageContents = messageContents.trimmingCharacters(in: .whitespaces)
 
-        if (content == "") {
+        if (messageContents == "") {
             return messageContents
         }
 
-        let splitMessage = content.split(separator: " ")
+        let splitMessage = messageContents.split(separator: " ")
         let newMessage = splitMessage.joined(separator: "-")
 
         return newMessage
