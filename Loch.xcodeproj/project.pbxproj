@@ -22,6 +22,7 @@
 		02EDC25A2B80710A00F63A29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView.swift */; };
 		02EDC25B2B80710A00F63A29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView.swift */; };
 		02EDC25C2B80710A00F63A29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView.swift */; };
+		4D312E2F2B99BDFE0008A896 /* ChatsHeadTextSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D312E2E2B99BDFE0008A896 /* ChatsHeadTextSearchView.swift */; };
 		4DC0264D2B8DF0C5005A1291 /* ChatsMainLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026422B8DF0C3005A1291 /* ChatsMainLoad.swift */; };
 		4DC0264E2B8DF0C5005A1291 /* ChatsHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026432B8DF0C3005A1291 /* ChatsHeadView.swift */; };
 		4DC0264F2B8DF0C5005A1291 /* ChatsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026442B8DF0C4005A1291 /* ChatsMainView.swift */; };
@@ -81,6 +82,7 @@
 		02DC16392B8A27CC007D45AF /* ContactsMainLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsMainLoad.swift; sourceTree = "<group>"; };
 		02DC163B2B8A27E9007D45AF /* ProfileMainLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainLoad.swift; sourceTree = "<group>"; };
 		02EDC2592B80710A00F63A29 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4D312E2E2B99BDFE0008A896 /* ChatsHeadTextSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsHeadTextSearchView.swift; sourceTree = "<group>"; };
 		4DC026422B8DF0C3005A1291 /* ChatsMainLoad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsMainLoad.swift; sourceTree = "<group>"; };
 		4DC026432B8DF0C3005A1291 /* ChatsHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsHeadView.swift; sourceTree = "<group>"; };
 		4DC026442B8DF0C4005A1291 /* ChatsMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsMainView.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				4DC0264C2B8DF0C5005A1291 /* Message.swift */,
 				4DC0264A2B8DF0C5005A1291 /* MessageBlock.swift */,
 				4DE136432B8F526B000507ED /* MessageContentViewModel.swift */,
+				4D312E2E2B99BDFE0008A896 /* ChatsHeadTextSearchView.swift */,
 			);
 			path = "Chat Group";
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				0263AD5C2B81F98000F2C72F /* UserModel.swift in Sources */,
 				4DE136442B8F526B000507ED /* MessageContentViewModel.swift in Sources */,
 				E18669CE2B69BD5400FEDDD9 /* ContactsDetailView.swift in Sources */,
+				4D312E2F2B99BDFE0008A896 /* ChatsHeadTextSearchView.swift in Sources */,
 				4DC026502B8DF0C5005A1291 /* ChatsTailView.swift in Sources */,
 				4DC026522B8DF0C5005A1291 /* ChatsDetailView.swift in Sources */,
 				02DC162C2B8A225F007D45AF /* ProfileDetailView.swift in Sources */,
