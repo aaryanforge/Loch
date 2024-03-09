@@ -14,10 +14,11 @@ import SwiftData
 
 
 struct YourMessage: View {
+    var message: String
     var body: some View {
         ZStack(alignment: .trailing) {
             // Need to change text based on messages
-            Text("I want food")
+            Text(message)
                 .padding(10)
                 .frame(maxWidth: .infinity, alignment: .trailing)
 
@@ -36,10 +37,12 @@ struct YourMessage: View {
 }
 
 struct TheirMessage: View {
+    var message: String
+
     var body: some View {
         ZStack(alignment: .leading) {
              // Need to change text based on messages
-            Text("Placeholder")
+            Text(message)
                 .padding(10)
                 .frame(maxWidth: .infinity, alignment: .leading)
 
@@ -66,10 +69,12 @@ struct ChatsDetailView: View {
     var body: some View {
         VStack {
             ChatsHeadView()
+
+            //placeholder for now, please render theirmessage or yourmessage based on uid matching
+            //mary
             LazyVStack {
-                TheirMessage()
-                YourMessage()
-                /* Maxmimum of three chats, unless you pay up*/
+                TheirMessage(messgae: "Placeholder")
+                YourMessage(message: "I want food")
             }
 
             // mark was here - loading the messages
