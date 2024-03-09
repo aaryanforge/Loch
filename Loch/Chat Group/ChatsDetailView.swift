@@ -13,6 +13,12 @@ import SwiftUI
 import SwiftData
 
 
+/* 
+YourMessage: Displays the text messages you send in green (TBC)
+@Params:
+    message: String 
+        Takes in a string for the message 
+*/
 struct YourMessage: View {
     var message: String
     var body: some View {
@@ -36,6 +42,12 @@ struct YourMessage: View {
     }
 }
 
+/* 
+TheirMessage: Displays the text messages you recieve in blue (TBC)
+@Params:
+    message: String 
+        Takes in a string for the message 
+*/
 struct TheirMessage: View {
     var message: String
 
@@ -71,15 +83,12 @@ struct ChatsDetailView: View {
             ChatsHeadView()
 
             //placeholder for now, please render theirmessage or yourmessage based on uid matching
-            //mary
             LazyVStack {
                 TheirMessage(messgae: "Placeholder")
                 YourMessage(message: "I want food")
             }
 
             // mark was here - loading the messages
-            // mary - this should be moved to the block view, and it calls this which renders 
-            // either theirmessage or ourmessage on determination of uid
             ForEach(messages) { message in
                 VStack {
                     Text(message.messageContents)

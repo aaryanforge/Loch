@@ -11,7 +11,7 @@
 
 import SwiftUI
 
-//todo
+//TODO
 // add fucntionality to these fuctions
 func reply() { print ("reply") }
 func pinComment() { print ("pinComment") }
