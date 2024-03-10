@@ -14,7 +14,7 @@ import SwiftUI
 
 
 /* 
-ForumBlockPostPublicPrivate: Displays the basic contents of each forum posting, before you click into them
+ForumBlockPostPublicPrivate: Displays the basic contents of each PRIVATE / PUBLIC forum posting, before you click into them
 @Params:
     imageLink: String 
         Takes in a link to the image to be posted (optional)
@@ -70,7 +70,7 @@ struct ForumBlockPostPublicPrivate: View {
     }
 }
 
-/*ForumBlockPostSponsored: Displays the basic contents of each forum posting, before you click into them
+/*ForumBlockPostSponsored: Displays the basic contents of each forum SPONSORED posting, before you click into them
 @Params:
     imageLink: String 
         Takes in a link to the image to be posted (optional)
