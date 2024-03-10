@@ -40,8 +40,8 @@ struct ForumMainView: View {
                 }
             }
             ForumTailView()
-        }
-    }
+         }
+     }
 }
 
 #Preview {
