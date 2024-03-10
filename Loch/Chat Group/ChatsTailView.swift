@@ -28,7 +28,7 @@ struct ChatsTailView: View {
         
         if (messageClassification == "0") {
             let newMessage = ChatTextMessage(
-                senderID: UUID().uuidString,
+                senderID: UUID().uuidString, // TODO: change this to the UUID of the current user
                 messageContents: newTextMessage
             )
             context.insert(newMessage)

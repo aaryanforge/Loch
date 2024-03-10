@@ -10,13 +10,31 @@
 // Due: Thursday 7th March
 
 import SwiftUI
+import SwiftData
 
 struct ChatsHeadView: View {
+    
+    @State private var isTextSearchSheetOn = false
+    
+    // TODO: as messages from every person is cached, figure out a way to filter messages of the current person user is talking to
+    
     var body: some View {
-        Text("Hello, World!")
+        Button {
+            // do something
+            isTextSearchSheetOn.toggle()
+        } label: {
+            Text("Magnifying Glass Icon") // make into actual UI
+        }
+        .sheet(
+            isPresented: $isTextSearchSheetOn,
+            content: {
+                ChatsHeadTextSearchView()
+            })
     }
 }
 
 #Preview {
     ChatsHeadView()
 }
+
+
