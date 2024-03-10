@@ -14,11 +14,14 @@ import SwiftData
     var commentID: String
     var parentID: String
     
+    var senderName: String
+    
     var messageContents: String
     var timeStamp: Date
     
-    init(senderID: String, messageContents: String) {
+    init(senderID: String, senderName: String, messageContents: String) {
         self.senderID = senderID
+        self.senderName = senderName
         self.commentID = "" // TODO: change later
         self.parentID = "" // TODO: change later
         self.messageContents = messageContents

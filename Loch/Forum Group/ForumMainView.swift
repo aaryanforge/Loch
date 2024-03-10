@@ -11,10 +11,36 @@
 
 
 import SwiftUI
+import SwiftData
 
 struct ForumMainView: View {
+    
+    @Query private var forumPosts: [ForumPost]
+    
+    
     var body: some View {
-        Text("Hello, World!")
+        
+        VStack {
+            
+            ForumHeadView()
+            
+            LazyVStack {
+                ForEach(forumPosts) { forumPost in
+                    VStack {
+                        Text(forumPost.messageContents)
+                        Text(forumPost.senderName)
+                        
+                        ForEach(forumPost.comments) { comment in
+                            VStack {
+                                Text(comment.senderName)
+                                Text(comment.messageContents)
+                            }
+                        }
+                    }
+                }
+            }
+            ForumTailView()
+        }
     }
 }
 

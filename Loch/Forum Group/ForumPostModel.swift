@@ -13,12 +13,15 @@ import SwiftData
     var senderID: String
     var forumID: String
     
+    var senderName: String
+    
     var messageContents: String
     var timeStamp: Date
     var comments: [ForumPostComment]
     
-    init(senderID: String, messageContents: String) {
+    init(senderID: String, senderName: String, messageContents: String) {
         self.senderID = senderID
+        self.senderName = senderName
         self.forumID = UUID().uuidString // TODO: change later
         self.messageContents = messageContents
         self.timeStamp = Date.now
