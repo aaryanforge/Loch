@@ -18,8 +18,9 @@ import SwiftData
         self.senderID = senderID
         self.messageContents = messageContents
         self.timeStamp = Date.now
-        //self.readReceipt = Date.now
+        self.readReceipt = Date.now //change later
     }
 }
+
 
 

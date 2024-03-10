@@ -14,19 +14,18 @@ ObservableObject - closesly looked at by SwiftUI and updates views when it is up
 Codable - enables JSON encoding and decoding
 */
 
-// TODO: rename this file to ChatMessageContentViewModel as well as the class
-
 class ChatsContentViewModel: ObservableObject {
     
     private struct Returned: Codable { // JSON container
         // properties match JSON keys
         var classification: String
-        var input: String?
+        var input: String
     }
 
     @Published var urlString = "127.0.0.1:5000/"//localhost + the message content
-
-    func getData(messageContents: String) async -> String {
+    @Published var classification = ""
+    
+    func getData(messageContents: String) async {
         print("~ Getting data from \(urlString)")
 
         urlString += _parseMessageContents(messageContents)
@@ -34,7 +33,7 @@ class ChatsContentViewModel: ObservableObject {
         // create a url string to a special URL type
         guard let url = URL(string: urlString) else {
             print("!! ERROR: Could not create URL from \(urlString)")
-            return "0"
+            return
         }
         
         // grab JSON data from internet
@@ -44,14 +43,9 @@ class ChatsContentViewModel: ObservableObject {
             // try to decode JSON data into our own data structures
             guard let returned = try? JSONDecoder().decode(Returned.self, from: data) else {
                 print("!! JSON ERROR: Could not decode returned JSON data \(urlString)")
-                return "0"
+                return
             }
-            
-            print("~ JSON returned! classification: \(returned.classification), input: \(returned.input ?? "")")
-            
-
-            // return classification
-            return returned.classification
+            self.classification = returned.classification
 
         } catch {
             print("!! ERROR: Could not get data from \(urlString)")
@@ -60,13 +54,13 @@ class ChatsContentViewModel: ObservableObject {
 
     // converts normal text to URL text params | e.g. mark is cool -> mark-is-cool
     private func _parseMessageContents(_ messageContents: String) -> String {
-        var trimmedMessageContents = messageContents.trimmingCharacters(in: .whitespaces)
+        let content = messageContents.trimmingCharacters(in: .whitespaces)
 
-        if (trimmedMessageContents == "") {
-            return trimmedMessageContents
+        if (content == "") {
+            return messageContents
         }
 
-        let splitMessage = trimmedMessageContents.split(separator: " ")
+        let splitMessage = content.split(separator: " ")
         let newMessage = splitMessage.joined(separator: "-")
 
         return newMessage

@@ -5,6 +5,10 @@
 //  Created by A P on 30/1/2024.
 //
 
+// Goal: Redo this page so that it looks more like the figma prototype
+// For: Mark
+// Due: Thursday 14th Mar
+
 import SwiftUI
 
 
