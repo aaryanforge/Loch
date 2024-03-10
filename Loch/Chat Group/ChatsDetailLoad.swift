@@ -8,3 +8,9 @@
 struct ChatsDetailLoad {
     
 }
+
+//#Preview {
+//    ChatsDetailLoad()
+//}
+
+//PL- Not a view so preview not needed

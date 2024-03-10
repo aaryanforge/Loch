@@ -9,7 +9,7 @@ import SwiftUI
 
 // Goal: Code and style the form for editing the user's profile
 // For: Mary
-// Due: Wednesday 28th Feb
+// Due: Thursday 14th Mar
 
 struct ProfileDetailView: View {
     var body: some View {

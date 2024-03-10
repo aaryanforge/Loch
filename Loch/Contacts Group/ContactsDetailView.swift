@@ -5,6 +5,9 @@
 //  Created by A P on 31/1/2024.
 //
 
+// Goal: Build an interface based on the figma
+// For: Mark
+// Due: Thursday 14th Mar
 
 import SwiftUI
 
