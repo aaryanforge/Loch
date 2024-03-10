@@ -30,7 +30,6 @@ struct ChatsHeadView: View {
             content: {
                 ChatsHeadTextSearchView()
             })
-
     }
 }
 

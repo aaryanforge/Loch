@@ -15,8 +15,8 @@ struct ChatsHeadTextSearchView: View {
     @State private var textSearch = ""
     
     @Query private var messages: [ChatTextMessage]
-    @State private var filteredUserMessages: [ChatTextMessage]
-    @State private var userMessages: [ChatTextMessage]
+    @State private var filteredUserMessages: [ChatTextMessage] = []
+    @State private var userMessages: [ChatTextMessage] = []
     
     var body: some View {
         VStack(spacing: 10) {
