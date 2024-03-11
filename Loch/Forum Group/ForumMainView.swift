@@ -24,6 +24,8 @@ struct ForumMainView: View {
             
             ForumHeadView()
             
+            ForumBlockView()
+            
             LazyVStack {
                 ForEach(forumPosts) { forumPost in
                     VStack {
@@ -39,7 +41,7 @@ struct ForumMainView: View {
                     }
                 }
             }
-            ForumTailView()
+            //ForumTailView()
          }
      }
 }

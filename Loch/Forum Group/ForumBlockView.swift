@@ -65,7 +65,7 @@ struct ForumBlockPostPublicPrivate: View {
             }
         }
         .frame(maxHeight:100)
-        .background((postType == "priv" ? .green : .blue), in: RoundedRectangle(cornerRadius: 15, style: .continuous))
+        .background((postType == "priv" ? .green : .blue), in: RoundedRectangle(cornerRadius: 15, style: .continuous).stroke(lineWidth: 1.5))
         .padding(5)
         
     }
@@ -92,7 +92,7 @@ struct ForumBlockPostSponsored: View {
             ZStack(alignment: .trailing) {
                 // Need to change text based on messages
                 Text(title)
-                    .fontfont(.system(size: 20 ,weight: .medium, design: .default))
+                    .font(.system(size: 20 ,weight: .medium, design: .default))
                     .foregroundColor( .white)
                     .padding(5)
 
@@ -117,14 +117,13 @@ struct ForumBlockPostSponsored: View {
         
     }
 }
-
 struct ForumBlockView: View {
     var body: some View {
         LazyVStack {
-            ForumBlockPost(title: "HELLO WORLD", 
-
-            //if this is throwing a bug you may have to put this all on 1 line
-            postContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            ForumBlockPostPublicPrivate(imageLink: "Connecting Image", title: "HELLO WORLD",
+                                        
+                                        //if this is throwing a bug you may have to put this all on 1 line
+                                        postContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", postType: "priv"
                 )
         }
     }

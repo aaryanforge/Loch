@@ -5,6 +5,7 @@
 //  Created by Phoenix Liu on 25/2/2024.
 //
 
+
 import SwiftUI
 
 //TODO : FILL OUT FUNCTIONS
@@ -37,7 +38,6 @@ struct FilterSort: View {
 //                    isFilterSortOverlayOpen.toggle()
 //                }
 //            )
-
         }
         .frame(maxHeight: 40) 
         .background(.gray)

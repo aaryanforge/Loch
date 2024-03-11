@@ -14,16 +14,12 @@ struct ChatsMainView: View {
     var body: some View {
         VStack {
             NavigationView {
-                NavigationLink("") {
+                NavigationLink {
                     ChatsDetailView()
+                }  label: {
+                    Label("Work Folder", systemImage: "folder")
                 }
-                }
-                NavigationLink("") {
-                    ChatsDetailView()
-                }
-                NavigationLink("") {
-                    ChatsDetailView()
-                }
+            }
                 /* More chats down the line */
         }
     }
