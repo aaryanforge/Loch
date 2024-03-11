@@ -14,7 +14,7 @@ import SwiftUI
 
 
 /* 
-ForumBlockPost: Displays the basic contents of each forum posting, before you click into them
+ForumBlockPostPublicPrivate: Displays the basic contents of each PRIVATE / PUBLIC forum posting, before you click into them
 @Params:
     imageLink: String 
         Takes in a link to the image to be posted (optional)
@@ -22,11 +22,14 @@ ForumBlockPost: Displays the basic contents of each forum posting, before you cl
         Name of the Thread
     postContent:
         Brief content of the post
+    postType:
+        type of post, either public or private
 */
-struct ForumBlockPost: View {
+struct ForumBlockPostPublicPrivate: View {
     var imageLink: String?
     var title: String
     var postContent: String
+    var postType: String // maybe set as either "priv" or "pub", should make consants for these
 
     var body: some View {
         HStack{
@@ -62,9 +65,54 @@ struct ForumBlockPost: View {
             }
         }
         .frame(maxHeight:100)
-        .background(.green, in: RoundedRectangle(cornerRadius: 15, style: .continuous)
-            .stroke(lineWidth: 1.5)
-        )
+        .background((postType == "priv" ? .green : .blue), in: RoundedRectangle(cornerRadius: 15, style: .continuous))
+        .padding(5)
+        
+    }
+}
+
+/*ForumBlockPostSponsored: Displays the basic contents of each forum SPONSORED posting, before you click into them
+@Params:
+    imageLink: String 
+        Takes in a link to the image to be posted (optional)
+    ttile: String
+        Name of the Thread
+    postContent:
+        Brief content of the post
+*/
+struct ForumBlockPostSponsored: View {
+    var imageLink: String?
+    var title: String
+    var postContent: String
+
+    var body: some View {
+        HStack{
+            Spacer()
+
+            ZStack(alignment: .trailing) {
+                // Need to change text based on messages
+                Text(title)
+                    .fontfont(.system(size: 20 ,weight: .medium, design: .default))
+                    .foregroundColor( .white)
+                    .padding(5)
+
+            }
+
+            if (imageLink != nil){
+                Image(imageLink!)
+                    .resizable()
+                    .aspectRatio(CGSize(width:1, height: 1), contentMode: .fit)
+                    .frame(width: 85, height: 85)
+                    .padding(5)
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                    .background(.black.opacity(0.6), in: RoundedRectangle(cornerRadius: 15, style: .continuous)
+                        .stroke(lineWidth: 1)
+                    )
+                
+            }
+        }
+        .frame(maxHeight:150)
+        .background(.red, in: RoundedRectangle(cornerRadius: 15, style: .continuous))
         .padding(5)
         
     }
