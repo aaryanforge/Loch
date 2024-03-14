@@ -130,7 +130,7 @@ struct ProfileDetailView: View {
                         Text("Submit")
                             .foregroundColor(.white)
                     }
-                    .frame(maxWidth: 80, maxHeight: 50)
+                    .frame(maxWidth: 120, maxHeight: 80)
                 }
                 .padding(8)
 
