@@ -36,14 +36,14 @@ struct ChatsTailView: View {
     }
     
     var body: some View {
-        ZStack (alingment: .trailing) {
+        ZStack (alignment: .trailing) {
             TextField(
                 "Message...", 
                 text: $newTextMessage
             )
             .padding(20)
             .foregroundColor(.white)
-            .background(.green.opactiy(0.2), in: RoundeRectangle (cornerRadius: 20, style: .continuous))
+            .background(.green.opactiy(0.2), in: RoundedRectangle (cornerRadius: 20, style: .continuous))
             .autocorrectionDisabled(false)
 
             Button(action: {
