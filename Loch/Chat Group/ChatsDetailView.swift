@@ -11,6 +11,8 @@
 
 import SwiftUI
 import SwiftData
+<<<<<<< HEAD
+=======
 
 
 /* 
@@ -72,6 +74,7 @@ struct TheirMessage: View {
     }
 }
 
+>>>>>>> 5177bd7de10db11a9475639a9595a1e8e92d03a2
 
 struct ChatsDetailView: View {
 
@@ -84,9 +87,14 @@ struct ChatsDetailView: View {
 
             //placeholder for now, please render theirmessage or yourmessage based on uid matching
             LazyVStack {
-                TheirMessage(message: "Placeholder")
-                //PL- Removed typo
+<<<<<<< HEAD
+                ChatsBlockView()
+                ChatsBlockView()
+                ChatsBlockView()
+=======
+                TheirMessage(messgae: "Placeholder")
                 YourMessage(message: "I want food")
+>>>>>>> 5177bd7de10db11a9475639a9595a1e8e92d03a2
             }
 
             // mark was here - loading the messages

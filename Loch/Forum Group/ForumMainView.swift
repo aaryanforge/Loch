@@ -7,7 +7,7 @@
 
 // Goal: Load forums from cache
 // For: Mark
-// Due: Saturday 9th March
+// Due: Saturday 9th Feb
 
 
 import SwiftUI
@@ -19,12 +19,20 @@ struct ForumMainView: View {
     
     
     var body: some View {
+<<<<<<< HEAD
+        ForumHeadView()
+        LazyVStack {
+            ForumBlockView()
+            ForumBlockView()
+            ForumBlockView()
+        }
+        ForumTailView()
+    }
+=======
         
         VStack {
             
             ForumHeadView()
-            
-            ForumBlockView()
             
             LazyVStack {
                 ForEach(forumPosts) { forumPost in
@@ -41,9 +49,10 @@ struct ForumMainView: View {
                     }
                 }
             }
-            //ForumTailView()
+            ForumTailView()
          }
      }
+>>>>>>> 5177bd7de10db11a9475639a9595a1e8e92d03a2
 }
 
 #Preview {

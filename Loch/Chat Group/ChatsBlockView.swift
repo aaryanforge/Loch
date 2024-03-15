@@ -17,7 +17,8 @@ struct ChatsBlockView: View {
     var body: some View {
         ScrollView {
             LazyVStack {
-                //mary - the mark's code in chatsdetailedview should be here as it iterates in a loop                
+                //mary - the mark's code in chatsdetailedview should be here as it iterates in a loop
+                ChatsDetailView()
             }
             .padding()
         }

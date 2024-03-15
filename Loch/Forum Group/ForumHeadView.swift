@@ -5,6 +5,9 @@
 //  Created by Phoenix Liu on 25/2/2024.
 //
 
+// Goal: Implement the head of the forums page, including the button for creating new posts
+// For: Mary
+// Due: Thursday 7th March
 
 import SwiftUI
 
@@ -33,11 +36,12 @@ struct FilterSort: View {
                     .foregroundColor(.white)
             }
             .padding(10)
-//            .onTapGesture(
-//                withAnimation(.easeInOut(duration: 1.0)){
-//                    isFilterSortOverlayOpen.toggle()
-//                }
-//            )
+            .onTapGesture(
+                withAnimation(.easeInOut(duration: 1.0)){
+                    isFilterSortOverlayOpen.toggle()
+                }
+            )
+
         }
         .frame(maxHeight: 40) 
         .background(.gray)
