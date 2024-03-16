@@ -48,7 +48,7 @@ struct LoginView: View {
                         .font(.system(size: 45 ,weight: .bold, design: .default))
                         .padding()
 
-                    //replace with logo
+                    //MD - to be replaced with logo
                     ProfilePictureCircle(imageLink: "Connecting Image",size: 250, hasBorder: true )
                     
                     Spacer()
