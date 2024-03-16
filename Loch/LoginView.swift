@@ -47,10 +47,14 @@ struct LoginView: View {
                     Text("Loch")
                         .font(.system(size: 45 ,weight: .bold, design: .default))
                         .padding()
+
+                    //replace with logo
+                    ProfilePictureCircle(imageLink: "Connecting Image",size: 250, hasBorder: true )
                     
+                    Spacer()
+
                     //sign up button
                     ButtonInit(todo: {print("sign up")}, actionName: "Sign Up", bgColor: .teal)
-
                     //log in button
                     ButtonInit(todo: {isSignedOn.toggle()}, actionName: "Log In", bgColor: .green)
                 }
