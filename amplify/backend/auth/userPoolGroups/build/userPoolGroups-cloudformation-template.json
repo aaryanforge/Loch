@@ -1,0 +1,50 @@
+{
+  "Description": "Root Stack for AWS Amplify CLI",
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Parameters": {
+    "env": {
+      "Type": "String"
+    },
+    "AuthRoleArn": {
+      "Type": "String"
+    },
+    "UnauthRoleArn": {
+      "Type": "String"
+    },
+    "authAuthAmplifySignInOnlyUserPoolId": {
+      "Type": "String",
+      "Default": "authAuthAmplifySignInOnlyUserPoolId"
+    },
+    "authAuthAmplifySignInOnlyAppClientID": {
+      "Type": "String",
+      "Default": "authAuthAmplifySignInOnlyAppClientID"
+    },
+    "authAuthAmplifySignInOnlyAppClientIDWeb": {
+      "Type": "String",
+      "Default": "authAuthAmplifySignInOnlyAppClientIDWeb"
+    }
+  },
+  "Conditions": {
+    "ShouldNotCreateEnvResources": {
+      "Fn::Equals": [
+        {
+          "Ref": "env"
+        },
+        "NONE"
+      ]
+    }
+  },
+  "Resources": {
+    "AuthAmplifyFirstPoolGroup": {
+      "Type": "AWS::Cognito::UserPoolGroup",
+      "Properties": {
+        "UserPoolId": {
+          "Ref": "authAuthAmplifySignInOnlyUserPoolId"
+        },
+        "Description": "override success",
+        "GroupName": "AuthAmplifyFirstPool",
+        "Precedence": 1
+      }
+    }
+  }
+}
