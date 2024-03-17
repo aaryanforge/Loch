@@ -143,7 +143,8 @@ struct ForumHeadView: View {
                 .sheet(
                     isPresented: $isAddNewForumSheetOn,
                     content: {
-                        ForumAddPostSheetView()
+                        //ForumAddPostSheetView()
+                        Text("empty sheet view")
                     })
             }
             .padding(10)

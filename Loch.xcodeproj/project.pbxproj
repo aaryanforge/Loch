@@ -8,35 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		025FC94C2B9F1B5A006F59D9 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025FC94B2B9F1B5A006F59D9 /* ViewExtensions.swift */; };
-		025FC94E2B9F1FA0006F59D9 /* ForumAddPostSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025FC94D2B9F1FA0006F59D9 /* ForumAddPostSheetView.swift */; };
 		02C8F2AA2BA44D7300B35C06 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 02C8F2A92BA44D7300B35C06 /* AWSAPIPlugin */; };
 		02C8F2AC2BA44D7300B35C06 /* AWSCloudWatchLoggingPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 02C8F2AB2BA44D7300B35C06 /* AWSCloudWatchLoggingPlugin */; };
 		02C8F2AE2BA44D7300B35C06 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 02C8F2AD2BA44D7300B35C06 /* AWSCognitoAuthPlugin */; };
 		02C8F2B02BA44E1A00B35C06 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C8F2AF2BA44E1A00B35C06 /* AuthenticationManager.swift */; };
-		02DC16202B8A2141007D45AF /* ConnectSendDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC161F2B8A2141007D45AF /* ConnectSendDetailView.swift */; };
-		02DC16222B8A216D007D45AF /* ConnectReceiveDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC16212B8A216D007D45AF /* ConnectReceiveDetailView.swift */; };
 		02DC16282B8A21F8007D45AF /* ForumHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC16272B8A21F8007D45AF /* ForumHeadView.swift */; };
 		02DC162C2B8A225F007D45AF /* ProfileSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC162B2B8A225F007D45AF /* ProfileSettingsView.swift */; };
 		02DC16342B8A277C007D45AF /* ForumBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC16332B8A277C007D45AF /* ForumBlockView.swift */; };
-		02DC16362B8A2795007D45AF /* ForumMainLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC16352B8A2795007D45AF /* ForumMainLoad.swift */; };
-		02DC16382B8A27A5007D45AF /* ForumToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC16372B8A27A5007D45AF /* ForumToolbarView.swift */; };
-		02DC163A2B8A27CC007D45AF /* ContactsMainLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC16392B8A27CC007D45AF /* ContactsMainLoad.swift */; };
-		02DC163C2B8A27E9007D45AF /* ProfileMainLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC163B2B8A27E9007D45AF /* ProfileMainLoad.swift */; };
+		02E0240B2BA7B1DC0044A8CE /* LoginDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0240A2BA7B1DC0044A8CE /* LoginDetailView.swift */; };
 		02EDC25A2B80710A00F63A29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView.swift */; };
 		02EDC25B2B80710A00F63A29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView.swift */; };
 		02EDC25C2B80710A00F63A29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView.swift */; };
 		4D312E2F2B99BDFE0008A896 /* ChatsHeadTextSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D312E2E2B99BDFE0008A896 /* ChatsHeadTextSearchView.swift */; };
 		4D66327F2B9D5122002E71A4 /* ForumPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D66327E2B9D5122002E71A4 /* ForumPostModel.swift */; };
 		4D6632812B9D51E3002E71A4 /* ForumPostCommentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6632802B9D51E3002E71A4 /* ForumPostCommentsModel.swift */; };
-		4DC0264D2B8DF0C5005A1291 /* ChatsMainLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026422B8DF0C3005A1291 /* ChatsMainLoad.swift */; };
 		4DC0264E2B8DF0C5005A1291 /* ChatsHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026432B8DF0C3005A1291 /* ChatsHeadView.swift */; };
 		4DC0264F2B8DF0C5005A1291 /* ChatsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026442B8DF0C4005A1291 /* ChatsMainView.swift */; };
 		4DC026502B8DF0C5005A1291 /* ChatsTailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026452B8DF0C4005A1291 /* ChatsTailView.swift */; };
-		4DC026512B8DF0C5005A1291 /* ChatsBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026462B8DF0C4005A1291 /* ChatsBlockView.swift */; };
 		4DC026522B8DF0C5005A1291 /* ChatsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026472B8DF0C4005A1291 /* ChatsDetailView.swift */; };
 		4DC026532B8DF0C5005A1291 /* ChatsTextMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026482B8DF0C4005A1291 /* ChatsTextMessageModel.swift */; };
 		4DC026542B8DF0C5005A1291 /* ChatsToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026492B8DF0C4005A1291 /* ChatsToolbarView.swift */; };
-		4DC026562B8DF0C5005A1291 /* ChatsDetailLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC0264B2B8DF0C5005A1291 /* ChatsDetailLoad.swift */; };
 		8F0509FA308C43F2442838CC /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 226250C1A126D465B9A088E0 /* amplifyconfiguration.json */; };
 		A560C9DB6B19EB5B37D2E666 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = ECDEC17D16526DCE58E37741 /* awsconfiguration.json */; };
 		E18669942B68853500FEDDD9 /* LochApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669932B68853500FEDDD9 /* LochApp.swift */; };
@@ -73,31 +64,22 @@
 
 /* Begin PBXFileReference section */
 		025FC94B2B9F1B5A006F59D9 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
-		025FC94D2B9F1FA0006F59D9 /* ForumAddPostSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumAddPostSheetView.swift; sourceTree = "<group>"; };
 		02C8F2AF2BA44E1A00B35C06 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
-		02DC161F2B8A2141007D45AF /* ConnectSendDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectSendDetailView.swift; sourceTree = "<group>"; };
-		02DC16212B8A216D007D45AF /* ConnectReceiveDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectReceiveDetailView.swift; sourceTree = "<group>"; };
 		02DC16272B8A21F8007D45AF /* ForumHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumHeadView.swift; sourceTree = "<group>"; };
 		02DC162B2B8A225F007D45AF /* ProfileSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsView.swift; sourceTree = "<group>"; };
 		02DC16332B8A277C007D45AF /* ForumBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumBlockView.swift; sourceTree = "<group>"; };
-		02DC16352B8A2795007D45AF /* ForumMainLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumMainLoad.swift; sourceTree = "<group>"; };
-		02DC16372B8A27A5007D45AF /* ForumToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumToolbarView.swift; sourceTree = "<group>"; };
-		02DC16392B8A27CC007D45AF /* ContactsMainLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsMainLoad.swift; sourceTree = "<group>"; };
-		02DC163B2B8A27E9007D45AF /* ProfileMainLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainLoad.swift; sourceTree = "<group>"; };
+		02E0240A2BA7B1DC0044A8CE /* LoginDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDetailView.swift; sourceTree = "<group>"; };
 		02EDC2592B80710A00F63A29 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		226250C1A126D465B9A088E0 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		4D312E2E2B99BDFE0008A896 /* ChatsHeadTextSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsHeadTextSearchView.swift; sourceTree = "<group>"; };
 		4D66327E2B9D5122002E71A4 /* ForumPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumPostModel.swift; sourceTree = "<group>"; };
 		4D6632802B9D51E3002E71A4 /* ForumPostCommentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumPostCommentsModel.swift; sourceTree = "<group>"; };
-		4DC026422B8DF0C3005A1291 /* ChatsMainLoad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsMainLoad.swift; sourceTree = "<group>"; };
 		4DC026432B8DF0C3005A1291 /* ChatsHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsHeadView.swift; sourceTree = "<group>"; };
 		4DC026442B8DF0C4005A1291 /* ChatsMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsMainView.swift; sourceTree = "<group>"; };
 		4DC026452B8DF0C4005A1291 /* ChatsTailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsTailView.swift; sourceTree = "<group>"; };
-		4DC026462B8DF0C4005A1291 /* ChatsBlockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsBlockView.swift; sourceTree = "<group>"; };
 		4DC026472B8DF0C4005A1291 /* ChatsDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsDetailView.swift; sourceTree = "<group>"; };
 		4DC026482B8DF0C4005A1291 /* ChatsTextMessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsTextMessageModel.swift; sourceTree = "<group>"; };
 		4DC026492B8DF0C4005A1291 /* ChatsToolbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsToolbarView.swift; sourceTree = "<group>"; };
-		4DC0264B2B8DF0C5005A1291 /* ChatsDetailLoad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsDetailLoad.swift; sourceTree = "<group>"; };
 		E18669902B68853500FEDDD9 /* Loch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18669932B68853500FEDDD9 /* LochApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LochApp.swift; sourceTree = "<group>"; };
 		E18669952B68853500FEDDD9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -158,11 +140,8 @@
 				E18669BF2B688B7600FEDDD9 /* ForumMainView.swift */,
 				02DC16272B8A21F8007D45AF /* ForumHeadView.swift */,
 				02DC16332B8A277C007D45AF /* ForumBlockView.swift */,
-				02DC16372B8A27A5007D45AF /* ForumToolbarView.swift */,
-				02DC16352B8A2795007D45AF /* ForumMainLoad.swift */,
 				4D66327E2B9D5122002E71A4 /* ForumPostModel.swift */,
 				4D6632802B9D51E3002E71A4 /* ForumPostCommentsModel.swift */,
-				025FC94D2B9F1FA0006F59D9 /* ForumAddPostSheetView.swift */,
 			);
 			path = "Forum Group";
 			sourceTree = "<group>";
@@ -171,8 +150,6 @@
 			isa = PBXGroup;
 			children = (
 				E18669C12B688B8000FEDDD9 /* ConnectMainView.swift */,
-				02DC161F2B8A2141007D45AF /* ConnectSendDetailView.swift */,
-				02DC16212B8A216D007D45AF /* ConnectReceiveDetailView.swift */,
 			);
 			path = "Connect Group";
 			sourceTree = "<group>";
@@ -180,11 +157,8 @@
 		4DC026582B8DF0D3005A1291 /* Chat Group */ = {
 			isa = PBXGroup;
 			children = (
-				4DC026462B8DF0C4005A1291 /* ChatsBlockView.swift */,
-				4DC0264B2B8DF0C5005A1291 /* ChatsDetailLoad.swift */,
 				4DC026472B8DF0C4005A1291 /* ChatsDetailView.swift */,
 				4DC026432B8DF0C3005A1291 /* ChatsHeadView.swift */,
-				4DC026422B8DF0C3005A1291 /* ChatsMainLoad.swift */,
 				4DC026442B8DF0C4005A1291 /* ChatsMainView.swift */,
 				4DC026452B8DF0C4005A1291 /* ChatsTailView.swift */,
 				4DC026492B8DF0C4005A1291 /* ChatsToolbarView.swift */,
@@ -232,6 +206,7 @@
 				E18669932B68853500FEDDD9 /* LochApp.swift */,
 				E18669952B68853500FEDDD9 /* ContentView.swift */,
 				02EDC2592B80710A00F63A29 /* LoginView.swift */,
+				02E0240A2BA7B1DC0044A8CE /* LoginDetailView.swift */,
 				025FC94B2B9F1B5A006F59D9 /* ViewExtensions.swift */,
 				02C8F2AF2BA44E1A00B35C06 /* AuthenticationManager.swift */,
 				E18669992B68853800FEDDD9 /* Preview Content */,
@@ -275,7 +250,6 @@
 			children = (
 				E18669C32B688B8C00FEDDD9 /* ContactsMainView.swift */,
 				E18669CD2B69BD5400FEDDD9 /* ContactsDetailView.swift */,
-				02DC16392B8A27CC007D45AF /* ContactsMainLoad.swift */,
 			);
 			path = "Contacts Group";
 			sourceTree = "<group>";
@@ -285,7 +259,6 @@
 			children = (
 				E18669C52B688B9700FEDDD9 /* ProfileMainView.swift */,
 				02DC162B2B8A225F007D45AF /* ProfileSettingsView.swift */,
-				02DC163B2B8A27E9007D45AF /* ProfileMainLoad.swift */,
 			);
 			path = "Profile Group";
 			sourceTree = "<group>";
@@ -432,15 +405,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DC026512B8DF0C5005A1291 /* ChatsBlockView.swift in Sources */,
 				4DC026542B8DF0C5005A1291 /* ChatsToolbarView.swift in Sources */,
-				02DC16362B8A2795007D45AF /* ForumMainLoad.swift in Sources */,
+				02E0240B2BA7B1DC0044A8CE /* LoginDetailView.swift in Sources */,
 				4DC0264F2B8DF0C5005A1291 /* ChatsMainView.swift in Sources */,
-				02DC16202B8A2141007D45AF /* ConnectSendDetailView.swift in Sources */,
-				4DC0264D2B8DF0C5005A1291 /* ChatsMainLoad.swift in Sources */,
-				02DC163A2B8A27CC007D45AF /* ContactsMainLoad.swift in Sources */,
 				E18669962B68853500FEDDD9 /* ContentView.swift in Sources */,
-				02DC163C2B8A27E9007D45AF /* ProfileMainLoad.swift in Sources */,
 				4DC026532B8DF0C5005A1291 /* ChatsTextMessageModel.swift in Sources */,
 				02EDC25A2B80710A00F63A29 /* LoginView.swift in Sources */,
 				E18669C42B688B8C00FEDDD9 /* ContactsMainView.swift in Sources */,
@@ -451,15 +419,11 @@
 				4D312E2F2B99BDFE0008A896 /* ChatsHeadTextSearchView.swift in Sources */,
 				4DC026502B8DF0C5005A1291 /* ChatsTailView.swift in Sources */,
 				4DC026522B8DF0C5005A1291 /* ChatsDetailView.swift in Sources */,
-				025FC94E2B9F1FA0006F59D9 /* ForumAddPostSheetView.swift in Sources */,
 				02C8F2B02BA44E1A00B35C06 /* AuthenticationManager.swift in Sources */,
 				025FC94C2B9F1B5A006F59D9 /* ViewExtensions.swift in Sources */,
 				02DC162C2B8A225F007D45AF /* ProfileSettingsView.swift in Sources */,
-				02DC16382B8A27A5007D45AF /* ForumToolbarView.swift in Sources */,
 				4D66327F2B9D5122002E71A4 /* ForumPostModel.swift in Sources */,
 				4D6632812B9D51E3002E71A4 /* ForumPostCommentsModel.swift in Sources */,
-				4DC026562B8DF0C5005A1291 /* ChatsDetailLoad.swift in Sources */,
-				02DC16222B8A216D007D45AF /* ConnectReceiveDetailView.swift in Sources */,
 				4DC0264E2B8DF0C5005A1291 /* ChatsHeadView.swift in Sources */,
 				02DC16282B8A21F8007D45AF /* ForumHeadView.swift in Sources */,
 				E18669C02B688B7600FEDDD9 /* ForumMainView.swift in Sources */,

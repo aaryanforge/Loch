@@ -22,7 +22,8 @@
           "deploymentBucketName": "amplify-authamplify-authdev-205452-deployment",
           "s3Key": "amplify-builds/AdminQueries0d1a670a-59592f47383243586a33-build.zip"
         },
-        "CensorText": {}
+        "CensorText": {},
+        "AuthAmplifySignInOnly": {}
       },
       "api": {
         "AdminQueries": {}

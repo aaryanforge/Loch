@@ -31,70 +31,40 @@ struct ButtonInit: View {
         }
         .padding()
     }
+    
 }
 
 struct LoginView: View {
     
-    //@State private var isSignedOn = true
-    @State private var manager = AuthenticationManager()
-    @State private var newUserName = ""
-    @State private var newEmail = ""
-    @State private var newPassword = ""
-    @State private var isSignedOn = false
+    @State private var isSignedOn = true
     var body: some View {
-//         if manager.signedIn {
-//             Text(manager.userAttributes.first!.value)
-//         } else {
-//             VStack {
-//                 Text("Email: ")
-//                 TextField("Mail", text: $newEmail)
-//                 Text("Username: ")
-//                 TextField("Username", text: $newUserName)
-//                 Text("Password: ")
-//                 SecureField("Password", text: $newPassword)
-//                 Divider()
-//                 Button(action: {
-//                     Task {
-//                         await manager.signUp(username: newUserName, password: newPassword, email: newEmail)
-//                     }
-//                 }, label: {
-//                 Text("Signup")
-//                     .font(.caption)
-//                     .foregroundStyle(.white)
-//                     .padding()
-//                     .background(.red)
-//                     .frame(width: 280, height: 50)
-//                     .padding()
-//                 })
-//                 Text("Just sign on...")
-//             }
-        if manager.signedIn == false {
+        
+        ZStack {
+            LinearGradient(colors: [.green, .blue], startPoint: .topLeading, endPoint: .bottomTrailing)
             
-            ZStack {
-                LinearGradient(colors: [.green, .blue], startPoint: .topLeading, endPoint: .bottomTrailing)
+            //details
+            VStack {
+                Text("Loch")
+                    .font(.system(size: 45 ,weight: .bold, design: .default))
+                    .padding()
                 
-                //details
-                VStack {
-                    Text("Loch")
-                        .font(.system(size: 45 ,weight: .bold, design: .default))
-                        .padding()
-
-                    //replace with logo
-                    ProfilePictureCircle(imageLink: "Connecting Image",size: 250, hasBorder: true )
-                    
-                    Spacer()
-
-                    //sign up button
-                    ButtonInit(todo: {print("sign up")}, actionName: "Sign Up", bgColor: .teal)
-                    //log in button
-                    ButtonInit(todo: {isSignedOn.toggle()}, actionName: "Log In", bgColor: .green)
-                }
-                .padding()
+                //replace with logo
+                ProfilePictureCircle(imageLink: "Connecting Image",size: 250, hasBorder: true )
+                
+                Spacer()
+                
+                //sign up button
+                ButtonInit(todo: {
+                    print("signup")
+                }, actionName: "Sign Up", bgColor: .teal)
+                //log in button
+                ButtonInit(todo: {isSignedOn.toggle()}, actionName: "Log In", bgColor: .green)
+                Divider()
+                LoginDetailView()
             }
-            .edgesIgnoringSafeArea(.all)
-        } else {
-            ContentView()
+            .padding()
         }
+        .edgesIgnoringSafeArea(.all)
     }
 }
 

@@ -3,5 +3,35 @@
     "Version": "0.1.0",
     "IdentityManager": {
         "Default": {}
+    },
+    "CognitoUserPool": {
+        "Default": {
+            "PoolId": "ap-southeast-2_UD4WgCEaC",
+            "AppClientId": "3hfsoju0luf2ka5atnbj7l9e7p",
+            "Region": "ap-southeast-2"
+        }
+    },
+    "Auth": {
+        "Default": {
+            "authenticationFlowType": "USER_SRP_AUTH",
+            "mfaConfiguration": "OFF",
+            "mfaTypes": [
+                "SMS"
+            ],
+            "passwordProtectionSettings": {
+                "passwordPolicyMinLength": 8,
+                "passwordPolicyCharacters": []
+            },
+            "signupAttributes": [
+                "EMAIL"
+            ],
+            "socialProviders": [],
+            "usernameAttributes": [
+                "EMAIL"
+            ],
+            "verificationMechanisms": [
+                "EMAIL"
+            ]
+        }
     }
 }

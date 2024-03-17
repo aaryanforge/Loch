@@ -17,7 +17,7 @@ struct LochApp: App {
   var body: some Scene {
     WindowGroup {
       NavigationView {
-        LoginView()
+        ContentView()
       }
       .modelContainer(for: [ChatTextMessage.self, ForumPost.self, ForumPostComment.self])
     }
