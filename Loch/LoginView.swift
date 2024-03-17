@@ -11,6 +11,28 @@
 
 import SwiftUI
 
+struct ButtonInit: View {
+    var todo: () -> Void
+    var actionName: String
+    var bgColor: Color
+
+    var body: some View {
+        Button {
+            self.todo()
+        } label: {
+            ZStack{
+                RoundedRectangle(cornerRadius: 10, style: .continuous)
+                    .fill(bgColor)
+                    .frame(width: 120, height: 80)
+
+                Text(actionName)
+                    .font(.system(size: 25 ,weight: .semibold, design: .default))
+            }
+        }
+        .padding()
+    }
+}
+
 struct LoginView: View {
     
     //@State private var isSignedOn = true
@@ -20,32 +42,58 @@ struct LoginView: View {
     @State private var newPassword = ""
     
     var body: some View {
-        if manager.signedIn {
-            Text(manager.userAttributes.first!.value)
-        } else {
-            VStack {
-                Text("Email: ")
-                TextField("Mail", text: $newEmail)
-                Text("Username: ")
-                TextField("Username", text: $newUserName)
-                Text("Password: ")
-                SecureField("Password", text: $newPassword)
-                Divider()
-                Button(action: {
-                    Task {
-                        await manager.signUp(username: newUserName, password: newPassword, email: newEmail)
-                    }
-                }, label: {
-                Text("Signup")
-                    .font(.caption)
-                    .foregroundStyle(.white)
-                    .padding()
-                    .background(.red)
-                    .frame(width: 280, height: 50)
-                    .padding()
-                })
-                Text("Just sign on...")
+        // if manager.signedIn {
+        //     Text(manager.userAttributes.first!.value)
+        // } else {
+        //     VStack {
+        //         Text("Email: ")
+        //         TextField("Mail", text: $newEmail)
+        //         Text("Username: ")
+        //         TextField("Username", text: $newUserName)
+        //         Text("Password: ")
+        //         SecureField("Password", text: $newPassword)
+        //         Divider()
+        //         Button(action: {
+        //             Task {
+        //                 await manager.signUp(username: newUserName, password: newPassword, email: newEmail)
+        //             }
+        //         }, label: {
+        //         Text("Signup")
+        //             .font(.caption)
+        //             .foregroundStyle(.white)
+        //             .padding()
+        //             .background(.red)
+        //             .frame(width: 280, height: 50)
+        //             .padding()
+        //         })
+        //         Text("Just sign on...")
+        //     }
+        if manager.signedIn == false {
+            
+            ZStack {
+                LinearGradient(colours: [.green, .blue], startPoint: .topLeading, endPoint: .bottomTrailing)
+                
+                //details
+                VStack {
+                    Text("Loch")
+                        .font(.system(size: 45 ,weight: .bold, design: .default))
+                        .padding()
+
+                    //replace with logo
+                    ProfilePictureCircle(imageLink: "Connecting Image",size: 250, hasBorder: true )
+                    
+                    Spacer()
+
+                    //sign up button
+                    ButtonInit(todo: {print("sign up")}, actionName: "Sign Up", bgColor: .teal)
+                    //log in button
+                    ButtonInit(todo: {isSignedOn.toggle()}, actionName: "Log In", bgColor: .green)
+                }
+                .padding()
             }
+            .edgesIgnoringSafeArea(.all)
+        } else {
+            ContentView()
         }
     }
 }

@@ -105,6 +105,9 @@ struct FilterSort: View {
 }
 
 struct ForumHeadView: View {
+    
+    @State private var isAddNewForumSheetOn = false
+    
     var body: some View {
         VStack (spacing: 0) {
             // top navbar
@@ -130,12 +133,18 @@ struct ForumHeadView: View {
                 Button(action: {
                     Task {
                         newPost() // FILL OUT FUNCTION AT TOP
+                        isAddNewForumSheetOn.toggle()
                     }
                 }, label: {
                     Image(systemName: "plus")
                     .foregroundColor(.white)
                 })
                 .padding(10)
+                .sheet(
+                    isPresented: $isAddNewForumSheetOn,
+                    content: {
+                        ForumAddNewView()
+                    })
             }
             .padding(10)
             .background(.green)

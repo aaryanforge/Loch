@@ -54,7 +54,7 @@ struct ChatsTailView: View {
             )
             .padding(20)
             .foregroundColor(.white)
-            .background(.green.opacity(0.2), in: RoundedRectangle (cornerRadius: 20, style: .continuous))
+            .background(.green.opactiy(0.2), in: RoundedRectangle (cornerRadius: 20, style: .continuous))
             .autocorrectionDisabled(false)
 
             Button(action: {

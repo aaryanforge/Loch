@@ -36,7 +36,7 @@ struct ForumBlockPostPublicPrivate: View {
             Spacer()
             
             if (imageLink != nil){
-                Image(imageLink!)
+                Image(imageLink)
                     .resizable()
                     .aspectRatio(CGSize(width:1, height: 1), contentMode: .fit)
                     .frame(width: 78, height: 78)
@@ -51,20 +51,26 @@ struct ForumBlockPostPublicPrivate: View {
             VStack(alignment: .leading, spacing: 0) {
                 // Need to change text based on messages
                 Text(title)
-                    .fontfont(.system(size: 18 ,weight: .medium, design: .default))
-                    .foregroundColor( .black)
+                    .font(.system(size: 18 ,weight: .medium, design: .default))
+                    // PL- Changed .fontfont to .font
+                    .foregroundColor(postType == "priv" ? .black : .white)
                     .padding(5)
 
                 // placeholder paragraph    
                 Text(postContent)
                     .font(.system(size: 10 ,weight: .light, design: .default))
-                    .foregroundColor(.gray)
+                    .foregroundColor(postType == "priv" ? .gray : .white)
                     .padding([.bottom, .trailing, .leading], 10)
 
             }
         }
         .frame(maxHeight:100)
-        .background((postType == "priv" ? .green : .blue), in: RoundedRectangle(cornerRadius: 15, style: .continuous))
+        .if (postType == "priv") { view in
+            view.background(.green, in: RoundedRectangle(cornerRadius: 15, style: .continuous).stroke(lineWidth: 1.5))
+        }
+        .if (postType == "pub") { view in
+            view.background(.blue, in: RoundedRectangle(cornerRadius: 15, style: .continuous))
+        }
         .padding(5)
         
     }
@@ -82,7 +88,6 @@ struct ForumBlockPostPublicPrivate: View {
 struct ForumBlockPostSponsored: View {
     var imageLink: String?
     var title: String
-    var postContent: String
 
     var body: some View {
         HStack{
@@ -120,16 +125,13 @@ struct ForumBlockPostSponsored: View {
 struct ForumBlockView: View {
     var body: some View {
         LazyVStack {
-            ForumBlockPost(title: "HELLO WORLD", 
-
-            //if this is throwing a bug you may have to put this all on 1 line
-            postContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
-                qui officia deserunt mollit anim id est laborum."
-                )
+            ForumBlockPostPublicPrivate(
+                imageLink: "Connecting Image", 
+                title: "HELLO WORLD",
+                //if this is throwing a bug you may have to put this all on 1 line
+                postContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+                postType: "priv"
+            )
         }
     }
 }
