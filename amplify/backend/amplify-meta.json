@@ -9,7 +9,8 @@
       "UnauthRoleName": "amplify-authamplify-authdev-205452-unauthRole",
       "StackName": "amplify-authamplify-authdev-205452",
       "StackId": "arn:aws:cloudformation:ap-southeast-2:851725592632:stack/amplify-authamplify-authdev-205452/150550b0-e2b2-11ee-91e3-0a88b7296fb7",
-      "AmplifyAppId": "d2u1u175h99szy"
+      "AmplifyAppId": "d2u1u175h99szy",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-authamplify-authdev-205452-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     }
   },
   "auth": {
@@ -23,11 +24,12 @@
           "attributes": [
             "UserPoolId",
             "AppClientIDWeb",
-            "AppClientID"
+            "AppClientID",
+            "IdentityPoolId"
           ]
         }
       ],
-      "lastPushTimeStamp": "2024-03-16T04:05:58.373Z",
+      "lastPushTimeStamp": "2024-03-17T07:46:57.560Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-authamplify-authdev-205452-deployment/amplify-cfn-templates/auth/userPoolGroups-cloudformation-template.json",
         "logicalId": "authuserPoolGroups"
@@ -64,7 +66,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-authamplify-authdev-205452-deployment/amplify-cfn-templates/auth/AuthAmplifySignInOnly-cloudformation-template.json",
         "logicalId": "authAuthAmplifySignInOnly"
       },
-      "lastPushTimeStamp": "2024-03-16T04:05:57.819Z",
+      "lastPushTimeStamp": "2024-03-17T07:46:56.885Z",
       "output": {
         "UserPoolId": "ap-southeast-2_UD4WgCEaC",
         "AppClientIDWeb": "ibc38o90lf7bs6l56qenje8pq",
@@ -89,9 +91,9 @@
           ]
         }
       ],
-      "lastBuildTimeStamp": "2024-03-16T04:06:07.582Z",
+      "lastBuildTimeStamp": "2024-03-17T07:47:01.862Z",
       "lastBuildType": "PROD",
-      "lastPackageTimeStamp": "2024-03-16T04:06:08.343Z",
+      "lastPackageTimeStamp": "2024-03-17T07:47:02.983Z",
       "distZipFilename": "AdminQueries0d1a670a-59592f47383243586a33-build.zip",
       "s3Bucket": {
         "deploymentBucketName": "amplify-authamplify-authdev-205452-deployment",
@@ -101,7 +103,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-authamplify-authdev-205452-deployment/amplify-cfn-templates/function/AdminQueries0d1a670a-cloudformation-template.json",
         "logicalId": "functionAdminQueries0d1a670a"
       },
-      "lastPushTimeStamp": "2024-03-16T04:05:57.820Z",
+      "lastPushTimeStamp": "2024-03-17T07:46:56.885Z",
       "output": {
         "LambdaExecutionRoleArn": "arn:aws:iam::851725592632:role/AdminQueries0d1a670aLambdaRole-authdev",
         "Region": "ap-southeast-2",
@@ -143,7 +145,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-authamplify-authdev-205452-deployment/amplify-cfn-templates/api/AdminQueries-cloudformation-template.json",
         "logicalId": "apiAdminQueries"
       },
-      "lastPushTimeStamp": "2024-03-16T04:05:57.822Z",
+      "lastPushTimeStamp": "2024-03-17T07:46:56.886Z",
       "output": {
         "ApiName": "AdminQueries",
         "RootUrl": "https://gniabc4aha.execute-api.ap-southeast-2.amazonaws.com/authdev",
@@ -152,6 +154,20 @@
       "lastPushDirHash": "PCOoLY0hZ1mLYZxDLbyJfinEdwk="
     },
     "AmplifyToApi": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "CensorText",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ]
+    },
+    "apid8c9fa53": {
       "service": "API Gateway",
       "providerPlugin": "awscloudformation",
       "dependsOn": [

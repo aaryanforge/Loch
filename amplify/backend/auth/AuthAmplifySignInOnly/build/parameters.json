@@ -1,4 +1,6 @@
 {
+  "identityPoolName": "AuthAmplifySignInOnly_identitypool_9502a4a5",
+  "allowUnauthenticatedIdentities": false,
   "resourceNameTruncated": "autham68115e8f",
   "userPoolName": "authamplify68115e8f_userpool_68115e8f",
   "autoVerifiedAttributes": [
@@ -31,7 +33,7 @@
   "userpoolClientSetAttributes": false,
   "sharedId": "68115e8f",
   "resourceName": "AuthAmplifySignInOnly",
-  "authSelections": "userPoolOnly",
+  "authSelections": "identityPoolAndUserPool",
   "useDefault": "manual",
   "usernameAttributes": [
     "email"

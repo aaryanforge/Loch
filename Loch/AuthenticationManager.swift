@@ -10,6 +10,7 @@ import Amplify
 
 class AuthenticationManager: ObservableObject {
     @Published var userAttributes: [AuthUserAttribute] = []
+    @Published var signedIn = false
     
     func signUp(username: String, password: String, email: String) async {
         let userAttributes = [AuthUserAttribute(.preferredUsername, value: username)]
@@ -39,7 +40,12 @@ class AuthenticationManager: ObservableObject {
     
     func fetchUserData(email: String) async {
         do {
-            let userAttributes = try await Amplify.Auth.fetchUserAttributes()
+            let session = try await Amplify.Auth.fetchAuthSession()
+            if (session.isSignedIn) {
+                self.signedIn = true
+                let userAttributes = try await Amplify.Auth.fetchUserAttributes()
+                self.userAttributes = userAttributes
+            }
         } catch {
             print("Could not fetch user data, error: \(error)")
         }
