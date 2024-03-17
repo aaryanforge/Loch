@@ -36,7 +36,7 @@ struct ProfilePictureCircle: View {
 
     var body: some View {
         ZStack {
-            if (imageLink != nil){
+            if let imageLink = imageLink {
                 Image(imageLink)
                     .resizable()
                     .aspectRatio(CGSize(width:1, height: 1), contentMode: .fit)
@@ -125,12 +125,13 @@ struct ProfileAboutInfo: View {
     }
 }
 struct ProfileMainView: View {
+    private var profPicLink = ""
     var body: some View {
         VStack (alignment: .leading) {
             ProfileHeader(nickName: "Lochie")
 
             // main profile section
-            ProfileAboutInfo(profPicLink, "Connecting Image", name: "Lochilon Ness", bio: "peepee poopoo")
+            ProfileAboutInfo(profPicLink: "Connecting Image", name: "Lochilon Ness", bio: "peepee poopoo")
 
             //forum posts
             // should be renedered in reverse chronilogical order, with the newest ones first

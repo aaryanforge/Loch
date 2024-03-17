@@ -29,7 +29,7 @@
           ]
         }
       ],
-      "lastPushTimeStamp": "2024-03-17T07:46:57.560Z",
+      "lastPushTimeStamp": "2024-03-17T23:05:04.611Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-authamplify-authdev-205452-deployment/amplify-cfn-templates/auth/userPoolGroups-cloudformation-template.json",
         "logicalId": "authuserPoolGroups"
@@ -66,7 +66,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-authamplify-authdev-205452-deployment/amplify-cfn-templates/auth/AuthAmplifySignInOnly-cloudformation-template.json",
         "logicalId": "authAuthAmplifySignInOnly"
       },
-      "lastPushTimeStamp": "2024-03-17T07:46:56.885Z",
+      "lastPushTimeStamp": "2024-03-17T23:05:04.015Z",
       "output": {
         "UserPoolId": "ap-southeast-2_UD4WgCEaC",
         "AppClientIDWeb": "ibc38o90lf7bs6l56qenje8pq",
@@ -91,9 +91,9 @@
           ]
         }
       ],
-      "lastBuildTimeStamp": "2024-03-17T07:47:01.862Z",
+      "lastBuildTimeStamp": "2024-03-17T23:05:13.449Z",
       "lastBuildType": "PROD",
-      "lastPackageTimeStamp": "2024-03-17T07:47:02.983Z",
+      "lastPackageTimeStamp": "2024-03-17T23:05:14.214Z",
       "distZipFilename": "AdminQueries0d1a670a-59592f47383243586a33-build.zip",
       "s3Bucket": {
         "deploymentBucketName": "amplify-authamplify-authdev-205452-deployment",
@@ -103,7 +103,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-authamplify-authdev-205452-deployment/amplify-cfn-templates/function/AdminQueries0d1a670a-cloudformation-template.json",
         "logicalId": "functionAdminQueries0d1a670a"
       },
-      "lastPushTimeStamp": "2024-03-17T07:46:56.885Z",
+      "lastPushTimeStamp": "2024-03-17T23:05:04.016Z",
       "output": {
         "LambdaExecutionRoleArn": "arn:aws:iam::851725592632:role/AdminQueries0d1a670aLambdaRole-authdev",
         "Region": "ap-southeast-2",
@@ -145,7 +145,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-authamplify-authdev-205452-deployment/amplify-cfn-templates/api/AdminQueries-cloudformation-template.json",
         "logicalId": "apiAdminQueries"
       },
-      "lastPushTimeStamp": "2024-03-17T07:46:56.886Z",
+      "lastPushTimeStamp": "2024-03-17T23:05:04.016Z",
       "output": {
         "ApiName": "AdminQueries",
         "RootUrl": "https://gniabc4aha.execute-api.ap-southeast-2.amazonaws.com/authdev",

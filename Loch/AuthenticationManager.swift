@@ -17,7 +17,7 @@ class AuthenticationManager: ObservableObject {
         let options = AuthSignUpRequest.Options(userAttributes: userAttributes)
         
         do {
-            let signupResult = try await Amplify.Auth.signUp(
+            try await Amplify.Auth.signUp(
                 username: email,
                 password: password,
                 options: options
@@ -30,7 +30,7 @@ class AuthenticationManager: ObservableObject {
     
     func signIn(email: String) async {
         do {
-            let signupResult = try await Amplify.Auth.signIn(username: email)
+            try await Amplify.Auth.signIn(username: email)
         } catch let error as AuthError {
             print("Authentication failed with error: \(error)")
         } catch {

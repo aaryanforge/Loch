@@ -36,11 +36,11 @@ struct FilterSort: View {
                     .foregroundColor(.white)
             }
             .padding(10)
-            .onTapGesture(
-                withAnimation(.easeInOut(duration: 1.0)){
-                    isFilterSortOverlayOpen.toggle()
-                }
-            )
+//            .onTapGesture(
+//                withAnimation(.easeInOut(duration: 1.0)){
+//                    isFilterSortOverlayOpen.toggle()
+//                }
+//            )
 
         }
         .frame(maxHeight: 40) 
@@ -143,7 +143,7 @@ struct ForumHeadView: View {
                 .sheet(
                     isPresented: $isAddNewForumSheetOn,
                     content: {
-                        ForumAddNewView()
+                        ForumAddPostSheetView()
                     })
             }
             .padding(10)

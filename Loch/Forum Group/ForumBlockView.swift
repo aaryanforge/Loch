@@ -36,7 +36,7 @@ struct ForumBlockPostPublicPrivate: View {
             Spacer()
             
             if (imageLink != nil){
-                Image(imageLink)
+                Image(imageLink ?? "")
                     .resizable()
                     .aspectRatio(CGSize(width:1, height: 1), contentMode: .fit)
                     .frame(width: 78, height: 78)
@@ -96,7 +96,7 @@ struct ForumBlockPostSponsored: View {
             ZStack(alignment: .trailing) {
                 // Need to change text based on messages
                 Text(title)
-                    .fontfont(.system(size: 20 ,weight: .medium, design: .default))
+                    .font(.system(size: 20 ,weight: .medium, design: .default))
                     .foregroundColor( .white)
                     .padding(5)
 

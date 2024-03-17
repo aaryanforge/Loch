@@ -19,16 +19,6 @@ struct ForumMainView: View {
     
     
     var body: some View {
-<<<<<<< HEAD
-        ForumHeadView()
-        LazyVStack {
-            ForumBlockView()
-            ForumBlockView()
-            ForumBlockView()
-        }
-        ForumTailView()
-    }
-=======
         
         VStack {
             
@@ -49,10 +39,8 @@ struct ForumMainView: View {
                     }
                 }
             }
-            ForumTailView()
          }
      }
->>>>>>> 5177bd7de10db11a9475639a9595a1e8e92d03a2
 }
 
 #Preview {

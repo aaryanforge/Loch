@@ -124,6 +124,18 @@
     },
     "dependsOn": {
       "Type": "CommaDelimitedList"
+    },
+    "thirdPartyAuth": {
+      "Type": "String"
+    },
+    "authProviders": {
+      "Type": "CommaDelimitedList"
+    },
+    "parentStack": {
+      "Type": "String"
+    },
+    "permissions": {
+      "Type": "CommaDelimitedList"
     }
   },
   "Conditions": {
@@ -212,11 +224,17 @@
           "Ref": "UserPool"
         },
         "ClientName": "autham68115e8f_app_clientWeb",
+        "ReadAttributes": {
+          "Ref": "userpoolClientReadAttributes"
+        },
         "RefreshTokenValidity": {
           "Ref": "userpoolClientRefreshTokenValidity"
         },
         "TokenValidityUnits": {
           "RefreshToken": "days"
+        },
+        "WriteAttributes": {
+          "Ref": "userpoolClientWriteAttributes"
         }
       },
       "DependsOn": [
@@ -233,11 +251,17 @@
         "GenerateSecret": {
           "Ref": "userpoolClientGenerateSecret"
         },
+        "ReadAttributes": {
+          "Ref": "userpoolClientReadAttributes"
+        },
         "RefreshTokenValidity": {
           "Ref": "userpoolClientRefreshTokenValidity"
         },
         "TokenValidityUnits": {
           "RefreshToken": "days"
+        },
+        "WriteAttributes": {
+          "Ref": "userpoolClientWriteAttributes"
         }
       },
       "DependsOn": [

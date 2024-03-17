@@ -49,7 +49,7 @@ struct ProfileDetailView: View {
 
     var body: some View {
         VStack {
-            VStack (alingment: left) {
+            VStack (alignment: .leading) {
                 //back button
                 Button {
                     goBack()

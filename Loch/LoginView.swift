@@ -40,38 +40,38 @@ struct LoginView: View {
     @State private var newUserName = ""
     @State private var newEmail = ""
     @State private var newPassword = ""
-    
+    @State private var isSignedOn = false
     var body: some View {
-        // if manager.signedIn {
-        //     Text(manager.userAttributes.first!.value)
-        // } else {
-        //     VStack {
-        //         Text("Email: ")
-        //         TextField("Mail", text: $newEmail)
-        //         Text("Username: ")
-        //         TextField("Username", text: $newUserName)
-        //         Text("Password: ")
-        //         SecureField("Password", text: $newPassword)
-        //         Divider()
-        //         Button(action: {
-        //             Task {
-        //                 await manager.signUp(username: newUserName, password: newPassword, email: newEmail)
-        //             }
-        //         }, label: {
-        //         Text("Signup")
-        //             .font(.caption)
-        //             .foregroundStyle(.white)
-        //             .padding()
-        //             .background(.red)
-        //             .frame(width: 280, height: 50)
-        //             .padding()
-        //         })
-        //         Text("Just sign on...")
-        //     }
+//         if manager.signedIn {
+//             Text(manager.userAttributes.first!.value)
+//         } else {
+//             VStack {
+//                 Text("Email: ")
+//                 TextField("Mail", text: $newEmail)
+//                 Text("Username: ")
+//                 TextField("Username", text: $newUserName)
+//                 Text("Password: ")
+//                 SecureField("Password", text: $newPassword)
+//                 Divider()
+//                 Button(action: {
+//                     Task {
+//                         await manager.signUp(username: newUserName, password: newPassword, email: newEmail)
+//                     }
+//                 }, label: {
+//                 Text("Signup")
+//                     .font(.caption)
+//                     .foregroundStyle(.white)
+//                     .padding()
+//                     .background(.red)
+//                     .frame(width: 280, height: 50)
+//                     .padding()
+//                 })
+//                 Text("Just sign on...")
+//             }
         if manager.signedIn == false {
             
             ZStack {
-                LinearGradient(colours: [.green, .blue], startPoint: .topLeading, endPoint: .bottomTrailing)
+                LinearGradient(colors: [.green, .blue], startPoint: .topLeading, endPoint: .bottomTrailing)
                 
                 //details
                 VStack {

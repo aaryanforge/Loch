@@ -16,7 +16,7 @@
     "smsVerificationMessage": "Your verification code is {####}",
     "emailVerificationSubject": "Your verification code",
     "emailVerificationMessage": "Your verification code is {####}",
-    "defaultPasswordPolicy": true,
+    "defaultPasswordPolicy": false,
     "passwordPolicyMinLength": 8,
     "passwordPolicyCharacters": [],
     "requiredAttributes": [
@@ -26,13 +26,15 @@
     "userpoolClientGenerateSecret": false,
     "userpoolClientRefreshTokenValidity": "30",
     "userpoolClientWriteAttributes": [
+      "gender",
+      "nickname",
       "email"
     ],
     "userpoolClientReadAttributes": [
       "email"
     ],
     "userpoolClientLambdaRole": "AuthAm68115e8f_userpoolclient_lambda_role",
-    "userpoolClientSetAttributes": false,
+    "userpoolClientSetAttributes": true,
     "sharedId": "68115e8f",
     "resourceName": "AuthAmplifySignInOnly",
     "authSelections": "identityPoolAndUserPool",
@@ -40,8 +42,8 @@
     "usernameAttributes": [
       "email"
     ],
-    "userPoolGroups": true,
-    "adminQueries": true,
+    "userPoolGroups": false,
+    "adminQueries": false,
     "triggers": {},
     "hostedUI": false,
     "userPoolGroupList": [
@@ -64,6 +66,12 @@
       ]
     },
     "breakCircularDependency": true,
-    "dependsOn": []
+    "dependsOn": [],
+    "thirdPartyAuth": false,
+    "authProviders": [],
+    "parentStack": {
+      "Ref": "AWS::StackId"
+    },
+    "permissions": []
   }
 }
