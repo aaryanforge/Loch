@@ -16,13 +16,15 @@ struct ChatsTailView: View {
     
     @Environment(\.modelContext) private var context
     @State private var newTextMessage: String = ""
-    @StateObject private var ChatMessageContentVM = MessageContentViewModel()
-    
+//<<<<<<< Updated upstream
+    @StateObject var ChatMessageContentVM = MessageContentViewModel()
+  
     func cacheNewMessage() async {
         // use URLSession API call to see whether to cache the message or not
         // guard that the message classification is a 1, else cache message
         
-        var messageClassification = await ChatMessageContentVM.getData(newTextMessage)
+        await ChatMessageContentVM.getData(messageContents: newTextMessage)
+        
         let messageClassification: String? = ChatMessageContentVM.classification
         
         if (messageClassification == "0") {

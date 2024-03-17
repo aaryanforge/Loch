@@ -14,15 +14,14 @@ import AWSCognitoAuthPlugin
 struct LochApp: App {
 
 
-    var body: some Scene {
-        WindowGroup {
-            NavigationView {
-                LoginView()
-            }
-            .modelContainer(for: [ChatTextMessage.self, ForumPost.self, ForumPostComment.self])
-        }
+  var body: some Scene {
+    WindowGroup {
+      NavigationView {
+        LoginView()
+      }
+      .modelContainer(for: [ChatTextMessage.self, ForumPost.self, ForumPostComment.self])
     }
-  
+  }
     init() {
         do {
             try Amplify.add(plugin: AWSCognitoAuthPlugin())
