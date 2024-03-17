@@ -5,96 +5,156 @@
 //  Created by A P on 30/1/2024.
 //
 
+// Goal: Create the page the user sees when they tap on the profile tab
+// For: Mary
+// Due: Thursday 14th Mar
+
 import SwiftUI
 
-// Goal: Code and style the main profile view & link this view to ProfileDetailView
-// For: Mary
-// Due: Wednesday 28th Feb
+struct ProfileHeader: View {
+    var nickName: String
 
-//import Firebase
-//
-//struct Profile: View {
-//    @State private var abtMe: String = ""
-//    @State var aboutMeFinal: String = ""
-//    @State var profName: String = ""
-//    @State var profNick: String = ""
-//    @State var profParent: String = ""
-//    
-//    var username = "Aaryan"
-//    
-//    var body: some View {
-//        
-//        VStack{
-//            NavigationView() {
-//                NavigationLink {
-//                    Settings()
-//                } label: {
-//                    Text("Settings")
-//                        .position(CGPoint(x: 325, y: 10))
-//                }
-//            }
-//            Image("Connecting Image")
-//                .resizable()
-//                .aspectRatio(contentMode: .fill)
-//                .frame(width: 150, height: 150)
-//                .cornerRadius(150)
-//                .shadow(radius: 3)
-//            Text(profName)
-//                .font(.title)
-//                .fontWeight(.bold)
-//                .task {
-//                    profName = "e"
-//                    profName = username
-//                    
-//                    for var prof in profData {
-//                        if prof.name == username {
-//                            profName = "Name: " + prof.name
-//                            profNick = "Nickname: " + prof.nickname
-//                            profParent = "Parent: " + prof.parent
-//                            prof.aboutMe = ""
-//                            print(prof.aboutMe)
-//                        }
-//                    }
-//                }
-//            Form {
-//                HStack(){
-//                    Text(profNick)
-//                        .font(.title)
-//                }
-//                .padding()
-//                HStack(){
-//                    Text(profParent)
-//                        .font(.title)
-//                }
-//                .padding()
-//                HStack() {
-//                    Text("About Me")
-//                        .font(.title)
-//                    TextField("About me", text: $abtMe, axis: .vertical)
-//                        .onSubmit {
-//                            aboutMeFinal = abtMe
-//                        }
-//                        .lineLimit(5)
-//                        .background(
-//                            RoundedRectangle(cornerRadius: 5)
-//                                .strokeBorder(Color.primary.opacity(0.25), lineWidth: 2))
-//                        .font(.title)
-//                        .padding()
-//                }
-//                .padding()
-//            }
-//        }
-//    }
-//}
-//
-//#Preview {
-//    Profile()
-//}
-
-struct ProfileMainView: View {
     var body: some View {
-        VStack {
-            // Mary's work
+        HStack {
+            Spacer()
+            Text(nickName)
+                .foregroundColor(.black)
+                .font(.system(size: 20,weight: .bold, design: .default))
+            Spacer()
+        }
+        .padding(10)
+        .frame(minHeight: 50)
+        .background(.green)
+    }
+}
+
+
+struct ProfilePictureCircle: View {
+    var imageLink: String?
+    var size: CGFloat
+    var hasBorder: Bool
+
+    var body: some View {
+        ZStack {
+            if let imageLink = imageLink {
+                Image(imageLink)
+                    .resizable()
+                    .aspectRatio(CGSize(width:1, height: 1), contentMode: .fit)
+                    .frame(width: size, height: size)
+                    .clipShape(Circle())
+            } else {
+                Image(systemName:  "person.fill")
+                    .resizable()
+                    .aspectRatio(CGSize(width:1, height: 1), contentMode: .fit)
+                    .frame(width: size, height: size)
+                    .clipShape(Circle())
+            }
+
+            if (hasBorder){
+                Circle()
+                    .strokeBorder(.green, style:
+                                    StrokeStyle(lineWidth: 1.5, miterLimit: 10, dash: [20, 5], dashPhase: 5)
+                    )
+            }
+        }
+        .frame(width: size, height: size)
+    }
+}
+
+struct ButtonSquare: View {
+    var todo: () -> Void
+    var actionName: String
+    var image: String
+    var size: CGFloat
+
+    var body: some View {
+        Button {
+            self.todo()
+        } label: {
+            ZStack{
+                RoundedRectangle(cornerRadius: 8, style: .continuous)
+                .fill(.green)
+                .frame(width: size, height: size)
+
+                Image(systemName: image)
+                    .foregroundColor(.white)
+            }
+        }
+        .padding(2)
+    }
+}
+struct ProfileAboutInfo: View {
+    var profPicLink: String?
+    var name: String
+    var bio: String
+
+    var body: some View {
+        VStack{
+            // top half of profile banner
+            HStack {
+                ProfilePictureCircle(size: 130, hasBorder: true )
+                    .padding()
+
+                //name and buttons
+                VStack(alignment: .leading){
+                    Text("AKA")
+                        .foregroundColor(.gray)
+                        .font(.system(size: 14,weight: .medium, design: .default))
+                    Text(name)
+                        .foregroundColor(.black)
+                        .font(.system(size: 17,weight: .semibold, design: .default))
+                        .padding([.bottom])
+
+                    HStack {
+                        ButtonSquare(todo: {print("Edit")}, actionName: "Edit", image: "square.and.pencil", size: 40)
+                        ButtonSquare(todo: {print("Notifications")}, actionName: "Notifications", image: "bell", size: 40)
+                    }
+
+                }
+                .padding()
+            }
+            //bio part
+
+            Text(bio)
+                .foregroundColor(.black)
+                .frame(maxWidth: .infinity, maxHeight: 130, alignment: .topLeading)
+                .padding()
+                .background(.green.opacity(0.2)).clipShape(RoundedRectangle(cornerRadius: 8))
+        }
+        .padding(10)
+    }
+}
+struct ProfileMainView: View {
+    private var profPicLink = ""
+    var body: some View {
+        VStack (alignment: .leading) {
+            ProfileHeader(nickName: "Lochie")
+
+            // main profile section
+            ProfileAboutInfo(profPicLink: "Connecting Image", name: "Lochilon Ness", bio: "peepee poopoo")
+
+            //forum posts
+            // should be renedered in reverse chronilogical order, with the newest ones first
+
+            Text("Forum Posts:")
+                .font(.subheadline)
+                .padding([.leading])
+            LazyVStack{
+                ForumBlockPostPublicPrivate(
+                    imageLink: "Connecting Image", 
+                    title: "HELLO WORLD",
+                    //if this is throwing a bug you may have to put this all on 1 line
+                    postContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+                    postType: "priv"
+                )
+
+                ForumBlockPostPublicPrivate(
+                    title: "Homework Help Q4",
+                    postContent: "Can anybody help out with my maths homework??? \nI don't get Question 4", 
+                    postType: "priv"
+                )
+            }
+            .padding(10)
         }
     }
 }

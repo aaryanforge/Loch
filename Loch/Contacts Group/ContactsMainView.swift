@@ -5,6 +5,10 @@
 //  Created by A P on 30/1/2024.
 //
 
+// Goal: revamp the contacts main page, modelling the looks from the figma prototype
+// For: Mark
+// Due: Thursday 14th Mar
+
 import SwiftUI
 
 struct ContactsMainView: View {

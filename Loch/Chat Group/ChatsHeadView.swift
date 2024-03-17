@@ -23,7 +23,7 @@ struct ChatsHeadView: View {
             // do something
             isTextSearchSheetOn.toggle()
         } label: {
-            Text("Magnifying Glass Icon") // make into actual UI
+            Label("Search", systemImage: "magnifyingglass")
         }
         .sheet(
             isPresented: $isTextSearchSheetOn,

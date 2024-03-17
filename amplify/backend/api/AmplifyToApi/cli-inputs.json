@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/checkers/{message}": {
+      "name": "/checkers/{message}",
+      "lambdaFunction": "CensorText",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

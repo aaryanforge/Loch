@@ -1,0 +1,7 @@
+{
+  "authdev": {
+    "configLevel": "project",
+    "useProfile": true,
+    "profileName": "amplify-dev"
+  }
+}

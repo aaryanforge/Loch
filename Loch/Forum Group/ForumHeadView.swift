@@ -36,11 +36,11 @@ struct FilterSort: View {
                     .foregroundColor(.white)
             }
             .padding(10)
-            .onTapGesture(
-                withAnimation(.easeInOut(duration: 1.0)){
-                    isFilterSortOverlayOpen.toggle()
-                }
-            )
+//            .onTapGesture(
+//                withAnimation(.easeInOut(duration: 1.0)){
+//                    isFilterSortOverlayOpen.toggle()
+//                }
+//            )
 
         }
         .frame(maxHeight: 40) 
@@ -105,6 +105,9 @@ struct FilterSort: View {
 }
 
 struct ForumHeadView: View {
+    
+    @State private var isAddNewForumSheetOn = false
+    
     var body: some View {
         VStack (spacing: 0) {
             // top navbar
@@ -130,12 +133,19 @@ struct ForumHeadView: View {
                 Button(action: {
                     Task {
                         newPost() // FILL OUT FUNCTION AT TOP
+                        isAddNewForumSheetOn.toggle()
                     }
                 }, label: {
                     Image(systemName: "plus")
                     .foregroundColor(.white)
                 })
                 .padding(10)
+                .sheet(
+                    isPresented: $isAddNewForumSheetOn,
+                    content: {
+                        //ForumAddPostSheetView()
+                        Text("empty sheet view")
+                    })
             }
             .padding(10)
             .background(.green)

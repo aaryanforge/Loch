@@ -16,15 +16,17 @@ import SwiftData
     var senderName: String
     
     var messageContents: String
+    var tags: String // TODO: change later to a list of users
     var timeStamp: Date
     var comments: [ForumPostComment]
     
-    init(senderID: String, senderName: String, messageContents: String) {
-        self.senderID = senderID
-        self.senderName = senderName
+    init(senderID: String, messageContents: String) {
+        self.senderID = senderID // foreign key -> can use this to get name of UserModel
         self.forumID = UUID().uuidString // TODO: change later
         self.messageContents = messageContents
         self.timeStamp = Date.now
         self.comments = []
+        self.tags = ""
+        self.senderName = ""
     }
 }
