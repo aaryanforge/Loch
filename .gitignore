@@ -21,6 +21,6 @@ amplifytools.xcconfig
 .secret-*
 **.sample
 #amplify-do-not-edit-end
-Loch.xcodeproj/project.xcworkspace/xcuserdata/phoenixliu.xcuserdatad/UserInterfaceState.xcuserstate
 Loch.xcodeproj/project.pbxproj
 Loch.xcodeproj/project.xcworkspace/xcuserdata/phoenixliu.xcuserdatad/UserInterfaceState.xcuserstate
+.DS_Store
