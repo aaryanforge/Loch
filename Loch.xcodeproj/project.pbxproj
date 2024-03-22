@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		023C2D0C2BAD4F72003D237C /* ConnectTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023C2D0B2BAD4F72003D237C /* ConnectTestView.swift */; };
 		025FC94C2B9F1B5A006F59D9 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025FC94B2B9F1B5A006F59D9 /* ViewExtensions.swift */; };
 		02C8F2AA2BA44D7300B35C06 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 02C8F2A92BA44D7300B35C06 /* AWSAPIPlugin */; };
 		02C8F2AC2BA44D7300B35C06 /* AWSCloudWatchLoggingPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 02C8F2AB2BA44D7300B35C06 /* AWSCloudWatchLoggingPlugin */; };
@@ -63,6 +64,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		023C2D0B2BAD4F72003D237C /* ConnectTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectTestView.swift; sourceTree = "<group>"; };
 		025FC94B2B9F1B5A006F59D9 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		02C8F2AF2BA44E1A00B35C06 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		02DC16272B8A21F8007D45AF /* ForumHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumHeadView.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				E18669C12B688B8000FEDDD9 /* ConnectMainView.swift */,
+				023C2D0B2BAD4F72003D237C /* ConnectTestView.swift */,
 			);
 			path = "Connect Group";
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				4DC0264F2B8DF0C5005A1291 /* ChatsMainView.swift in Sources */,
 				E18669962B68853500FEDDD9 /* ContentView.swift in Sources */,
 				4DC026532B8DF0C5005A1291 /* ChatsTextMessageModel.swift in Sources */,
+				023C2D0C2BAD4F72003D237C /* ConnectTestView.swift in Sources */,
 				02EDC25A2B80710A00F63A29 /* LoginView.swift in Sources */,
 				E18669C42B688B8C00FEDDD9 /* ContactsMainView.swift in Sources */,
 				02DC16342B8A277C007D45AF /* ForumBlockView.swift in Sources */,

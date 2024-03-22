@@ -16,10 +16,8 @@ struct LochApp: App {
 
   var body: some Scene {
     WindowGroup {
-      NavigationView {
-        ContentView()
-      }
-      .modelContainer(for: [ChatTextMessage.self, ForumPost.self, ForumPostComment.self])
+        ConnectTestView()
+            .modelContainer(for: [ChatTextMessage.self, ForumPost.self, ForumPostComment.self])
     }
   }
     init() {
