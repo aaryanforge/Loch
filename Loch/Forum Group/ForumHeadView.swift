@@ -116,6 +116,7 @@ struct ForumHeadView: View {
                 .padding(10)
                 .font(.system(size: 25,weight: .bold, design: .default))
                 .foregroundColor(.white)
+                .edgesIgnoringSafeArea(.top)
 
                 Spacer()
 

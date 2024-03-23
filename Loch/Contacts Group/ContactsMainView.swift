@@ -11,10 +11,50 @@
 
 import SwiftUI
 
+struct ContactItem: View {
+    //var uid : Int   please change when avaliable 
+
+    var body: some View {
+        HStack {
+
+        }
+
+    }
+
+}
+
+
 struct ContactsMainView: View {
     @State private var isAddingUser = false
+
     var body: some View {
-        NavigationView() {
+
+        VStack (spacing: 0) {
+            HStack {
+                Text("Contacts")
+                .padding(10)
+                .font(.system(size: 25,weight: .bold, design: .default))
+                .foregroundColor(.white)
+                .edgesIgnoringSafeArea(.top)
+            }
+            
+            ScrollView ([.vertical]) {
+                NavigationView() {
+                
+                }
+            }
+
+        }
+    }
+}
+
+#Preview {
+    ContactsMainView()
+}
+
+
+/* Mark's Old code
+NavigationView() {
             Image("Thomas")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
@@ -36,10 +76,5 @@ struct ContactsMainView: View {
                 }
             }
             .navigationTitle("Contacts")
-        }
-    }
-}
-
-#Preview {
-    ContactsMainView()
-}
+            
+*/

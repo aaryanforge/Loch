@@ -1,6 +1,5 @@
 //
-//  Profile.swift
-//  Loch
+//  Profile.swift 
 //
 //  Created by A P on 30/1/2024.
 //
@@ -18,13 +17,13 @@ struct ProfileHeader: View {
         HStack {
             Spacer()
             Text(nickName)
-                .foregroundColor(.black)
+                .foregroundColor(.blackBlue800)
                 .font(.system(size: 20,weight: .bold, design: .default))
             Spacer()
         }
         .padding(10)
         .frame(minHeight: 50)
-        .background(.green)
+        .background(.green500)
     }
 }
 
@@ -52,9 +51,10 @@ struct ProfilePictureCircle: View {
 
             if (hasBorder){
                 Circle()
-                    .strokeBorder(.green, style:
+                    .strokeBorder(.green500, style:
                                     StrokeStyle(lineWidth: 1.5, miterLimit: 10, dash: [20, 5], dashPhase: 5)
                     )
+                    .padding(-5)
             }
         }
         .frame(width: size, height: size)
@@ -73,7 +73,7 @@ struct ButtonSquare: View {
         } label: {
             ZStack{
                 RoundedRectangle(cornerRadius: 8, style: .continuous)
-                .fill(.green)
+                .fill(.green500)
                 .frame(width: size, height: size)
 
                 Image(systemName: image)
@@ -98,10 +98,10 @@ struct ProfileAboutInfo: View {
                 //name and buttons
                 VStack(alignment: .leading){
                     Text("AKA")
-                        .foregroundColor(.gray)
+                        .foregroundColor(.grey800)
                         .font(.system(size: 14,weight: .medium, design: .default))
                     Text(name)
-                        .foregroundColor(.black)
+                        .foregroundColor(.blackBlue800)
                         .font(.system(size: 17,weight: .semibold, design: .default))
                         .padding([.bottom])
 
@@ -116,10 +116,10 @@ struct ProfileAboutInfo: View {
             //bio part
 
             Text(bio)
-                .foregroundColor(.black)
+                .foregroundColor(.blackBlue800)
                 .frame(maxWidth: .infinity, maxHeight: 130, alignment: .topLeading)
                 .padding()
-                .background(.green.opacity(0.2)).clipShape(RoundedRectangle(cornerRadius: 8))
+                .background(.green500.opacity(0.2)).clipShape(RoundedRectangle(cornerRadius: 8))
         }
         .padding(10)
     }
@@ -139,20 +139,23 @@ struct ProfileMainView: View {
             Text("Forum Posts:")
                 .font(.subheadline)
                 .padding([.leading])
-            LazyVStack{
-                ForumBlockPostPublicPrivate(
-                    imageLink: "Connecting Image", 
-                    title: "HELLO WORLD",
-                    //if this is throwing a bug you may have to put this all on 1 line
-                    postContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
-                    postType: "priv"
-                )
+            
+            ScrollView{
+                LazyVStack{
+                    ForumBlockPostPublicPrivate( 
+                        imageLink: "Connecting Image", 
+                        title: "HELLO WORLD",
+                        //if this is throwing a bug you may have to put this all on 1 line
+                        postContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+                        postType: "priv"
+                    )
 
-                ForumBlockPostPublicPrivate(
-                    title: "Homework Help Q4",
-                    postContent: "Can anybody help out with my maths homework??? \nI don't get Question 4", 
-                    postType: "priv"
-                )
+                    ForumBlockPostPublicPrivate(
+                        title: "Homework Help Q4",
+                        postContent: "Can anybody help out with my maths homework??? \nI don't get Question 4", 
+                        postType: "priv"
+                    )
+                }
             }
             .padding(10)
         }
