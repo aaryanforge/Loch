@@ -55,16 +55,19 @@ struct ForumBlockPostPublicPrivate: View {
                     // PL- Changed .fontfont to .font
                     .foregroundColor(postType == "priv" ? .black : .white)
                     .padding(5)
+                    .frame(maxWdith: .infinity, alignment: .leading)
 
                 // placeholder paragraph    
                 Text(postContent)
                     .font(.system(size: 10 ,weight: .light, design: .default))
                     .foregroundColor(postType == "priv" ? .gray : .white)
                     .padding([.bottom, .trailing, .leading], 10)
+                    .frame(maxWdith: .infinity, alignment: .leading)
 
             }
+            .frame(maxWdith: .infinity)
         }
-        .frame(maxHeight:100)
+        .frame(maxWdith: .infinity, maxHeight:100)
         .if (postType == "priv") { view in
             view.background(.green, in: RoundedRectangle(cornerRadius: 15, style: .continuous).stroke(lineWidth: 1.5))
         }
