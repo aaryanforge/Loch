@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		023C2D0C2BAD4F72003D237C /* ConnectTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023C2D0B2BAD4F72003D237C /* ConnectTestView.swift */; };
+		025281882BAED53700046300 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025281872BAED53700046300 /* ColorExtensions.swift */; };
 		025FC94C2B9F1B5A006F59D9 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025FC94B2B9F1B5A006F59D9 /* ViewExtensions.swift */; };
 		02C8F2AA2BA44D7300B35C06 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 02C8F2A92BA44D7300B35C06 /* AWSAPIPlugin */; };
 		02C8F2AC2BA44D7300B35C06 /* AWSCloudWatchLoggingPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 02C8F2AB2BA44D7300B35C06 /* AWSCloudWatchLoggingPlugin */; };
@@ -65,6 +66,7 @@
 
 /* Begin PBXFileReference section */
 		023C2D0B2BAD4F72003D237C /* ConnectTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectTestView.swift; sourceTree = "<group>"; };
+		025281872BAED53700046300 /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		025FC94B2B9F1B5A006F59D9 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		02C8F2AF2BA44E1A00B35C06 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		02DC16272B8A21F8007D45AF /* ForumHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumHeadView.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 		E18669922B68853500FEDDD9 /* Loch */ = {
 			isa = PBXGroup;
 			children = (
+				025281872BAED53700046300 /* ColorExtensions.swift */,
 				E18669932B68853500FEDDD9 /* LochApp.swift */,
 				E18669952B68853500FEDDD9 /* ContentView.swift */,
 				02EDC2592B80710A00F63A29 /* LoginView.swift */,
@@ -409,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DC026542B8DF0C5005A1291 /* ChatsToolbarView.swift in Sources */,
+				025281882BAED53700046300 /* ColorExtensions.swift in Sources */,
 				02E0240B2BA7B1DC0044A8CE /* LoginDetailView.swift in Sources */,
 				4DC0264F2B8DF0C5005A1291 /* ChatsMainView.swift in Sources */,
 				E18669962B68853500FEDDD9 /* ContentView.swift in Sources */,
