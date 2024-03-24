@@ -17,7 +17,6 @@ struct ForumMainView: View {
     
     @Query private var forumPosts: [ForumPost]
     
-    
     var body: some View {
         
         VStack {

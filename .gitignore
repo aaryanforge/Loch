@@ -21,7 +21,5 @@ amplifytools.xcconfig
 .secret-*
 **.sample
 #amplify-do-not-edit-end
-#Loch.xcodeproj
-#Loch.xcodeproj/project.pbxproj
 Loch.xcodeproj/project.xcworkspace/xcuserdata
 .DS_Store
