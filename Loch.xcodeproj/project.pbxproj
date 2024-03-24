@@ -1,0 +1,801 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		025FC94C2B9F1B5A006F59D9 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025FC94B2B9F1B5A006F59D9 /* ViewExtensions.swift */; };
+		02C8F2AA2BA44D7300B35C06 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 02C8F2A92BA44D7300B35C06 /* AWSAPIPlugin */; };
+		02C8F2AC2BA44D7300B35C06 /* AWSCloudWatchLoggingPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 02C8F2AB2BA44D7300B35C06 /* AWSCloudWatchLoggingPlugin */; };
+		02C8F2AE2BA44D7300B35C06 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 02C8F2AD2BA44D7300B35C06 /* AWSCognitoAuthPlugin */; };
+		02C8F2B02BA44E1A00B35C06 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C8F2AF2BA44E1A00B35C06 /* AuthenticationManager.swift */; };
+		02DC16282B8A21F8007D45AF /* ForumHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC16272B8A21F8007D45AF /* ForumHeadView.swift */; };
+		02DC162C2B8A225F007D45AF /* ProfileSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC162B2B8A225F007D45AF /* ProfileSettingsView.swift */; };
+		02DC16342B8A277C007D45AF /* ForumBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC16332B8A277C007D45AF /* ForumBlockView.swift */; };
+		02E0240B2BA7B1DC0044A8CE /* LoginDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0240A2BA7B1DC0044A8CE /* LoginDetailView.swift */; };
+		02EDC25A2B80710A00F63A29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView.swift */; };
+		02EDC25B2B80710A00F63A29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView.swift */; };
+		02EDC25C2B80710A00F63A29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView.swift */; };
+		4D312E2F2B99BDFE0008A896 /* ChatsHeadTextSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D312E2E2B99BDFE0008A896 /* ChatsHeadTextSearchView.swift */; };
+		4D66327F2B9D5122002E71A4 /* ForumPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D66327E2B9D5122002E71A4 /* ForumPostModel.swift */; };
+		4D6632812B9D51E3002E71A4 /* ForumPostCommentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6632802B9D51E3002E71A4 /* ForumPostCommentsModel.swift */; };
+		4DC0264E2B8DF0C5005A1291 /* ChatsHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026432B8DF0C3005A1291 /* ChatsHeadView.swift */; };
+		4DC0264F2B8DF0C5005A1291 /* ChatsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026442B8DF0C4005A1291 /* ChatsMainView.swift */; };
+		4DC026502B8DF0C5005A1291 /* ChatsTailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026452B8DF0C4005A1291 /* ChatsTailView.swift */; };
+		4DC026522B8DF0C5005A1291 /* ChatsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026472B8DF0C4005A1291 /* ChatsDetailView.swift */; };
+		4DC026532B8DF0C5005A1291 /* ChatsTextMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026482B8DF0C4005A1291 /* ChatsTextMessageModel.swift */; };
+		4DC026542B8DF0C5005A1291 /* ChatsToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026492B8DF0C4005A1291 /* ChatsToolbarView.swift */; };
+		8F0509FA308C43F2442838CC /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 226250C1A126D465B9A088E0 /* amplifyconfiguration.json */; };
+		A560C9DB6B19EB5B37D2E666 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = ECDEC17D16526DCE58E37741 /* awsconfiguration.json */; };
+		E18669942B68853500FEDDD9 /* LochApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669932B68853500FEDDD9 /* LochApp.swift */; };
+		E18669962B68853500FEDDD9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669952B68853500FEDDD9 /* ContentView.swift */; };
+		E18669982B68853800FEDDD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E18669972B68853800FEDDD9 /* Assets.xcassets */; };
+		E186699B2B68853800FEDDD9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E186699A2B68853800FEDDD9 /* Preview Assets.xcassets */; };
+		E18669A52B68853900FEDDD9 /* LochTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669A42B68853900FEDDD9 /* LochTests.swift */; };
+		E18669AF2B68853900FEDDD9 /* LochUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669AE2B68853900FEDDD9 /* LochUITests.swift */; };
+		E18669B12B68853900FEDDD9 /* LochUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669B02B68853900FEDDD9 /* LochUITestsLaunchTests.swift */; };
+		E18669C02B688B7600FEDDD9 /* ForumMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669BF2B688B7600FEDDD9 /* ForumMainView.swift */; };
+		E18669C22B688B8000FEDDD9 /* ConnectMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669C12B688B8000FEDDD9 /* ConnectMainView.swift */; };
+		E18669C42B688B8C00FEDDD9 /* ContactsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669C32B688B8C00FEDDD9 /* ContactsMainView.swift */; };
+		E18669C62B688B9700FEDDD9 /* ProfileMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669C52B688B9700FEDDD9 /* ProfileMainView.swift */; };
+		E18669CE2B69BD5400FEDDD9 /* ContactsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669CD2B69BD5400FEDDD9 /* ContactsDetailView.swift */; };
+		E18669DE2B807CCB00FEDDD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E18669DD2B807CCB00FEDDD9 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E18669A12B68853900FEDDD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E18669882B68853500FEDDD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E186698F2B68853500FEDDD9;
+			remoteInfo = Loch;
+		};
+		E18669AB2B68853900FEDDD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E18669882B68853500FEDDD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E186698F2B68853500FEDDD9;
+			remoteInfo = Loch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		025FC94B2B9F1B5A006F59D9 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		02C8F2AF2BA44E1A00B35C06 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		02DC16272B8A21F8007D45AF /* ForumHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumHeadView.swift; sourceTree = "<group>"; };
+		02DC162B2B8A225F007D45AF /* ProfileSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsView.swift; sourceTree = "<group>"; };
+		02DC16332B8A277C007D45AF /* ForumBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumBlockView.swift; sourceTree = "<group>"; };
+		02E0240A2BA7B1DC0044A8CE /* LoginDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDetailView.swift; sourceTree = "<group>"; };
+		02EDC2592B80710A00F63A29 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		226250C1A126D465B9A088E0 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		4D312E2E2B99BDFE0008A896 /* ChatsHeadTextSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsHeadTextSearchView.swift; sourceTree = "<group>"; };
+		4D66327E2B9D5122002E71A4 /* ForumPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumPostModel.swift; sourceTree = "<group>"; };
+		4D6632802B9D51E3002E71A4 /* ForumPostCommentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumPostCommentsModel.swift; sourceTree = "<group>"; };
+		4DC026432B8DF0C3005A1291 /* ChatsHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsHeadView.swift; sourceTree = "<group>"; };
+		4DC026442B8DF0C4005A1291 /* ChatsMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsMainView.swift; sourceTree = "<group>"; };
+		4DC026452B8DF0C4005A1291 /* ChatsTailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsTailView.swift; sourceTree = "<group>"; };
+		4DC026472B8DF0C4005A1291 /* ChatsDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsDetailView.swift; sourceTree = "<group>"; };
+		4DC026482B8DF0C4005A1291 /* ChatsTextMessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsTextMessageModel.swift; sourceTree = "<group>"; };
+		4DC026492B8DF0C4005A1291 /* ChatsToolbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsToolbarView.swift; sourceTree = "<group>"; };
+		E18669902B68853500FEDDD9 /* Loch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E18669932B68853500FEDDD9 /* LochApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LochApp.swift; sourceTree = "<group>"; };
+		E18669952B68853500FEDDD9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E18669972B68853800FEDDD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E186699A2B68853800FEDDD9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E18669A02B68853900FEDDD9 /* LochTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LochTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E18669A42B68853900FEDDD9 /* LochTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LochTests.swift; sourceTree = "<group>"; };
+		E18669AA2B68853900FEDDD9 /* LochUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LochUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E18669AE2B68853900FEDDD9 /* LochUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LochUITests.swift; sourceTree = "<group>"; };
+		E18669B02B68853900FEDDD9 /* LochUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LochUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E18669BF2B688B7600FEDDD9 /* ForumMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumMainView.swift; sourceTree = "<group>"; };
+		E18669C12B688B8000FEDDD9 /* ConnectMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectMainView.swift; sourceTree = "<group>"; };
+		E18669C32B688B8C00FEDDD9 /* ContactsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsMainView.swift; sourceTree = "<group>"; };
+		E18669C52B688B9700FEDDD9 /* ProfileMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainView.swift; sourceTree = "<group>"; };
+		E18669CD2B69BD5400FEDDD9 /* ContactsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDetailView.swift; sourceTree = "<group>"; };
+		E18669DD2B807CCB00FEDDD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ECDEC17D16526DCE58E37741 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E186698D2B68853500FEDDD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02C8F2AA2BA44D7300B35C06 /* AWSAPIPlugin in Frameworks */,
+				02C8F2AC2BA44D7300B35C06 /* AWSCloudWatchLoggingPlugin in Frameworks */,
+				02C8F2AE2BA44D7300B35C06 /* AWSCognitoAuthPlugin in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E186699D2B68853900FEDDD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E18669A72B68853900FEDDD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0263AD582B81F82500F2C72F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		02DC161D2B8A207E007D45AF /* Forum Group */ = {
+			isa = PBXGroup;
+			children = (
+				E18669BF2B688B7600FEDDD9 /* ForumMainView.swift */,
+				02DC16272B8A21F8007D45AF /* ForumHeadView.swift */,
+				02DC16332B8A277C007D45AF /* ForumBlockView.swift */,
+				4D66327E2B9D5122002E71A4 /* ForumPostModel.swift */,
+				4D6632802B9D51E3002E71A4 /* ForumPostCommentsModel.swift */,
+			);
+			path = "Forum Group";
+			sourceTree = "<group>";
+		};
+		02DC161E2B8A2090007D45AF /* Connect Group */ = {
+			isa = PBXGroup;
+			children = (
+				E18669C12B688B8000FEDDD9 /* ConnectMainView.swift */,
+			);
+			path = "Connect Group";
+			sourceTree = "<group>";
+		};
+		4DC026582B8DF0D3005A1291 /* Chat Group */ = {
+			isa = PBXGroup;
+			children = (
+				4DC026472B8DF0C4005A1291 /* ChatsDetailView.swift */,
+				4DC026432B8DF0C3005A1291 /* ChatsHeadView.swift */,
+				4DC026442B8DF0C4005A1291 /* ChatsMainView.swift */,
+				4DC026452B8DF0C4005A1291 /* ChatsTailView.swift */,
+				4DC026492B8DF0C4005A1291 /* ChatsToolbarView.swift */,
+				4DC026482B8DF0C4005A1291 /* ChatsTextMessageModel.swift */,
+				4D312E2E2B99BDFE0008A896 /* ChatsHeadTextSearchView.swift */,
+			);
+			path = "Chat Group";
+			sourceTree = "<group>";
+		};
+		C554A0CAA34604FB968E903F /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				ECDEC17D16526DCE58E37741 /* awsconfiguration.json */,
+				226250C1A126D465B9A088E0 /* amplifyconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			sourceTree = "<group>";
+		};
+		E18669872B68853500FEDDD9 = {
+			isa = PBXGroup;
+			children = (
+				E18669922B68853500FEDDD9 /* Loch */,
+				E18669A32B68853900FEDDD9 /* LochTests */,
+				E18669AD2B68853900FEDDD9 /* LochUITests */,
+				E18669912B68853500FEDDD9 /* Products */,
+				0263AD582B81F82500F2C72F /* Frameworks */,
+				E18669DD2B807CCB00FEDDD9 /* GoogleService-Info.plist */,
+				C554A0CAA34604FB968E903F /* AmplifyConfig */,
+			);
+			sourceTree = "<group>";
+		};
+		E18669912B68853500FEDDD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E18669902B68853500FEDDD9 /* Loch.app */,
+				E18669A02B68853900FEDDD9 /* LochTests.xctest */,
+				E18669AA2B68853900FEDDD9 /* LochUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E18669922B68853500FEDDD9 /* Loch */ = {
+			isa = PBXGroup;
+			children = (
+				E18669932B68853500FEDDD9 /* LochApp.swift */,
+				E18669952B68853500FEDDD9 /* ContentView.swift */,
+				02EDC2592B80710A00F63A29 /* LoginView.swift */,
+				02E0240A2BA7B1DC0044A8CE /* LoginDetailView.swift */,
+				025FC94B2B9F1B5A006F59D9 /* ViewExtensions.swift */,
+				02C8F2AF2BA44E1A00B35C06 /* AuthenticationManager.swift */,
+				E18669992B68853800FEDDD9 /* Preview Content */,
+				4DC026582B8DF0D3005A1291 /* Chat Group */,
+				02DC161D2B8A207E007D45AF /* Forum Group */,
+				02DC161E2B8A2090007D45AF /* Connect Group */,
+				E18669CC2B69BD3300FEDDD9 /* Contacts Group */,
+				E18669D42B6B37CE00FEDDD9 /* Profile Group */,
+				E18669972B68853800FEDDD9 /* Assets.xcassets */,
+			);
+			path = Loch;
+			sourceTree = "<group>";
+		};
+		E18669992B68853800FEDDD9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E186699A2B68853800FEDDD9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E18669A32B68853900FEDDD9 /* LochTests */ = {
+			isa = PBXGroup;
+			children = (
+				E18669A42B68853900FEDDD9 /* LochTests.swift */,
+			);
+			path = LochTests;
+			sourceTree = "<group>";
+		};
+		E18669AD2B68853900FEDDD9 /* LochUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E18669AE2B68853900FEDDD9 /* LochUITests.swift */,
+				E18669B02B68853900FEDDD9 /* LochUITestsLaunchTests.swift */,
+			);
+			path = LochUITests;
+			sourceTree = "<group>";
+		};
+		E18669CC2B69BD3300FEDDD9 /* Contacts Group */ = {
+			isa = PBXGroup;
+			children = (
+				E18669C32B688B8C00FEDDD9 /* ContactsMainView.swift */,
+				E18669CD2B69BD5400FEDDD9 /* ContactsDetailView.swift */,
+			);
+			path = "Contacts Group";
+			sourceTree = "<group>";
+		};
+		E18669D42B6B37CE00FEDDD9 /* Profile Group */ = {
+			isa = PBXGroup;
+			children = (
+				E18669C52B688B9700FEDDD9 /* ProfileMainView.swift */,
+				02DC162B2B8A225F007D45AF /* ProfileSettingsView.swift */,
+			);
+			path = "Profile Group";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E186698F2B68853500FEDDD9 /* Loch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E18669B42B68853900FEDDD9 /* Build configuration list for PBXNativeTarget "Loch" */;
+			buildPhases = (
+				E186698C2B68853500FEDDD9 /* Sources */,
+				E186698D2B68853500FEDDD9 /* Frameworks */,
+				E186698E2B68853500FEDDD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Loch;
+			packageProductDependencies = (
+				02C8F2A92BA44D7300B35C06 /* AWSAPIPlugin */,
+				02C8F2AB2BA44D7300B35C06 /* AWSCloudWatchLoggingPlugin */,
+				02C8F2AD2BA44D7300B35C06 /* AWSCognitoAuthPlugin */,
+			);
+			productName = Loch;
+			productReference = E18669902B68853500FEDDD9 /* Loch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E186699F2B68853900FEDDD9 /* LochTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E18669B72B68853900FEDDD9 /* Build configuration list for PBXNativeTarget "LochTests" */;
+			buildPhases = (
+				E186699C2B68853900FEDDD9 /* Sources */,
+				E186699D2B68853900FEDDD9 /* Frameworks */,
+				E186699E2B68853900FEDDD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E18669A22B68853900FEDDD9 /* PBXTargetDependency */,
+			);
+			name = LochTests;
+			productName = LochTests;
+			productReference = E18669A02B68853900FEDDD9 /* LochTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E18669A92B68853900FEDDD9 /* LochUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E18669BA2B68853900FEDDD9 /* Build configuration list for PBXNativeTarget "LochUITests" */;
+			buildPhases = (
+				E18669A62B68853900FEDDD9 /* Sources */,
+				E18669A72B68853900FEDDD9 /* Frameworks */,
+				E18669A82B68853900FEDDD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E18669AC2B68853900FEDDD9 /* PBXTargetDependency */,
+			);
+			name = LochUITests;
+			productName = LochUITests;
+			productReference = E18669AA2B68853900FEDDD9 /* LochUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E18669882B68853500FEDDD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					E186698F2B68853500FEDDD9 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					E186699F2B68853900FEDDD9 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = E186698F2B68853500FEDDD9;
+					};
+					E18669A92B68853900FEDDD9 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = E186698F2B68853500FEDDD9;
+					};
+				};
+			};
+			buildConfigurationList = E186698B2B68853500FEDDD9 /* Build configuration list for PBXProject "Loch" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E18669872B68853500FEDDD9;
+			packageReferences = (
+				E18669DF2B807E2000FEDDD9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				02C8F2A82BA44D7300B35C06 /* XCRemoteSwiftPackageReference "amplify-swift" */,
+			);
+			productRefGroup = E18669912B68853500FEDDD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E186698F2B68853500FEDDD9 /* Loch */,
+				E186699F2B68853900FEDDD9 /* LochTests */,
+				E18669A92B68853900FEDDD9 /* LochUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E186698E2B68853500FEDDD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E186699B2B68853800FEDDD9 /* Preview Assets.xcassets in Resources */,
+				E18669982B68853800FEDDD9 /* Assets.xcassets in Resources */,
+				E18669DE2B807CCB00FEDDD9 /* GoogleService-Info.plist in Resources */,
+				A560C9DB6B19EB5B37D2E666 /* awsconfiguration.json in Resources */,
+				8F0509FA308C43F2442838CC /* amplifyconfiguration.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E186699E2B68853900FEDDD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E18669A82B68853900FEDDD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E186698C2B68853500FEDDD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DC026542B8DF0C5005A1291 /* ChatsToolbarView.swift in Sources */,
+				02E0240B2BA7B1DC0044A8CE /* LoginDetailView.swift in Sources */,
+				4DC0264F2B8DF0C5005A1291 /* ChatsMainView.swift in Sources */,
+				E18669962B68853500FEDDD9 /* ContentView.swift in Sources */,
+				4DC026532B8DF0C5005A1291 /* ChatsTextMessageModel.swift in Sources */,
+				02EDC25A2B80710A00F63A29 /* LoginView.swift in Sources */,
+				E18669C42B688B8C00FEDDD9 /* ContactsMainView.swift in Sources */,
+				02DC16342B8A277C007D45AF /* ForumBlockView.swift in Sources */,
+				E18669C62B688B9700FEDDD9 /* ProfileMainView.swift in Sources */,
+				E18669942B68853500FEDDD9 /* LochApp.swift in Sources */,
+				E18669CE2B69BD5400FEDDD9 /* ContactsDetailView.swift in Sources */,
+				4D312E2F2B99BDFE0008A896 /* ChatsHeadTextSearchView.swift in Sources */,
+				4DC026502B8DF0C5005A1291 /* ChatsTailView.swift in Sources */,
+				4DC026522B8DF0C5005A1291 /* ChatsDetailView.swift in Sources */,
+				02C8F2B02BA44E1A00B35C06 /* AuthenticationManager.swift in Sources */,
+				025FC94C2B9F1B5A006F59D9 /* ViewExtensions.swift in Sources */,
+				02DC162C2B8A225F007D45AF /* ProfileSettingsView.swift in Sources */,
+				4D66327F2B9D5122002E71A4 /* ForumPostModel.swift in Sources */,
+				4D6632812B9D51E3002E71A4 /* ForumPostCommentsModel.swift in Sources */,
+				4DC0264E2B8DF0C5005A1291 /* ChatsHeadView.swift in Sources */,
+				02DC16282B8A21F8007D45AF /* ForumHeadView.swift in Sources */,
+				E18669C02B688B7600FEDDD9 /* ForumMainView.swift in Sources */,
+				E18669C22B688B8000FEDDD9 /* ConnectMainView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E186699C2B68853900FEDDD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02EDC25B2B80710A00F63A29 /* LoginView.swift in Sources */,
+				E18669A52B68853900FEDDD9 /* LochTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E18669A62B68853900FEDDD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02EDC25C2B80710A00F63A29 /* LoginView.swift in Sources */,
+				E18669B12B68853900FEDDD9 /* LochUITestsLaunchTests.swift in Sources */,
+				E18669AF2B68853900FEDDD9 /* LochUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E18669A22B68853900FEDDD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E186698F2B68853500FEDDD9 /* Loch */;
+			targetProxy = E18669A12B68853900FEDDD9 /* PBXContainerItemProxy */;
+		};
+		E18669AC2B68853900FEDDD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E186698F2B68853500FEDDD9 /* Loch */;
+			targetProxy = E18669AB2B68853900FEDDD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E18669B22B68853900FEDDD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E18669B32B68853900FEDDD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E18669B52B68853900FEDDD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Loch/Preview Content\"";
+				DEVELOPMENT_TEAM = 8WQXU256NM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Loch.LochSafety;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E18669B62B68853900FEDDD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Loch/Preview Content\"";
+				DEVELOPMENT_TEAM = 8WQXU256NM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Loch.LochSafety;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E18669B82B68853900FEDDD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8WQXU256NM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Test.LochTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Loch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Loch";
+			};
+			name = Debug;
+		};
+		E18669B92B68853900FEDDD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8WQXU256NM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Test.LochTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Loch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Loch";
+			};
+			name = Release;
+		};
+		E18669BB2B68853900FEDDD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8WQXU256NM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Test.LochUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Loch;
+			};
+			name = Debug;
+		};
+		E18669BC2B68853900FEDDD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8WQXU256NM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Test.LochUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Loch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E186698B2B68853500FEDDD9 /* Build configuration list for PBXProject "Loch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E18669B22B68853900FEDDD9 /* Debug */,
+				E18669B32B68853900FEDDD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E18669B42B68853900FEDDD9 /* Build configuration list for PBXNativeTarget "Loch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E18669B52B68853900FEDDD9 /* Debug */,
+				E18669B62B68853900FEDDD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E18669B72B68853900FEDDD9 /* Build configuration list for PBXNativeTarget "LochTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E18669B82B68853900FEDDD9 /* Debug */,
+				E18669B92B68853900FEDDD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E18669BA2B68853900FEDDD9 /* Build configuration list for PBXNativeTarget "LochUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E18669BB2B68853900FEDDD9 /* Debug */,
+				E18669BC2B68853900FEDDD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		02C8F2A82BA44D7300B35C06 /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.27.2;
+			};
+		};
+		E18669DF2B807E2000FEDDD9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.21.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		02C8F2A92BA44D7300B35C06 /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02C8F2A82BA44D7300B35C06 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSAPIPlugin;
+		};
+		02C8F2AB2BA44D7300B35C06 /* AWSCloudWatchLoggingPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02C8F2A82BA44D7300B35C06 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSCloudWatchLoggingPlugin;
+		};
+		02C8F2AD2BA44D7300B35C06 /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02C8F2A82BA44D7300B35C06 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E18669882B68853500FEDDD9 /* Project object */;
+}
