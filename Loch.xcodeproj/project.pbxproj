@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		023C2D0C2BAD4F72003D237C /* ConnectTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023C2D0B2BAD4F72003D237C /* ConnectTestView.swift */; };
+		025281882BAED53700046300 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025281872BAED53700046300 /* ColorExtensions.swift */; };
 		025FC94C2B9F1B5A006F59D9 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025FC94B2B9F1B5A006F59D9 /* ViewExtensions.swift */; };
 		02C8F2AA2BA44D7300B35C06 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 02C8F2A92BA44D7300B35C06 /* AWSAPIPlugin */; };
 		02C8F2AC2BA44D7300B35C06 /* AWSCloudWatchLoggingPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 02C8F2AB2BA44D7300B35C06 /* AWSCloudWatchLoggingPlugin */; };
 		02C8F2AE2BA44D7300B35C06 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 02C8F2AD2BA44D7300B35C06 /* AWSCognitoAuthPlugin */; };
 		02C8F2B02BA44E1A00B35C06 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C8F2AF2BA44E1A00B35C06 /* AuthenticationManager.swift */; };
+		02CADFD12BAFBCF9000973DD /* ChatsContentViewModel.swift in Resources */ = {isa = PBXBuildFile; fileRef = 02CADFD02BAFBCF9000973DD /* ChatsContentViewModel.swift */; };
+		02CADFD32BAFBD74000973DD /* ForumAddNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CADFD22BAFBD74000973DD /* ForumAddNewView.swift */; };
 		02DC16282B8A21F8007D45AF /* ForumHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC16272B8A21F8007D45AF /* ForumHeadView.swift */; };
 		02DC162C2B8A225F007D45AF /* ProfileSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC162B2B8A225F007D45AF /* ProfileSettingsView.swift */; };
 		02DC16342B8A277C007D45AF /* ForumBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC16332B8A277C007D45AF /* ForumBlockView.swift */; };
@@ -63,8 +67,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		023C2D0B2BAD4F72003D237C /* ConnectTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectTestView.swift; sourceTree = "<group>"; };
+		025281872BAED53700046300 /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		025FC94B2B9F1B5A006F59D9 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		02C8F2AF2BA44E1A00B35C06 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		02CADFD02BAFBCF9000973DD /* ChatsContentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsContentViewModel.swift; sourceTree = "<group>"; };
+		02CADFD22BAFBD74000973DD /* ForumAddNewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumAddNewView.swift; sourceTree = "<group>"; };
 		02DC16272B8A21F8007D45AF /* ForumHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumHeadView.swift; sourceTree = "<group>"; };
 		02DC162B2B8A225F007D45AF /* ProfileSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsView.swift; sourceTree = "<group>"; };
 		02DC16332B8A277C007D45AF /* ForumBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumBlockView.swift; sourceTree = "<group>"; };
@@ -137,6 +145,7 @@
 		02DC161D2B8A207E007D45AF /* Forum Group */ = {
 			isa = PBXGroup;
 			children = (
+				02CADFD22BAFBD74000973DD /* ForumAddNewView.swift */,
 				E18669BF2B688B7600FEDDD9 /* ForumMainView.swift */,
 				02DC16272B8A21F8007D45AF /* ForumHeadView.swift */,
 				02DC16332B8A277C007D45AF /* ForumBlockView.swift */,
@@ -150,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				E18669C12B688B8000FEDDD9 /* ConnectMainView.swift */,
+				023C2D0B2BAD4F72003D237C /* ConnectTestView.swift */,
 			);
 			path = "Connect Group";
 			sourceTree = "<group>";
@@ -157,6 +167,7 @@
 		4DC026582B8DF0D3005A1291 /* Chat Group */ = {
 			isa = PBXGroup;
 			children = (
+				02CADFD02BAFBCF9000973DD /* ChatsContentViewModel.swift */,
 				4DC026472B8DF0C4005A1291 /* ChatsDetailView.swift */,
 				4DC026432B8DF0C3005A1291 /* ChatsHeadView.swift */,
 				4DC026442B8DF0C4005A1291 /* ChatsMainView.swift */,
@@ -203,6 +214,7 @@
 		E18669922B68853500FEDDD9 /* Loch */ = {
 			isa = PBXGroup;
 			children = (
+				025281872BAED53700046300 /* ColorExtensions.swift */,
 				E18669932B68853500FEDDD9 /* LochApp.swift */,
 				E18669952B68853500FEDDD9 /* ContentView.swift */,
 				02EDC2592B80710A00F63A29 /* LoginView.swift */,
@@ -380,6 +392,7 @@
 				E18669982B68853800FEDDD9 /* Assets.xcassets in Resources */,
 				E18669DE2B807CCB00FEDDD9 /* GoogleService-Info.plist in Resources */,
 				A560C9DB6B19EB5B37D2E666 /* awsconfiguration.json in Resources */,
+				02CADFD12BAFBCF9000973DD /* ChatsContentViewModel.swift in Resources */,
 				8F0509FA308C43F2442838CC /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,10 +419,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DC026542B8DF0C5005A1291 /* ChatsToolbarView.swift in Sources */,
+				025281882BAED53700046300 /* ColorExtensions.swift in Sources */,
 				02E0240B2BA7B1DC0044A8CE /* LoginDetailView.swift in Sources */,
 				4DC0264F2B8DF0C5005A1291 /* ChatsMainView.swift in Sources */,
 				E18669962B68853500FEDDD9 /* ContentView.swift in Sources */,
 				4DC026532B8DF0C5005A1291 /* ChatsTextMessageModel.swift in Sources */,
+				023C2D0C2BAD4F72003D237C /* ConnectTestView.swift in Sources */,
 				02EDC25A2B80710A00F63A29 /* LoginView.swift in Sources */,
 				E18669C42B688B8C00FEDDD9 /* ContactsMainView.swift in Sources */,
 				02DC16342B8A277C007D45AF /* ForumBlockView.swift in Sources */,
@@ -418,6 +433,7 @@
 				E18669CE2B69BD5400FEDDD9 /* ContactsDetailView.swift in Sources */,
 				4D312E2F2B99BDFE0008A896 /* ChatsHeadTextSearchView.swift in Sources */,
 				4DC026502B8DF0C5005A1291 /* ChatsTailView.swift in Sources */,
+				02CADFD32BAFBD74000973DD /* ForumAddNewView.swift in Sources */,
 				4DC026522B8DF0C5005A1291 /* ChatsDetailView.swift in Sources */,
 				02C8F2B02BA44E1A00B35C06 /* AuthenticationManager.swift in Sources */,
 				025FC94C2B9F1B5A006F59D9 /* ViewExtensions.swift in Sources */,

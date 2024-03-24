@@ -31,39 +31,38 @@ struct ButtonInit: View {
         }
         .padding()
     }
+    
 }
 
 struct LoginView: View {
     
     @State private var isSignedOn = true
-    
     var body: some View {
-        if isSignedOn == false {
-            ZStack {
-                LinearGradient(colours: [.green, .blue], startPoint: .topLeading, endPoint: .bottomTrailing)
+        
+        ZStack {
+            LinearGradient(colors: [.green, .blue], startPoint: .topLeading, endPoint: .bottomTrailing)
+            
+            //details
+            VStack {
+                Text("Loch")
+                    .font(.system(size: 45 ,weight: .bold, design: .default))
+                    .padding()
                 
-                //details
-                VStack {
-                    Text("Loch")
-                        .font(.system(size: 45 ,weight: .bold, design: .default))
-                        .padding()
-
-                    //MD - to be replaced with logo
-                    ProfilePictureCircle(imageLink: "Connecting Image",size: 250, hasBorder: true )
-                    
-                    Spacer()
-
-                    //sign up button
-                    ButtonInit(todo: {print("sign up")}, actionName: "Sign Up", bgColor: .teal)
-                    //log in button
-                    ButtonInit(todo: {isSignedOn.toggle()}, actionName: "Log In", bgColor: .green)
-                }
-                .padding()
+                //replace with logo
+                ProfilePictureCircle(imageLink: "Connecting Image",size: 250, hasBorder: true )
+                
+                Spacer()
+                
+                //sign up button
+                ButtonInit(todo: {
+                    print("signup")
+                }, actionName: "Sign Up", bgColor: .teal)
+                //log in button
+                ButtonInit(todo: {isSignedOn.toggle()}, actionName: "Log In", bgColor: .green)
             }
-            .edgesIgnoringSafeArea(.all)
-        } else {
-            ContentView()
+            .padding()
         }
+        .edgesIgnoringSafeArea(.all)
     }
 }
 

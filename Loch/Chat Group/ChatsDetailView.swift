@@ -85,7 +85,6 @@ struct ChatsDetailView: View {
             //placeholder for now, please render theirmessage or yourmessage based on uid matching
             LazyVStack {
                 TheirMessage(message: "Placeholder")
-                //PL- Removed typo
                 YourMessage(message: "I want food")
             }
 
@@ -95,7 +94,7 @@ struct ChatsDetailView: View {
                     Text(message.messageContents)
                 }
             }
-            ChatsTailView()
+            //ChatsTailView()
         }
     }
 }
