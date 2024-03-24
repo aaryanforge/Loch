@@ -59,8 +59,6 @@ struct LoginView: View {
                 }, actionName: "Sign Up", bgColor: .teal)
                 //log in button
                 ButtonInit(todo: {isSignedOn.toggle()}, actionName: "Log In", bgColor: .green)
-                Divider()
-                LoginDetailView()
             }
             .padding()
         }

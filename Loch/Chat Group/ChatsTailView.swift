@@ -17,34 +17,34 @@
 //    @Environment(\.modelContext) private var context
 //    @State private var newTextMessage: String = ""
 //
-//    //@StateObject var ChatMessageContentVM: MessageContentViewModel()
+//    @StateObject var ChatMessageContentVM = ChatsContentViewModel()
 //  
-////    func cacheNewMessage() async {
-////        // use URLSession API call to see whether to cache the message or not
-////        // guard that the message classification is a 1, else cache message
-////        
-////        await ChatMessageContentVM.getData(messageContents: newTextMessage)
-////        
-////        let messageClassification: String? = ChatMessageContentVM.classification
-////        
-////        if (messageClassification == "0") {
-////            let newMessage = ChatTextMessage(
-////                senderID: UUID().uuidString, // TODO: change this to the UUID of the current user
-////                messageContents: newTextMessage
-////            )
-////            context.insert(newMessage)
-////        }
-////
-////    }
+//    func cacheNewMessage() async {
+//        // use URLSession API call to see whether to cache the message or not
+//        // guard that the message classification is a 1, else cache message
+//        
+//        await ChatMessageContentVM.getData(messageContents: newTextMessage)
+//        
+//        let messageClassification: String? = ChatMessageContentVM.classification
+//        
+//        if (messageClassification == "0") {
+//            let newMessage = ChatTextMessage(
+//                senderID: UUID().uuidString, // TODO: change this to the UUID of the current user
+//                messageContents: newTextMessage
+//            )
+//            context.insert(newMessage)
+//        }
+//
+//    }
 //    
-////    func cacheNewMessage() {
-////        let newMessage = ChatTextMessage(
-////            senderID: UUID().uuidString,
-////            messageContents: newTextMessage
-////        )
-////        context.insert(newMessage)
-////
-////    }
+//    func cacheNewMessage() {
+//        let newMessage = ChatTextMessage(
+//            senderID: UUID().uuidString,
+//            messageContents: newTextMessage
+//        )
+//        context.insert(newMessage)
+//
+//    }
 //    
 //    var body: some View {
 //        ZStack (alignment: .trailing) {

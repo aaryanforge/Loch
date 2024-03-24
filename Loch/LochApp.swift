@@ -16,7 +16,7 @@ struct LochApp: App {
 
   var body: some Scene {
     WindowGroup {
-        ConnectTestView()
+        ContentView()
             .modelContainer(for: [ChatTextMessage.self, ForumPost.self, ForumPostComment.self])
     }
   }

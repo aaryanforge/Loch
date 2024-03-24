@@ -23,7 +23,8 @@ struct ProfileHeader: View {
         }
         .padding(10)
         .frame(minHeight: 50)
-        .background(.green500)
+        .background(.green)
+        //.green500
     }
 }
 
@@ -51,9 +52,10 @@ struct ProfilePictureCircle: View {
 
             if (hasBorder){
                 Circle()
-                    .strokeBorder(.green500, style:
+                    .strokeBorder(.green, style:
                                     StrokeStyle(lineWidth: 1.5, miterLimit: 10, dash: [20, 5], dashPhase: 5)
                     )
+                    //.green500
                     .padding(-5)
             }
         }
@@ -73,7 +75,8 @@ struct ButtonSquare: View {
         } label: {
             ZStack{
                 RoundedRectangle(cornerRadius: 8, style: .continuous)
-                .fill(.green500)
+                    .fill(.green)
+                //.green500
                 .frame(width: size, height: size)
 
                 Image(systemName: image)
@@ -119,7 +122,8 @@ struct ProfileAboutInfo: View {
                 .foregroundColor(.blackBlue800)
                 .frame(maxWidth: .infinity, maxHeight: 130, alignment: .topLeading)
                 .padding()
-                .background(.green500.opacity(0.2)).clipShape(RoundedRectangle(cornerRadius: 8))
+                .background(.green.opacity(0.2)).clipShape(RoundedRectangle(cornerRadius: 8))
+            //.green500
         }
         .padding(10)
     }
