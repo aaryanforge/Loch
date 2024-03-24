@@ -5,14 +5,46 @@
 //  Created by A P on 30/1/2024.
 //
 
-import SwiftUI
+// Goal: Load forums from cache
+// For: Mark
+// Due: Saturday 9th March
 
-struct Forums: View {
+
+import SwiftUI
+import SwiftData
+
+struct ForumMainView: View {
+    
+    @Query private var forumPosts: [ForumPost]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+        
+        VStack {
+            
+            ForumHeadView()
+            
+            ForumBlockView()
+            
+            LazyVStack {
+                ForEach(forumPosts) { forumPost in
+                    VStack {
+                        Text(forumPost.messageContents)
+                        Text(forumPost.senderName)
+                        
+                        ForEach(forumPost.comments) { comment in
+                            VStack {
+                                Text(comment.senderName)
+                                Text(comment.messageContents)
+                            }
+                        }
+                    }
+                }
+            }
+            //ForumTailView()
+         }
+     }
 }
 
 #Preview {
-    Forums()
+    ForumMainView()
 }

@@ -5,48 +5,76 @@
 //  Created by A P on 30/1/2024.
 //
 
+// Goal: revamp the contacts main page, modelling the looks from the figma prototype
+// For: Mark
+// Due: Thursday 14th Mar
+
 import SwiftUI
 
-//func displayedMessage(name: String) -> Text {
-//    var user = Text("")
-//
-//    user = Text(name)
-//        .font(.headline)
-//    return user
-//}
+struct ContactItem: View {
+    //var uid : Int   please change when avaliable 
 
-struct Contacts: View {
-    @State private var isAddingUser = false
     var body: some View {
-        NavigationView() {
+        HStack {
+
+        }
+
+    }
+
+}
+
+
+struct ContactsMainView: View {
+    @State private var isAddingUser = false
+
+    var body: some View {
+
+        VStack (spacing: 0) {
+            HStack {
+                Text("Contacts")
+                .padding(10)
+                .font(.system(size: 25,weight: .bold, design: .default))
+                .foregroundColor(.white)
+                .edgesIgnoringSafeArea(.top)
+            }
+            
+            ScrollView ([.vertical]) {
+                NavigationView() {
+                
+                }
+            }
+
+        }
+    }
+}
+
+#Preview {
+    ContactsMainView()
+}
+
+
+/* Mark's Old code
+NavigationView() {
             Image("Thomas")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 30, height: 30)
-                .sheet(isPresented: $isAddingUser, content: {
-                    AddContactSheet()
-                })
-                .onTapGesture {
-                    isAddingUser = true
-                }
-            List(contacts) { contact in
-                NavigationLink(destination: Detailed_View(contact: contact)) {
+            List {
+                NavigationLink(destination: ContactsDetailView()) {
                     HStack(){
-                        Image(contact.imageName)
+                        Image("Connecting Image")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 60, height: 60)
                             .clipped()
                             .cornerRadius(50)
                         VStack(alignment: .leading, spacing: 50) {
-                            Text(contact.name)
+                            Text("Contact Name")
                                 .font(.system(size: 21, weight: .medium, design: .default))
                         }
                     }
                 }
             }
             .navigationTitle("Contacts")
-        }
-    }
-}
-
+            
+*/

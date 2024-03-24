@@ -1,10 +1,10 @@
 //
-//  ContactsMainLoad.swift
+//  ChatsMainLoad.swift
 //  Loch
 //
 //  Created by Phoenix Liu on 25/2/2024.
 //
 
-struct ContactsMainLoad {
+struct ChatsMainLoad {
     
 }

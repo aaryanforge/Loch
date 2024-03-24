@@ -5,23 +5,24 @@
 //  Created by A P on 31/1/2024.
 //
 
+// Goal: Build an interface based on the figma
+// For: Mark
+// Due: Thursday 14th Mar
 
 import SwiftUI
 
-struct Detailed_View: View {
-    
-    let contact: contactData
+struct ContactsDetailView: View {
     
     var body: some View {
         VStack{
-            Image(contact.imageName)
+            Image("Connecting Image")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 150, height: 150)
                 .clipped()
                 .cornerRadius(150)
                 .shadow(radius: 3)
-            Text(contact.name)
+            Text("Phoenix Liu")
                 .font(.title)
                 .fontWeight(.bold)
             Form {
@@ -29,7 +30,7 @@ struct Detailed_View: View {
                     Text("Name")
                         .underline()
                     Spacer()
-                    Text(contact.name)
+                    Text("Phoenix")
                         .foregroundColor(.gray)
                         .font(.callout)
                 }
@@ -37,7 +38,7 @@ struct Detailed_View: View {
                     Text("Nickname")
                         .underline()
                     Spacer()
-                    Text(contact.nickname)
+                    Text("Penghus")
                         .foregroundColor(.gray)
                         .font(.callout)
                 }
@@ -47,23 +48,9 @@ struct Detailed_View: View {
                         Text("About Me:")
                             .underline()
                         Spacer()
-                        if contact.name == "Aaryan" {
-                            Text(profData[0].aboutMe)
-                                .foregroundColor(.black)
-                                .font(.callout)
-//                                .task {
-//                                    for prof in profData {
-//                                        print(prof.aboutMe) //tf glitch in the matrix - why isn't this showing the abbout me but in the other page it does despite them being the exact same data.
-//                                        print(prof.name)
-//                                        print("yesSIR")
-//                                        print(profData[0].aboutMe)
-//                                    }
-//                                }
-                        } else {
-                            Text(contact.aboutMe)
-                                .foregroundColor(.black)
-                                .font(.callout)
-                        }
+                        Text("I love cheese")
+                            .foregroundColor(.black)
+                            .font(.callout)
                     }
                 }
                 
@@ -78,5 +65,5 @@ struct Detailed_View: View {
 }
 
 #Preview {
-    Detailed_View(contact: contacts[0])
+    ContactsDetailView()
 }
