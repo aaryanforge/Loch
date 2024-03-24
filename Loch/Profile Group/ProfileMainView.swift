@@ -14,16 +14,16 @@ struct ProfileHeader: View {
     var nickName: String
 
     var body: some View {
-        HStack {
-            Spacer()
+        VStack {
             Text(nickName)
                 .foregroundColor(.blackBlue800)
                 .font(.system(size: 20,weight: .bold, design: .default))
-            Spacer()
         }
         .padding(10)
-        .frame(minHeight: 50)
+        .padding([.top])
+        .frame(maxWidth: .infinity, minHeight: 50)
         .background(.green500)
+        .edgesIgnoringSafeArea(.top)
     }
 }
 
@@ -36,7 +36,7 @@ struct ProfilePictureCircle: View {
     var body: some View {
         ZStack {
             if (imageLink != nil){
-                Image(imageLink)
+                Image(imageLink!)
                     .resizable()
                     .aspectRatio(CGSize(width:1, height: 1), contentMode: .fit)
                     .frame(width: size, height: size)
@@ -45,16 +45,15 @@ struct ProfilePictureCircle: View {
                 Image(systemName:  "person.fill")
                     .resizable()
                     .aspectRatio(CGSize(width:1, height: 1), contentMode: .fit)
-                    .frame(width: size, height: size)
+                    .frame(width: size * 0.8, height: size * 0.8)
                     .clipShape(Circle())
             }
 
             if (hasBorder){
                 Circle()
                     .strokeBorder(.green500, style:
-                                    StrokeStyle(lineWidth: 1.5, miterLimit: 10, dash: [20, 5], dashPhase: 5)
+                                    StrokeStyle(lineWidth: 2, miterLimit: 10, dash: [8, 5], dashPhase: 0)
                     )
-                    .padding(-5)
             }
         }
         .frame(width: size, height: size)
@@ -63,7 +62,6 @@ struct ProfilePictureCircle: View {
 
 struct ButtonSquare: View {
     var todo: () -> Void
-    var actionName: String
     var image: String
     var size: CGFloat
 
@@ -93,21 +91,24 @@ struct ProfileAboutInfo: View {
             // top half of profile banner
             HStack {
                 ProfilePictureCircle(size: 130, hasBorder: true )
-                    .padding()
+                    .padding([.bottom], 10)
+                    .padding([.top], 5)
+                    .padding([.trailing], 8)
 
                 //name and buttons
                 VStack(alignment: .leading){
                     Text("AKA")
                         .foregroundColor(.grey800)
                         .font(.system(size: 14,weight: .medium, design: .default))
+                        .padding([.bottom], 1)
                     Text(name)
                         .foregroundColor(.blackBlue800)
                         .font(.system(size: 17,weight: .semibold, design: .default))
-                        .padding([.bottom])
+                        .padding([.bottom], 10)
 
                     HStack {
-                        ButtonSquare(todo: {print("Edit")}, actionName: "Edit", image: "square.and.pencil", size: 40)
-                        ButtonSquare(todo: {print("Notifications")}, actionName: "Notifications", image: "bell", size: 40)
+                        ButtonSquare(todo: {print("Edit")}, image: "square.and.pencil", size: 40)
+                        ButtonSquare(todo: {print("Notifications")}, image: "bell", size: 40)
                     }
 
                 }
@@ -117,13 +118,15 @@ struct ProfileAboutInfo: View {
 
             Text(bio)
                 .foregroundColor(.blackBlue800)
-                .frame(maxWidth: .infinity, maxHeight: 130, alignment: .topLeading)
-                .padding()
+                .frame(maxWidth: .infinity, minHeight: 100, alignment: .topLeading)
+                .padding(15)
                 .background(.green500.opacity(0.2)).clipShape(RoundedRectangle(cornerRadius: 8))
         }
         .padding(10)
+        .padding([.bottom], 10)
     }
 }
+
 struct ProfileMainView: View {
     var body: some View {
         VStack (alignment: .leading) {
@@ -137,9 +140,11 @@ struct ProfileMainView: View {
 
             Text("Forum Posts:")
                 .font(.subheadline)
+                .foregroundColor(.grey800)
+                .padding(5)
                 .padding([.leading])
             
-            ScrollView{
+            ScrollView([.vertical]) {
                 LazyVStack{
                     ForumBlockPostPublicPrivate( 
                         imageLink: "Connecting Image", 
@@ -155,8 +160,8 @@ struct ProfileMainView: View {
                         postType: "priv"
                     )
                 }
+                .padding()
             }
-            .padding(10)
         }
     }
 }

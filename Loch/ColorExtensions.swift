@@ -32,7 +32,7 @@ extension Color {
     static let blackGreen800 = Color(hex: "111B0E") 
     static let blackBlue800 = Color(hex: "131E2D") // for fonts
 
-    // TINTS
+    // TINTS   
     static let greenTint30 = Color(red:(119/255), green: (191/255), blue: (89/255), alpha: 0.3) 
     static let greenTint50 = Color(red:(119/255), green: (191/255), blue: (89/255), alpha: 0.5) 
 

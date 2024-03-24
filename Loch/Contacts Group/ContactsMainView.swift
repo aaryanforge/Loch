@@ -16,13 +16,18 @@ struct ContactItem: View {
 
     var body: some View {
         HStack {
+            ProfilePictureCircle(size: 80, hasBorder: true)
+                .padding(8)
 
+            Text("Nickname here")
+                .padding(8)
+            
         }
-
+        .frame(maxWidth: .infinity, maxHeight: 120, alignment: .leading)
+        .padding(5)
     }
 
 }
-
 
 struct ContactsMainView: View {
     @State private var isAddingUser = false
@@ -40,9 +45,14 @@ struct ContactsMainView: View {
             
             ScrollView ([.vertical]) {
                 NavigationView() {
-                
+                    NavigationLink(destination: ContactsDetailView()) {ContactItem()}
+                    NavigationLink(destination: ContactsDetailView()) {ContactItem()}
+                    NavigationLink(destination: ContactsDetailView()) {ContactItem()}
+                    NavigationLink(destination: ContactsDetailView()) {ContactItem()}
+                    NavigationLink(destination: ContactsDetailView()) {ContactItem()}
                 }
             }
+            .padding([.top], 10)
 
         }
     }
@@ -53,7 +63,7 @@ struct ContactsMainView: View {
 }
 
 
-/* Mark's Old code
+/* Old code
 NavigationView() {
             Image("Thomas")
                 .resizable()
