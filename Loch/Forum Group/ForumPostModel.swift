@@ -26,5 +26,7 @@ import SwiftData
         self.messageContents = messageContents
         self.timeStamp = Date.now
         self.comments = []
+        self.tags = ""
+        self.senderName = ""
     }
 }

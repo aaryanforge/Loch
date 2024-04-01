@@ -36,7 +36,7 @@ struct ForumBlockPostPublicPrivate: View {
             Spacer()
             
             if (imageLink != nil){
-                Image(imageLink!)
+                Image(imageLink ?? "")
                     .resizable()
                     .aspectRatio(CGSize(width:1, height: 1), contentMode: .fit)
                     .frame(width: 78, height: 78)
@@ -74,7 +74,7 @@ struct ForumBlockPostPublicPrivate: View {
             .frame(maxWdith: .infinity)
             .padding(5)
         }
-        .frame(maxWdith: .infinity, maxHeight:100)
+        .frame(maxWidth: .infinity, maxHeight:100)
         .if (postType == "priv") { view in
             view.background(green500, in: RoundedRectangle(cornerRadius: 15, style: .continuous).stroke(lineWidth: 1.5))
         }
@@ -134,6 +134,7 @@ struct ForumBlockPostSponsored: View {
         
     }
 }
+
 struct ForumBlockView: View {
     var body: some View {
         LazyVStack {

@@ -22,7 +22,8 @@ struct ProfileHeader: View {
         .padding(10)
         .padding([.top])
         .frame(maxWidth: .infinity, minHeight: 50)
-        .background(.green500)
+        .background(.green)
+        //.green500
         .edgesIgnoringSafeArea(.top)
     }
 }
@@ -35,8 +36,8 @@ struct ProfilePictureCircle: View {
 
     var body: some View {
         ZStack {
-            if (imageLink != nil){
-                Image(imageLink!)
+            if let imageLink = imageLink {
+                Image(imageLink)
                     .resizable()
                     .aspectRatio(CGSize(width:1, height: 1), contentMode: .fit)
                     .frame(width: size, height: size)
@@ -51,9 +52,11 @@ struct ProfilePictureCircle: View {
 
             if (hasBorder){
                 Circle()
-                    .strokeBorder(.green500, style:
-                                    StrokeStyle(lineWidth: 2, miterLimit: 10, dash: [8, 5], dashPhase: 0)
+                    .strokeBorder(.green, style:
+                                    StrokeStyle(lineWidth: 1.5, miterLimit: 10, dash: [20, 5], dashPhase: 5)
                     )
+                    //.green500
+                    .padding(-5)
             }
         }
         .frame(width: size, height: size)
@@ -71,7 +74,8 @@ struct ButtonSquare: View {
         } label: {
             ZStack{
                 RoundedRectangle(cornerRadius: 8, style: .continuous)
-                .fill(.green500)
+                    .fill(.green)
+                //.green500
                 .frame(width: size, height: size)
 
                 Image(systemName: image)
@@ -118,9 +122,10 @@ struct ProfileAboutInfo: View {
 
             Text(bio)
                 .foregroundColor(.blackBlue800)
-                .frame(maxWidth: .infinity, minHeight: 100, alignment: .topLeading)
-                .padding(15)
-                .background(.green500.opacity(0.2)).clipShape(RoundedRectangle(cornerRadius: 8))
+                .frame(maxWidth: .infinity, maxHeight: 130, alignment: .topLeading)
+                .padding()
+                .background(.green.opacity(0.2)).clipShape(RoundedRectangle(cornerRadius: 8))
+            //.green500
         }
         .padding(10)
         .padding([.bottom], 10)
@@ -128,12 +133,13 @@ struct ProfileAboutInfo: View {
 }
 
 struct ProfileMainView: View {
+    private var profPicLink = ""
     var body: some View {
         VStack (alignment: .leading) {
             ProfileHeader(nickName: "Lochie")
 
             // main profile section
-            ProfileAboutInfo(profPicLink, "Connecting Image", name: "Lochilon Ness", bio: "peepee poopoo")
+            ProfileAboutInfo(profPicLink: "Connecting Image", name: "Lochilon Ness", bio: "peepee poopoo")
 
             //forum posts
             // should be renedered in reverse chronilogical order, with the newest ones first

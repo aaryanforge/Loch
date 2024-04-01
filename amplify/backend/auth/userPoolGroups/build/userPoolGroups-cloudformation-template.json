@@ -1,0 +1,109 @@
+{
+  "Description": "Root Stack for AWS Amplify CLI",
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Parameters": {
+    "env": {
+      "Type": "String"
+    },
+    "AuthRoleArn": {
+      "Type": "String"
+    },
+    "UnauthRoleArn": {
+      "Type": "String"
+    },
+    "authAuthAmplifySignInOnlyUserPoolId": {
+      "Type": "String",
+      "Default": "authAuthAmplifySignInOnlyUserPoolId"
+    },
+    "authAuthAmplifySignInOnlyIdentityPoolId": {
+      "Type": "String",
+      "Default": "authAuthAmplifySignInOnlyIdentityPoolId"
+    },
+    "authAuthAmplifySignInOnlyAppClientID": {
+      "Type": "String",
+      "Default": "authAuthAmplifySignInOnlyAppClientID"
+    },
+    "authAuthAmplifySignInOnlyAppClientIDWeb": {
+      "Type": "String",
+      "Default": "authAuthAmplifySignInOnlyAppClientIDWeb"
+    }
+  },
+  "Conditions": {
+    "ShouldNotCreateEnvResources": {
+      "Fn::Equals": [
+        {
+          "Ref": "env"
+        },
+        "NONE"
+      ]
+    }
+  },
+  "Resources": {
+    "AuthAmplifyFirstPoolGroup": {
+      "Type": "AWS::Cognito::UserPoolGroup",
+      "Properties": {
+        "UserPoolId": {
+          "Ref": "authAuthAmplifySignInOnlyUserPoolId"
+        },
+        "Description": "override success",
+        "GroupName": "AuthAmplifyFirstPool",
+        "Precedence": 1,
+        "RoleArn": {
+          "Fn::GetAtt": [
+            "AuthAmplifyFirstPoolGroupRole",
+            "Arn"
+          ]
+        }
+      }
+    },
+    "AuthAmplifyFirstPoolGroupRole": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Sid": "",
+              "Effect": "Allow",
+              "Principal": {
+                "Federated": "cognito-identity.amazonaws.com"
+              },
+              "Action": "sts:AssumeRoleWithWebIdentity",
+              "Condition": {
+                "StringEquals": {
+                  "cognito-identity.amazonaws.com:aud": {
+                    "Ref": "authAuthAmplifySignInOnlyIdentityPoolId"
+                  }
+                },
+                "ForAnyValue:StringLike": {
+                  "cognito-identity.amazonaws.com:amr": "authenticated"
+                }
+              }
+            }
+          ]
+        },
+        "RoleName": {
+          "Fn::Join": [
+            "",
+            [
+              {
+                "Ref": "authAuthAmplifySignInOnlyUserPoolId"
+              },
+              "-AuthAmplifyFirstPoolGroupRole"
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "Outputs": {
+    "AuthAmplifyFirstPoolGroupRole": {
+      "Value": {
+        "Fn::GetAtt": [
+          "AuthAmplifyFirstPoolGroupRole",
+          "Arn"
+        ]
+      }
+    }
+  }
+}
