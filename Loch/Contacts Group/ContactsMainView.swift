@@ -44,13 +44,11 @@ struct ContactsMainView: View {
             }
             
             ScrollView ([.vertical]) {
-                NavigationView() {
-                    NavigationLink(destination: ContactsDetailView()) {ContactItem()}
-                    NavigationLink(destination: ContactsDetailView()) {ContactItem()}
-                    NavigationLink(destination: ContactsDetailView()) {ContactItem()}
-                    NavigationLink(destination: ContactsDetailView()) {ContactItem()}
-                    NavigationLink(destination: ContactsDetailView()) {ContactItem()}
-                }
+                ContactItem()
+                ContactItem()
+                ContactItem()
+                ContactItem()
+                ContactItem()
             }
             .padding([.top], 10)
 
