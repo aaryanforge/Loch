@@ -45,6 +45,9 @@ struct ContactsMainView: View {
         .padding()
         .background(.green)
 
+        //bloop here is a change please update
+    
+
         VStack (spacing: 0) {
             ScrollView ([.vertical]) {
                 ContactItem()
