@@ -34,16 +34,20 @@ struct ContactsMainView: View {
 
     var body: some View {
 
+        HStack {
+            Text("Contacts")
+            .padding(10)                
+            .font(.system(size: 25,weight: .bold, design: .default))
+            .foregroundColor(.white)
+            .edgesIgnoringSafeArea(.top)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding()
+        .background(.green)
+
         VStack (spacing: 0) {
-            HStack {
-                Text("Contacts")
-                .padding(10)
-                .font(.system(size: 25,weight: .bold, design: .default))
-                .foregroundColor(.white)
-                .edgesIgnoringSafeArea(.top)
-            }
-            
             ScrollView ([.vertical]) {
+                ContactItem()
                 ContactItem()
                 ContactItem()
                 ContactItem()
@@ -68,6 +72,13 @@ NavigationView() {
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 30, height: 30)
             List {
+                NavigationView() {
+                    NavigationLink(destination: ContactsDetailView()) {ContactItem()}
+                    NavigationLink(destination: ContactsDetailView()) {ContactItem()}
+                    NavigationLink(destination: ContactsDetailView()) {ContactItem()}
+                    NavigationLink(destination: ContactsDetailView()) {ContactItem()}
+                    NavigationLink(destination: ContactsDetailView()) {ContactItem()}
+                }
                 NavigationLink(destination: ContactsDetailView()) {
                     HStack(){
                         Image("Connecting Image")
