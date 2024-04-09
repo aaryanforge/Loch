@@ -57,7 +57,7 @@ struct ForumBlockPostPublicPrivate: View {
                     // PL- Changed .fontfont to .font
                     .foregroundColor(postType == "priv" ? .blackBlue800 : .white)
                     .padding(5)
-                    .frame(maxWdith: .infinity, alignment: .topLeading)
+                    .frame(maxWidth: .infinity, alignment: .topLeading)
 
                 Spacer() 
                     .frame(maxHeight: 5)
@@ -67,19 +67,21 @@ struct ForumBlockPostPublicPrivate: View {
                     .font(.system(size: 10 ,weight: .light, design: .default))
                     .foregroundColor(postType == "priv" ? .grey800 : .white)
                     .padding([.bottom, .trailing, .leading], 10)
-                    .frame(maxWdith: .infinity, alignment: .bottomLeading)
+                    .frame(maxWidth: .infinity, alignment: .bottomLeading)
                     .frame(minHeight: (imageLink != nil ? 50 : 0))
 
             }
-            .frame(maxWdith: .infinity)
+            .frame(maxWidth: .infinity)
             .padding(5)
         }
         .frame(maxWidth: .infinity, maxHeight:100)
         .if (postType == "priv") { view in
-            view.background(green500, in: RoundedRectangle(cornerRadius: 15, style: .continuous).stroke(lineWidth: 1.5))
+//            view.background(.green500, in: RoundedRectangle(cornerRadius: 15, style: .continuous).stroke(lineWidth: 1.5))
+            view.background(.green, in: RoundedRectangle(cornerRadius: 15, style: .continuous).stroke(lineWidth: 1.5))
         }
         .if (postType == "pub") { view in
-            view.background(.blue800, in: RoundedRectangle(cornerRadius: 15, style: .continuous))
+            //view.background(.blue800, in: RoundedRectangle(cornerRadius: 15, style: .continuous))
+            view.background(.blue, in: RoundedRectangle(cornerRadius: 15, style: .continuous))
         }
         .padding(5)
         
@@ -129,7 +131,8 @@ struct ForumBlockPostSponsored: View {
             }
         }
         .frame(maxWidth: .infinity, maxHeight:150)
-        .background(.lightYellow, in: RoundedRectangle(cornerRadius: 15, style: .continuous))
+        //.background(.lightYellow, in: RoundedRectangle(cornerRadius: 15, style: .continuous))
+        .background(.yellow, in: RoundedRectangle(cornerRadius: 15, style: .continuous))
         .padding(5)
         
     }

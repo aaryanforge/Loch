@@ -43,7 +43,8 @@ struct ContactProfileHeader: View {
         .padding(10)
         .padding([.top])
         .frame(maxWidth: .infinity, minHeight: 50)
-        .background(.green500)
+        .background(.green)
+        //.background(.green500)
         .edgesIgnoringSafeArea(.top)
     }
 }
@@ -59,7 +60,8 @@ struct ButtonSquareAlert: View {
         } label: {
             ZStack{
                 RoundedRectangle(cornerRadius: 8, style: .continuous)
-                .fill(.redWarning)
+                //.fill(.redWarning)
+                    .fill(.red)
                 .frame(width: size, height: size)
 
                 Image(systemName: image)
@@ -111,7 +113,9 @@ struct ProfileAboutInfoContact: View {
                 .foregroundColor(.blackBlue800)
                 .frame(maxWidth: .infinity, minHeight: 100, alignment: .topLeading)
                 .padding(15)
-                .background(.green500.opacity(0.2)).clipShape(RoundedRectangle(cornerRadius: 8))
+                .background(.green.opacity(0.2))
+                //.background(.green500.opacity(0.2))
+                .clipShape(RoundedRectangle(cornerRadius: 8))
         }
         .padding(10)
         .padding([.bottom], 10)
@@ -119,13 +123,12 @@ struct ProfileAboutInfoContact: View {
 }
 
 struct ContactsDetailView: View {
-    
     var body: some View {
         VStack (alignment: .leading) {
             ContactProfileHeader(nickName: "Friend")
 
             // main profile section
-            ProfileAboutInfoContact(profPicLink, "Connecting Image", name: "Do not Fear me", bio: ":              )")
+            ProfileAboutInfoContact(profPicLink: "Connecting Image", name: "Do not Fear me", bio: ":              )")
 
             //forum posts
             // should be renedered in reverse chronilogical order, with the newest ones first
