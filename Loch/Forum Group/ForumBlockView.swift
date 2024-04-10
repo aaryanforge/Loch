@@ -29,7 +29,7 @@ struct ForumBlockPostPublicPrivate: View {
     var imageLink: String?
     var title: String
     var postContent: String
-    var postType: String // maybe set as either "priv" or "pub", should make consants for these
+    var postType: String // maybe set as either "priv" or "pub", should make constants for these
 
     var body: some View {
         HStack{
@@ -45,6 +45,8 @@ struct ForumBlockPostPublicPrivate: View {
                     .background(.black.opacity(0.6), in: RoundedRectangle(cornerRadius: 15, style: .continuous)
                         .stroke(lineWidth: 1)
                     )
+                    .padding([.leading], 10)
+                    .padding([.vertical])
                 
             }
 
@@ -53,25 +55,32 @@ struct ForumBlockPostPublicPrivate: View {
                 Text(title)
                     .font(.system(size: 18 ,weight: .medium, design: .default))
                     // PL- Changed .fontfont to .font
-                    .foregroundColor(postType == "priv" ? .black : .white)
+                    .foregroundColor(postType == "priv" ? .blackBlue800 : .white)
                     .padding(5)
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .frame(maxWidth: .infinity, alignment: .topLeading)
+
+                Spacer() 
+                    .frame(maxHeight: 5)
 
                 // placeholder paragraph    
                 Text(postContent)
                     .font(.system(size: 10 ,weight: .light, design: .default))
-                    .foregroundColor(postType == "priv" ? .gray : .white)
+                    .foregroundColor(postType == "priv" ? .grey800 : .white)
                     .padding([.bottom, .trailing, .leading], 10)
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .frame(maxWidth: .infinity, alignment: .bottomLeading)
+                    .frame(minHeight: (imageLink != nil ? 50 : 0))
 
             }
             .frame(maxWidth: .infinity)
+            .padding(5)
         }
         .frame(maxWidth: .infinity, maxHeight:100)
         .if (postType == "priv") { view in
+//            view.background(.green500, in: RoundedRectangle(cornerRadius: 15, style: .continuous).stroke(lineWidth: 1.5))
             view.background(.green, in: RoundedRectangle(cornerRadius: 15, style: .continuous).stroke(lineWidth: 1.5))
         }
         .if (postType == "pub") { view in
+            //view.background(.blue800, in: RoundedRectangle(cornerRadius: 15, style: .continuous))
             view.background(.blue, in: RoundedRectangle(cornerRadius: 15, style: .continuous))
         }
         .padding(5)
@@ -94,16 +103,18 @@ struct ForumBlockPostSponsored: View {
 
     var body: some View {
         HStack{
-            Spacer()
-
             ZStack(alignment: .trailing) {
                 // Need to change text based on messages
                 Text(title)
                     .font(.system(size: 20 ,weight: .medium, design: .default))
-                    .foregroundColor( .white)
+                    .foregroundColor( .blackGreen800)
                     .padding(5)
+                    .padding([.leading], 8)
+                    
 
             }
+
+            Spacer()
 
             if (imageLink != nil){
                 Image(imageLink!)
@@ -115,11 +126,13 @@ struct ForumBlockPostSponsored: View {
                     .background(.black.opacity(0.6), in: RoundedRectangle(cornerRadius: 15, style: .continuous)
                         .stroke(lineWidth: 1)
                     )
+                    .padding([.vertical])
                 
             }
         }
-        .frame(maxHeight:150)
-        .background(.red, in: RoundedRectangle(cornerRadius: 15, style: .continuous))
+        .frame(maxWidth: .infinity, maxHeight:150)
+        //.background(.lightYellow, in: RoundedRectangle(cornerRadius: 15, style: .continuous))
+        .background(.yellow, in: RoundedRectangle(cornerRadius: 15, style: .continuous))
         .padding(5)
         
     }

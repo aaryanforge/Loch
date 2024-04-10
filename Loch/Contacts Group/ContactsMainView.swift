@@ -16,33 +16,48 @@ struct ContactItem: View {
 
     var body: some View {
         HStack {
+            ProfilePictureCircle(size: 80, hasBorder: true)
+                .padding(8)
 
+            Text("Nickname here")
+                .padding(8)
+            
         }
-
+        .frame(maxWidth: .infinity, maxHeight: 120, alignment: .leading)
+        .padding(5)
     }
 
 }
-
 
 struct ContactsMainView: View {
     @State private var isAddingUser = false
 
     var body: some View {
 
+        HStack {
+            Text("Contacts")
+            .padding(10)                
+            .font(.system(size: 25,weight: .bold, design: .default))
+            .foregroundColor(.white)
+            .edgesIgnoringSafeArea(.top)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding()
+        .background(.green)
+
+        //bloop here is a change please update
+    
+
         VStack (spacing: 0) {
-            HStack {
-                Text("Contacts")
-                .padding(10)
-                .font(.system(size: 25,weight: .bold, design: .default))
-                .foregroundColor(.white)
-                .edgesIgnoringSafeArea(.top)
-            }
-            
             ScrollView ([.vertical]) {
-                NavigationView() {
-                
-                }
+                ContactItem()
+                ContactItem()
+                ContactItem()
+                ContactItem()
+                ContactItem()
+                ContactItem()
             }
+            .padding([.top], 10)
 
         }
     }
@@ -53,13 +68,20 @@ struct ContactsMainView: View {
 }
 
 
-/* Mark's Old code
+/* Old code
 NavigationView() {
             Image("Thomas")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 30, height: 30)
             List {
+                NavigationView() {
+                    NavigationLink(destination: ContactsDetailView()) {ContactItem()}
+                    NavigationLink(destination: ContactsDetailView()) {ContactItem()}
+                    NavigationLink(destination: ContactsDetailView()) {ContactItem()}
+                    NavigationLink(destination: ContactsDetailView()) {ContactItem()}
+                    NavigationLink(destination: ContactsDetailView()) {ContactItem()}
+                }
                 NavigationLink(destination: ContactsDetailView()) {
                     HStack(){
                         Image("Connecting Image")
