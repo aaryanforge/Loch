@@ -15,9 +15,10 @@
 		02DC16282B8A21F8007D45AF /* ForumHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC16272B8A21F8007D45AF /* ForumHeadView.swift */; };
 		02DC162C2B8A225F007D45AF /* ProfileSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC162B2B8A225F007D45AF /* ProfileSettingsView.swift */; };
 		02DC16342B8A277C007D45AF /* ForumBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC16332B8A277C007D45AF /* ForumBlockView.swift */; };
-		02EDC25A2B80710A00F63A29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView.swift */; };
-		02EDC25B2B80710A00F63A29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView.swift */; };
-		02EDC25C2B80710A00F63A29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView.swift */; };
+		02EDC25A2B80710A00F63A29 /* LoginView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView2.swift */; };
+		02EDC25B2B80710A00F63A29 /* LoginView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView2.swift */; };
+		02EDC25C2B80710A00F63A29 /* LoginView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC2592B80710A00F63A29 /* LoginView2.swift */; };
+		34F0B6383953124C3139B5B9 /* Pods_Loch_LochUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983C9DE4CE04067C68F21D7A /* Pods_Loch_LochUITests.framework */; };
 		4D312E2F2B99BDFE0008A896 /* ChatsHeadTextSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D312E2E2B99BDFE0008A896 /* ChatsHeadTextSearchView.swift */; };
 		4D66327F2B9D5122002E71A4 /* ForumPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D66327E2B9D5122002E71A4 /* ForumPostModel.swift */; };
 		4D6632812B9D51E3002E71A4 /* ForumPostCommentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6632802B9D51E3002E71A4 /* ForumPostCommentsModel.swift */; };
@@ -27,6 +28,17 @@
 		4DC026522B8DF0C5005A1291 /* ChatsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026472B8DF0C4005A1291 /* ChatsDetailView.swift */; };
 		4DC026532B8DF0C5005A1291 /* ChatsTextMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026482B8DF0C4005A1291 /* ChatsTextMessageModel.swift */; };
 		4DC026542B8DF0C5005A1291 /* ChatsToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026492B8DF0C4005A1291 /* ChatsToolbarView.swift */; };
+		8F0509FA308C43F2442838CC /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 226250C1A126D465B9A088E0 /* amplifyconfiguration.json */; };
+		A560C9DB6B19EB5B37D2E666 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = ECDEC17D16526DCE58E37741 /* awsconfiguration.json */; };
+		B08899AA30A6703F7D52BF74 /* Pods_Loch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE818DBF8D2ADDB87D8A81E /* Pods_Loch.framework */; };
+		E175F2752BC613C700524358 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = E175F2742BC613C700524358 /* amplifyconfiguration.json */; };
+		E175F2772BC613E300524358 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = E175F2762BC613E200524358 /* awsconfiguration.json */; };
+		E175F27C2BC614FA00524358 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175F27B2BC614FA00524358 /* SessionManager.swift */; };
+		E175F27E2BC6153400524358 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175F27D2BC6153400524358 /* LoginView.swift */; };
+		E175F2802BC6155500524358 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175F27F2BC6155500524358 /* SignUpView.swift */; };
+		E175F2822BC6156C00524358 /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175F2812BC6156C00524358 /* ConfirmationView.swift */; };
+		E175F2842BC6157B00524358 /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175F2832BC6157B00524358 /* SessionView.swift */; };
+		E175F2862BC616B500524358 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175F2852BC616B500524358 /* Authenticator.swift */; };
 		E18669942B68853500FEDDD9 /* LochApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669932B68853500FEDDD9 /* LochApp.swift */; };
 		E18669962B68853500FEDDD9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669952B68853500FEDDD9 /* ContentView.swift */; };
 		E18669982B68853800FEDDD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E18669972B68853800FEDDD9 /* Assets.xcassets */; };
@@ -40,6 +52,7 @@
 		E18669C62B688B9700FEDDD9 /* ProfileMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669C52B688B9700FEDDD9 /* ProfileMainView.swift */; };
 		E18669CE2B69BD5400FEDDD9 /* ContactsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669CD2B69BD5400FEDDD9 /* ContactsDetailView.swift */; };
 		E18669DE2B807CCB00FEDDD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E18669DD2B807CCB00FEDDD9 /* GoogleService-Info.plist */; };
+		FFC9E42BDC2099A9C960E49D /* Pods_LochTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D22C749CA7DBB0DCAA8661 /* Pods_LochTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +81,10 @@
 		02DC16272B8A21F8007D45AF /* ForumHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumHeadView.swift; sourceTree = "<group>"; };
 		02DC162B2B8A225F007D45AF /* ProfileSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsView.swift; sourceTree = "<group>"; };
 		02DC16332B8A277C007D45AF /* ForumBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumBlockView.swift; sourceTree = "<group>"; };
-		02EDC2592B80710A00F63A29 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		02EDC2592B80710A00F63A29 /* LoginView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView2.swift; sourceTree = "<group>"; };
+		0D38DE9C6AE70B7326CFF98F /* Pods-Loch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loch.debug.xcconfig"; path = "Target Support Files/Pods-Loch/Pods-Loch.debug.xcconfig"; sourceTree = "<group>"; };
+		226250C1A126D465B9A088E0 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		37D22C749CA7DBB0DCAA8661 /* Pods_LochTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LochTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D312E2E2B99BDFE0008A896 /* ChatsHeadTextSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsHeadTextSearchView.swift; sourceTree = "<group>"; };
 		4D66327E2B9D5122002E71A4 /* ForumPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumPostModel.swift; sourceTree = "<group>"; };
 		4D6632802B9D51E3002E71A4 /* ForumPostCommentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumPostCommentsModel.swift; sourceTree = "<group>"; };
@@ -78,6 +94,20 @@
 		4DC026472B8DF0C4005A1291 /* ChatsDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsDetailView.swift; sourceTree = "<group>"; };
 		4DC026482B8DF0C4005A1291 /* ChatsTextMessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsTextMessageModel.swift; sourceTree = "<group>"; };
 		4DC026492B8DF0C4005A1291 /* ChatsToolbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsToolbarView.swift; sourceTree = "<group>"; };
+		58DBBED4F3960B746C6C6C2D /* Pods-LochTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LochTests.debug.xcconfig"; path = "Target Support Files/Pods-LochTests/Pods-LochTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8AA46D5F9062E66D5341939F /* Pods-LochTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LochTests.release.xcconfig"; path = "Target Support Files/Pods-LochTests/Pods-LochTests.release.xcconfig"; sourceTree = "<group>"; };
+		983C9DE4CE04067C68F21D7A /* Pods_Loch_LochUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loch_LochUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAC3D64539AF4E497795658C /* Pods-Loch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loch.release.xcconfig"; path = "Target Support Files/Pods-Loch/Pods-Loch.release.xcconfig"; sourceTree = "<group>"; };
+		AEE818DBF8D2ADDB87D8A81E /* Pods_Loch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5FCC007A1BF29B164A29A2D /* Pods-Loch-LochUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loch-LochUITests.debug.xcconfig"; path = "Target Support Files/Pods-Loch-LochUITests/Pods-Loch-LochUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E175F2742BC613C700524358 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
+		E175F2762BC613E200524358 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
+		E175F27B2BC614FA00524358 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		E175F27D2BC6153400524358 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E175F27F2BC6155500524358 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		E175F2812BC6156C00524358 /* ConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
+		E175F2832BC6157B00524358 /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
+		E175F2852BC616B500524358 /* Authenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
 		E18669902B68853500FEDDD9 /* Loch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18669932B68853500FEDDD9 /* LochApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LochApp.swift; sourceTree = "<group>"; };
 		E18669952B68853500FEDDD9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +124,8 @@
 		E18669C52B688B9700FEDDD9 /* ProfileMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainView.swift; sourceTree = "<group>"; };
 		E18669CD2B69BD5400FEDDD9 /* ContactsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDetailView.swift; sourceTree = "<group>"; };
 		E18669DD2B807CCB00FEDDD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ECDEC17D16526DCE58E37741 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		EDD611C823465658325E3031 /* Pods-Loch-LochUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loch-LochUITests.release.xcconfig"; path = "Target Support Files/Pods-Loch-LochUITests/Pods-Loch-LochUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B08899AA30A6703F7D52BF74 /* Pods_Loch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFC9E42BDC2099A9C960E49D /* Pods_LochTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34F0B6383953124C3139B5B9 /* Pods_Loch_LochUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +159,9 @@
 		0263AD582B81F82500F2C72F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AEE818DBF8D2ADDB87D8A81E /* Pods_Loch.framework */,
+				983C9DE4CE04067C68F21D7A /* Pods_Loch_LochUITests.framework */,
+				37D22C749CA7DBB0DCAA8661 /* Pods_LochTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -165,6 +203,42 @@
 			path = "Chat Group";
 			sourceTree = "<group>";
 		};
+		7A994D02768AFC7A9D3B6154 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D38DE9C6AE70B7326CFF98F /* Pods-Loch.debug.xcconfig */,
+				AAC3D64539AF4E497795658C /* Pods-Loch.release.xcconfig */,
+				C5FCC007A1BF29B164A29A2D /* Pods-Loch-LochUITests.debug.xcconfig */,
+				EDD611C823465658325E3031 /* Pods-Loch-LochUITests.release.xcconfig */,
+				58DBBED4F3960B746C6C6C2D /* Pods-LochTests.debug.xcconfig */,
+				8AA46D5F9062E66D5341939F /* Pods-LochTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C554A0CAA34604FB968E903F /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				ECDEC17D16526DCE58E37741 /* awsconfiguration.json */,
+				226250C1A126D465B9A088E0 /* amplifyconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			sourceTree = "<group>";
+		};
+		E175F2782BC6148500524358 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				E175F27B2BC614FA00524358 /* SessionManager.swift */,
+				E175F27D2BC6153400524358 /* LoginView.swift */,
+				E175F27F2BC6155500524358 /* SignUpView.swift */,
+				E175F2812BC6156C00524358 /* ConfirmationView.swift */,
+				E175F2832BC6157B00524358 /* SessionView.swift */,
+				E175F2852BC616B500524358 /* Authenticator.swift */,
+			);
+			name = Authentication;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		E18669872B68853500FEDDD9 = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +248,8 @@
 				E18669912B68853500FEDDD9 /* Products */,
 				0263AD582B81F82500F2C72F /* Frameworks */,
 				E18669DD2B807CCB00FEDDD9 /* GoogleService-Info.plist */,
+				7A994D02768AFC7A9D3B6154 /* Pods */,
+				C554A0CAA34604FB968E903F /* AmplifyConfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -191,9 +267,12 @@
 			isa = PBXGroup;
 			children = (
 				025281872BAED53700046300 /* ColorExtensions.swift */,
+				E175F2782BC6148500524358 /* Authentication */,
 				E18669932B68853500FEDDD9 /* LochApp.swift */,
 				E18669952B68853500FEDDD9 /* ContentView.swift */,
-				02EDC2592B80710A00F63A29 /* LoginView.swift */,
+				02EDC2592B80710A00F63A29 /* LoginView2.swift */,
+				E175F2762BC613E200524358 /* awsconfiguration.json */,
+				E175F2742BC613C700524358 /* amplifyconfiguration.json */,
 				025FC94B2B9F1B5A006F59D9 /* ViewExtensions.swift */,
 				E18669992B68853800FEDDD9 /* Preview Content */,
 				4DC026582B8DF0D3005A1291 /* Chat Group */,
@@ -256,17 +335,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E18669B42B68853900FEDDD9 /* Build configuration list for PBXNativeTarget "Loch" */;
 			buildPhases = (
+				855A4DBE32BFDC79942E5155 /* [CP] Check Pods Manifest.lock */,
 				E186698C2B68853500FEDDD9 /* Sources */,
 				E186698D2B68853500FEDDD9 /* Frameworks */,
 				E186698E2B68853500FEDDD9 /* Resources */,
+				1DDA84E73C3854AE5C1E80C9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Loch;
-			packageProductDependencies = (
-			);
 			productName = Loch;
 			productReference = E18669902B68853500FEDDD9 /* Loch.app */;
 			productType = "com.apple.product-type.application";
@@ -275,6 +354,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E18669B72B68853900FEDDD9 /* Build configuration list for PBXNativeTarget "LochTests" */;
 			buildPhases = (
+				E6D348B4561BF3CE97AFF52A /* [CP] Check Pods Manifest.lock */,
 				E186699C2B68853900FEDDD9 /* Sources */,
 				E186699D2B68853900FEDDD9 /* Frameworks */,
 				E186699E2B68853900FEDDD9 /* Resources */,
@@ -293,9 +373,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E18669BA2B68853900FEDDD9 /* Build configuration list for PBXNativeTarget "LochUITests" */;
 			buildPhases = (
+				5499B899BD2D2B2498C55295 /* [CP] Check Pods Manifest.lock */,
 				E18669A62B68853900FEDDD9 /* Sources */,
 				E18669A72B68853900FEDDD9 /* Frameworks */,
 				E18669A82B68853900FEDDD9 /* Resources */,
+				CFBDCFA09DBC2359027972F7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -359,10 +441,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E175F2772BC613E300524358 /* awsconfiguration.json in Resources */,
 				E186699B2B68853800FEDDD9 /* Preview Assets.xcassets in Resources */,
 				E18669982B68853800FEDDD9 /* Assets.xcassets in Resources */,
 				E18669DE2B807CCB00FEDDD9 /* GoogleService-Info.plist in Resources */,
+				E175F2752BC613C700524358 /* amplifyconfiguration.json in Resources */,
 				02CADFD12BAFBCF9000973DD /* ChatsContentViewModel.swift in Resources */,
+				A560C9DB6B19EB5B37D2E666 /* awsconfiguration.json in Resources */,
+				8F0509FA308C43F2442838CC /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,32 +468,149 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1DDA84E73C3854AE5C1E80C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Loch/Pods-Loch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Loch/Pods-Loch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Loch/Pods-Loch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5499B899BD2D2B2498C55295 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Loch-LochUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		855A4DBE32BFDC79942E5155 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Loch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFBDCFA09DBC2359027972F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Loch-LochUITests/Pods-Loch-LochUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Loch-LochUITests/Pods-Loch-LochUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Loch-LochUITests/Pods-Loch-LochUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6D348B4561BF3CE97AFF52A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LochTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E186698C2B68853500FEDDD9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4DC026542B8DF0C5005A1291 /* ChatsToolbarView.swift in Sources */,
+				E175F2842BC6157B00524358 /* SessionView.swift in Sources */,
 				025281882BAED53700046300 /* ColorExtensions.swift in Sources */,
 				4DC0264F2B8DF0C5005A1291 /* ChatsMainView.swift in Sources */,
 				E18669962B68853500FEDDD9 /* ContentView.swift in Sources */,
+				E175F2862BC616B500524358 /* Authenticator.swift in Sources */,
 				4DC026532B8DF0C5005A1291 /* ChatsTextMessageModel.swift in Sources */,
 				023C2D0C2BAD4F72003D237C /* ConnectTestView.swift in Sources */,
-				02EDC25A2B80710A00F63A29 /* LoginView.swift in Sources */,
+				02EDC25A2B80710A00F63A29 /* LoginView2.swift in Sources */,
 				E18669C42B688B8C00FEDDD9 /* ContactsMainView.swift in Sources */,
 				02DC16342B8A277C007D45AF /* ForumBlockView.swift in Sources */,
 				E18669C62B688B9700FEDDD9 /* ProfileMainView.swift in Sources */,
 				E18669942B68853500FEDDD9 /* LochApp.swift in Sources */,
 				E18669CE2B69BD5400FEDDD9 /* ContactsDetailView.swift in Sources */,
+				E175F27C2BC614FA00524358 /* SessionManager.swift in Sources */,
 				4D312E2F2B99BDFE0008A896 /* ChatsHeadTextSearchView.swift in Sources */,
 				4DC026502B8DF0C5005A1291 /* ChatsTailView.swift in Sources */,
+				E175F2822BC6156C00524358 /* ConfirmationView.swift in Sources */,
 				02CADFD32BAFBD74000973DD /* ForumAddNewView.swift in Sources */,
 				4DC026522B8DF0C5005A1291 /* ChatsDetailView.swift in Sources */,
 				025FC94C2B9F1B5A006F59D9 /* ViewExtensions.swift in Sources */,
 				02DC162C2B8A225F007D45AF /* ProfileSettingsView.swift in Sources */,
 				4D66327F2B9D5122002E71A4 /* ForumPostModel.swift in Sources */,
+				E175F27E2BC6153400524358 /* LoginView.swift in Sources */,
 				4D6632812B9D51E3002E71A4 /* ForumPostCommentsModel.swift in Sources */,
 				4DC0264E2B8DF0C5005A1291 /* ChatsHeadView.swift in Sources */,
+				E175F2802BC6155500524358 /* SignUpView.swift in Sources */,
 				02DC16282B8A21F8007D45AF /* ForumHeadView.swift in Sources */,
 				E18669C02B688B7600FEDDD9 /* ForumMainView.swift in Sources */,
 				E18669C22B688B8000FEDDD9 /* ConnectMainView.swift in Sources */,
@@ -418,7 +621,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02EDC25B2B80710A00F63A29 /* LoginView.swift in Sources */,
+				02EDC25B2B80710A00F63A29 /* LoginView2.swift in Sources */,
 				E18669A52B68853900FEDDD9 /* LochTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,7 +630,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02EDC25C2B80710A00F63A29 /* LoginView.swift in Sources */,
+				02EDC25C2B80710A00F63A29 /* LoginView2.swift in Sources */,
 				E18669B12B68853900FEDDD9 /* LochUITestsLaunchTests.swift in Sources */,
 				E18669AF2B68853900FEDDD9 /* LochUITests.swift in Sources */,
 			);
@@ -486,7 +689,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -549,7 +752,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -570,13 +773,14 @@
 		};
 		E18669B52B68853900FEDDD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D38DE9C6AE70B7326CFF98F /* Pods-Loch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Loch/Preview Content\"";
-				DEVELOPMENT_TEAM = 8WQXU256NM;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -599,13 +803,14 @@
 		};
 		E18669B62B68853900FEDDD9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAC3D64539AF4E497795658C /* Pods-Loch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Loch/Preview Content\"";
-				DEVELOPMENT_TEAM = 8WQXU256NM;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -628,6 +833,7 @@
 		};
 		E18669B82B68853900FEDDD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58DBBED4F3960B746C6C6C2D /* Pods-LochTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -648,6 +854,7 @@
 		};
 		E18669B92B68853900FEDDD9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AA46D5F9062E66D5341939F /* Pods-LochTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -668,6 +875,7 @@
 		};
 		E18669BB2B68853900FEDDD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5FCC007A1BF29B164A29A2D /* Pods-Loch-LochUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -686,6 +894,7 @@
 		};
 		E18669BC2B68853900FEDDD9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDD611C823465658325E3031 /* Pods-Loch-LochUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

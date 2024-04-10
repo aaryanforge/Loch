@@ -1,0 +1,6 @@
+framework module Pods_Loch {
+  umbrella header "Pods-Loch-umbrella.h"
+
+  export *
+  module * { export * }
+}

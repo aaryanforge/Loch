@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-loch-dev-9a989-authRole",
+      "UnauthRoleArn": "arn:aws:iam::851725592632:role/amplify-loch-dev-9a989-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::851725592632:role/amplify-loch-dev-9a989-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-loch-dev-9a989-deployment",
+      "UnauthRoleName": "amplify-loch-dev-9a989-unauthRole",
+      "StackName": "amplify-loch-dev-9a989",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:851725592632:stack/amplify-loch-dev-9a989/df6ab6c0-f6cf-11ee-ae0f-022849153069",
+      "AmplifyAppId": "d3uh4rtmpbs5iw"
+    },
+    "categories": {
+      "auth": {
+        "lochbb8d2009": {}
+      }
+    }
+  }
+}
