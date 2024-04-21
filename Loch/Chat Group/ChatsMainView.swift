@@ -27,7 +27,7 @@ struct Chatitem: View {
                 .foregroundColor(.gray)
 
             Image(systemName: "checkmark.circle")
-                .foregroundColor(isRead ? .green : .teal)
+                .foregroundColor(isRead ? .green : .gray) 
                 .padding(.trailing)
 
         }
