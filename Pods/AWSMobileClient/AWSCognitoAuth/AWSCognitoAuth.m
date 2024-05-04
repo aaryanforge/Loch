@@ -51,7 +51,7 @@ NSString *const AWSCognitoAuthErrorDomain = @"com.amazon.cognito.AWSCognitoAuthE
 API_AVAILABLE(ios(11.0))
 @interface AWSCognitoAuth()
 
-@property (nonatomic, strong) SFAuthenticationSession *sfAuthSession;
+@property (nonatomic, strong) ASWebAuthenticationSession *sfAuthSession;
 
 @end
 
@@ -80,7 +80,7 @@ API_AVAILABLE(ios(13.0))
 
 @implementation AWSCognitoAuth
 
-NSString *const AWSCognitoAuthSDKVersion = @"2.34.2";
+NSString *const AWSCognitoAuthSDKVersion = @"2.36.1";
 
 
 static NSMutableDictionary *_instanceDictionary = nil;
@@ -356,12 +356,14 @@ withPresentingViewController:(UIViewController *)presentingViewController {
 
 - (void)launchSFWebAuthenticationSession:(NSURL *)hostedUIURL API_AVAILABLE(ios(11.0)) {
     self.sfAuthenticationSessionAvailable = YES;
-    NSString *callbackURLScheme = [[self urlEncode:self.authConfiguration.signInRedirectUri] copy];
+    NSString *callbackURLString = [[self urlEncode:self.authConfiguration.signInRedirectUri] copy];
+    NSURL *callbackURL = [[NSURL alloc] initWithString:callbackURLString];
+    NSString *callbackURLScheme = callbackURL.scheme;
     __weak AWSCognitoAuth *weakSelf = self;
-    self.sfAuthSession = [[SFAuthenticationSession alloc] initWithURL:hostedUIURL
-                                                    callbackURLScheme:callbackURLScheme
-                                                    completionHandler:^(NSURL * _Nullable url,
-                                                                        NSError * _Nullable error) {
+    self.sfAuthSession = [[ASWebAuthenticationSession alloc] initWithURL:hostedUIURL
+                                                       callbackURLScheme:callbackURLScheme
+                                                       completionHandler:^(NSURL * _Nullable url,
+                                                                           NSError * _Nullable error) {
         __strong AWSCognitoAuth *strongSelf = weakSelf;
         [strongSelf handleSignInCallbackWithURL:url error:error];
     }];
@@ -403,7 +405,9 @@ withPresentingViewController:(UIViewController *)presentingViewController {
 
 -(void)showSFSafariViewControllerForURL:(NSURL *)url
            withPresentingViewController:(UIViewController *)presentingViewController{
-    self.svc = [[SFSafariViewController alloc] initWithURL:url entersReaderIfAvailable:NO];
+    SFSafariViewControllerConfiguration *configuration = [[SFSafariViewControllerConfiguration alloc] init];
+    configuration.entersReaderIfAvailable = NO;
+    self.svc = [[SFSafariViewController alloc] initWithURL:url configuration:configuration];
     self.svc.delegate = self;
     self.svc.modalPresentationStyle = UIModalPresentationPopover;
     self.isProcessingSignIn = YES;
@@ -653,17 +657,19 @@ withPresentingViewController:(UIViewController *)presentingViewController {
 
 - (void)launchSFAuthenticationSessionForSignOut:(NSURL *) url API_AVAILABLE(ios(11.0)) {
     self.sfAuthenticationSessionAvailable = YES;
-    NSString *callbackURLScheme = [[self urlEncode:self.authConfiguration.signOutRedirectUri] copy];
+    NSString *callbackURLString = [[self urlEncode:self.authConfiguration.signOutRedirectUri] copy];
+    NSURL *callbackURL = [[NSURL alloc] initWithString:callbackURLString];
+    NSString *callbackURLScheme = callbackURL.scheme;
     __weak AWSCognitoAuth *weakSelf = self;
-    self.sfAuthSession = [[SFAuthenticationSession alloc] initWithURL:url
-                                                    callbackURLScheme:callbackURLScheme
-                                                    completionHandler:^(NSURL * _Nullable url,
-                                                                        NSError * _Nullable error) {
+    self.sfAuthSession = [[ASWebAuthenticationSession alloc] initWithURL:url
+                                                       callbackURLScheme:callbackURLScheme
+                                                       completionHandler:^(NSURL * _Nullable url,
+                                                                           NSError * _Nullable error) {
         __strong AWSCognitoAuth *strongSelf = weakSelf;
         if (url) {
             [strongSelf processURL:url forRedirection:NO];
         } else {
-            if (error.code != SFAuthenticationErrorCanceledLogin) {
+            if (error.code != ASWebAuthenticationSessionErrorCodeCanceledLogin) {
                 [strongSelf signOutLocallyAndClearLastKnownUser];
             }
             [strongSelf dismissSafariViewControllerAndCompleteSignOut:error];
@@ -674,7 +680,9 @@ withPresentingViewController:(UIViewController *)presentingViewController {
 
 - (void)signOutSFSafariVC: (UIViewController *) vc
                       url:(NSURL *)url {
-    self.svc = [[SFSafariViewController alloc] initWithURL:url entersReaderIfAvailable:NO];
+    SFSafariViewControllerConfiguration *configuration = [[SFSafariViewControllerConfiguration alloc] init];
+    configuration.entersReaderIfAvailable = NO;
+    self.svc = [[SFSafariViewController alloc] initWithURL:url configuration:configuration];
     self.svc.delegate = self;
     self.svc.modalPresentationStyle = UIModalPresentationPopover;
     self.isProcessingSignOut = YES;

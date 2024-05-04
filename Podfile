@@ -6,7 +6,6 @@ target 'Loch' do
   use_frameworks!
 
   # Pods for Loch
-
   pod 'Amplify'
   pod 'AmplifyPlugins/AWSCognitoAuthPlugin'
 

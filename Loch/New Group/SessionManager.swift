@@ -60,7 +60,7 @@ final class SessionManager: ObservableObject {
                     }
                 }
                 
-                
+
             case .failure(let error):
                 print("Sign up error:", error)
             }
