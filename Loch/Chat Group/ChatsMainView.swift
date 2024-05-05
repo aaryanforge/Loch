@@ -14,8 +14,9 @@ struct Chatitem: View {
 
     var body: some View {
         HStack {
-            ProfilePictureCircle(size: 80, hasBorder: true)
-                .padding(8)
+            ProfilePictureCircle(size: 65, hasBorder: true)
+                .padding(6)
+                .padding(.leading, 5)
 
             Text("Nickname here")
                 .padding(8)
@@ -26,7 +27,7 @@ struct Chatitem: View {
                 .padding(.trailing, 5)
                 .foregroundColor(.gray)
 
-            Image(systemName: "checkmark.circle")
+            Image(systemName: (isRead ? "checkmark.circle" : "circle" ))
                 .foregroundColor(isRead ? .green : .gray) 
                 .padding(.trailing)
 
@@ -38,6 +39,7 @@ struct Chatitem: View {
 }
 
 struct ChatsMainView: View {
+    @State private var isAddGroupMemberOn = false
 
     var body: some View {
 
@@ -54,10 +56,26 @@ struct ChatsMainView: View {
                 .padding(.trailing)
                 .foregroundColor(.white)
                 .scaleEffect(1.5)
+                .onTapGesture{
+                    withAnimation(.easeInOut(duration: 1.0)) {
+                        isAddGroupMemberOn.toggle()
+                    }
+                }
+                .sheet(
+                    isPresented: $isAddGroupMemberOn,
+                    content: {
+                        GroupChatsMainView()
+                })
+            
             Image(systemName: "magnifyingglass")
                 .padding(.trailing)
                 .foregroundColor(.white)
                 .scaleEffect(1.2)
+            Image(systemName: "ellipsis")
+                .padding(.trailing, 8)
+                .foregroundColor(.white)
+                .scaleEffect(1.2)
+
         }
         .frame(maxWidth:.infinity, maxHeight: 65, alignment: .leading)
         .padding()

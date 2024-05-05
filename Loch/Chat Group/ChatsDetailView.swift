@@ -25,6 +25,7 @@ struct YourMessage: View {
         ZStack(alignment: .trailing) {
             // Need to change text based on messages
             Text(message)
+                .font(.system(size: 10 ,weight: .regular, design: .default))
                 .padding(10)
                 .frame(maxWidth: .infinity, alignment: .trailing)
 
@@ -55,6 +56,7 @@ struct TheirMessage: View {
         ZStack(alignment: .leading) {
              // Need to change text based on messages
             Text(message)
+                .font(.system(size: 10 ,weight: .regular, design: .default))
                 .padding(10)
                 .frame(maxWidth: .infinity, alignment: .leading)
 
@@ -89,11 +91,11 @@ struct ChatsDetailView: View {
             }
 
             // mark was here - loading the messages
-            ForEach(messages) { message in
-                VStack {
-                    Text(message.messageContents)
-                }
-            }
+            // ForEach(messages) { message in
+            //     VStack {
+            //         Text(message.messageContents)
+            //     }
+            // }
             //ChatsTailView()
         }
     }
