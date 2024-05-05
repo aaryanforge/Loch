@@ -28,9 +28,9 @@
 		4DC026522B8DF0C5005A1291 /* ChatsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026472B8DF0C4005A1291 /* ChatsDetailView.swift */; };
 		4DC026532B8DF0C5005A1291 /* ChatsTextMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026482B8DF0C4005A1291 /* ChatsTextMessageModel.swift */; };
 		4DC026542B8DF0C5005A1291 /* ChatsToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026492B8DF0C4005A1291 /* ChatsToolbarView.swift */; };
+		8F0509FA308C43F2442838CC /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 226250C1A126D465B9A088E0 /* amplifyconfiguration.json */; };
+		A560C9DB6B19EB5B37D2E666 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = ECDEC17D16526DCE58E37741 /* awsconfiguration.json */; };
 		B08899AA30A6703F7D52BF74 /* Pods_Loch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE818DBF8D2ADDB87D8A81E /* Pods_Loch.framework */; };
-		E123E5342BE623D50011C85F /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = E123E5322BE623D40011C85F /* amplifyconfiguration.json */; };
-		E123E5352BE623D50011C85F /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = E123E5332BE623D50011C85F /* awsconfiguration.json */; };
 		E175F27C2BC614FA00524358 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175F27B2BC614FA00524358 /* SessionManager.swift */; };
 		E175F27E2BC6153400524358 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175F27D2BC6153400524358 /* LoginView.swift */; };
 		E175F2802BC6155500524358 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175F27F2BC6155500524358 /* SignUpView.swift */; };
@@ -70,6 +70,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		02E7094E2BE7B4630078E6BF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		023C2D0B2BAD4F72003D237C /* ConnectTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectTestView.swift; sourceTree = "<group>"; };
 		025281872BAED53700046300 /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
@@ -82,6 +95,7 @@
 		02EDC2592B80710A00F63A29 /* LoginView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView2.swift; sourceTree = "<group>"; };
 		154A82FA4C7654D2E06A9DB5 /* Pods-LochTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LochTests.release.xcconfig"; path = "Target Support Files/Pods-LochTests/Pods-LochTests.release.xcconfig"; sourceTree = "<group>"; };
 		17E31757D2B645201118284C /* Pods-LochTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LochTests.debug.xcconfig"; path = "Target Support Files/Pods-LochTests/Pods-LochTests.debug.xcconfig"; sourceTree = "<group>"; };
+		226250C1A126D465B9A088E0 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; lastKnownFileType = text.json; name = amplifyconfiguration.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		37D22C749CA7DBB0DCAA8661 /* Pods_LochTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LochTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		497B1D089705295C7B993F59 /* Pods-Loch-LochUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loch-LochUITests.debug.xcconfig"; path = "Target Support Files/Pods-Loch-LochUITests/Pods-Loch-LochUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4D312E2E2B99BDFE0008A896 /* ChatsHeadTextSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsHeadTextSearchView.swift; sourceTree = "<group>"; };
@@ -98,8 +112,6 @@
 		AEE818DBF8D2ADDB87D8A81E /* Pods_Loch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C639B247E19C3D6670F92D0F /* Pods-Loch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loch.debug.xcconfig"; path = "Target Support Files/Pods-Loch/Pods-Loch.debug.xcconfig"; sourceTree = "<group>"; };
 		DA055A398E3291B9B2BF4756 /* Pods-Loch-LochUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loch-LochUITests.release.xcconfig"; path = "Target Support Files/Pods-Loch-LochUITests/Pods-Loch-LochUITests.release.xcconfig"; sourceTree = "<group>"; };
-		E123E5322BE623D40011C85F /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = amplifyconfiguration.json; path = Loch/amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
-		E123E5332BE623D50011C85F /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = awsconfiguration.json; path = Loch/awsconfiguration.json; sourceTree = SOURCE_ROOT; };
 		E175F27B2BC614FA00524358 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		E175F27D2BC6153400524358 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E175F27F2BC6155500524358 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -122,6 +134,7 @@
 		E18669C52B688B9700FEDDD9 /* ProfileMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainView.swift; sourceTree = "<group>"; };
 		E18669CD2B69BD5400FEDDD9 /* ContactsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDetailView.swift; sourceTree = "<group>"; };
 		E18669DD2B807CCB00FEDDD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ECDEC17D16526DCE58E37741 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; lastKnownFileType = text.json; name = awsconfiguration.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +225,22 @@
 			path = "Chat Group";
 			sourceTree = "<group>";
 		};
+		741C6508B5A9EAF3E365B224 /* AmplifyModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = AmplifyModels;
+			sourceTree = "<group>";
+		};
+		C554A0CAA34604FB968E903F /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				ECDEC17D16526DCE58E37741 /* awsconfiguration.json */,
+				226250C1A126D465B9A088E0 /* amplifyconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			sourceTree = "<group>";
+		};
 		E175F2782BC6148500524358 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +265,8 @@
 				0263AD582B81F82500F2C72F /* Frameworks */,
 				E18669DD2B807CCB00FEDDD9 /* GoogleService-Info.plist */,
 				4C90F38E8D06CFF76CABED2E /* Pods */,
+				C554A0CAA34604FB968E903F /* AmplifyConfig */,
+				741C6508B5A9EAF3E365B224 /* AmplifyModels */,
 			);
 			sourceTree = "<group>";
 		};
@@ -252,8 +283,6 @@
 		E18669922B68853500FEDDD9 /* Loch */ = {
 			isa = PBXGroup;
 			children = (
-				E123E5322BE623D40011C85F /* amplifyconfiguration.json */,
-				E123E5332BE623D50011C85F /* awsconfiguration.json */,
 				025281872BAED53700046300 /* ColorExtensions.swift */,
 				E175F2782BC6148500524358 /* Authentication */,
 				E18669932B68853500FEDDD9 /* LochApp.swift */,
@@ -326,6 +355,7 @@
 				E186698D2B68853500FEDDD9 /* Frameworks */,
 				E186698E2B68853500FEDDD9 /* Resources */,
 				1DDA84E73C3854AE5C1E80C9 /* [CP] Embed Pods Frameworks */,
+				02E7094E2BE7B4630078E6BF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -427,12 +457,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E123E5352BE623D50011C85F /* awsconfiguration.json in Resources */,
 				E186699B2B68853800FEDDD9 /* Preview Assets.xcassets in Resources */,
 				E18669982B68853800FEDDD9 /* Assets.xcassets in Resources */,
 				E18669DE2B807CCB00FEDDD9 /* GoogleService-Info.plist in Resources */,
-				E123E5342BE623D50011C85F /* amplifyconfiguration.json in Resources */,
 				02CADFD12BAFBCF9000973DD /* ChatsContentViewModel.swift in Resources */,
+				A560C9DB6B19EB5B37D2E666 /* awsconfiguration.json in Resources */,
+				8F0509FA308C43F2442838CC /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -764,7 +794,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Loch/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = M4M438699Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -794,7 +824,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Loch/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = M4M438699Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
