@@ -7,8 +7,6 @@
 
 import SwiftUI
 import SwiftData
-import Amplify
-import AWSCognitoAuthPlugin
 
 @main
 struct LochApp: App {
@@ -20,15 +18,4 @@ struct LochApp: App {
             .modelContainer(for: [ChatTextMessage.self, ForumPost.self, ForumPostComment.self])
     }
   }
-    init() {
-        do {
-            try Amplify.add(plugin: AWSCognitoAuthPlugin())
-            try Amplify.configure()
-            print("Amplify auth ready")
-        } catch {
-            print("Amplify config failed with error \(error)")
-        }
-    }
- 
-
 }
