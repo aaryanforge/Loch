@@ -50,15 +50,10 @@ struct ChatsToolbarViewGC: View {
     }
 }
 
-
-struct ChatsToolbarView: View {
-
-    var body: some View {
-        //to be edited dependent on which chat is active 
-        ChatsToolbarViewPM()
-    }
+#Preview {
+    ChatsToolbarViewPM()
 }
 
 #Preview {
-    ChatsToolbarView()
+    ChatsToolbarViewGC()
 }

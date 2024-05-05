@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct Chatitem: View {
     //var uid : Int   please change when avaliable 
     var time: String
