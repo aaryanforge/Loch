@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		025FC94C2B9F1B5A006F59D9 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025FC94B2B9F1B5A006F59D9 /* ViewExtensions.swift */; };
-		025FC94E2B9F1FA0006F59D9 /* ForumAddPostSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025FC94D2B9F1FA0006F59D9 /* ForumAddPostSheetView.swift */; };
-		0263AD5C2B81F98000F2C72F /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263AD5B2B81F98000F2C72F /* UserModel.swift */; };
-		02DC16202B8A2141007D45AF /* ConnectSendDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC161F2B8A2141007D45AF /* ConnectSendDetailView.swift */; };
-		02DC16222B8A216D007D45AF /* ConnectReceiveDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC16212B8A216D007D45AF /* ConnectReceiveDetailView.swift */; };
+		02C69DCD2BE6409C003B222C /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 02C69DCB2BE6409C003B222C /* amplifyconfiguration.json */; };
+		02C69DCE2BE6409C003B222C /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 02C69DCC2BE6409C003B222C /* awsconfiguration.json */; };
+		02CADFD12BAFBCF9000973DD /* ChatsContentViewModel.swift in Resources */ = {isa = PBXBuildFile; fileRef = 02CADFD02BAFBCF9000973DD /* ChatsContentViewModel.swift */; };
+		02CADFD32BAFBD74000973DD /* ForumAddNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CADFD22BAFBD74000973DD /* ForumAddNewView.swift */; };
 		02DC16282B8A21F8007D45AF /* ForumHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC16272B8A21F8007D45AF /* ForumHeadView.swift */; };
 		02DC162A2B8A2205007D45AF /* ForumTailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC16292B8A2205007D45AF /* ForumTailView.swift */; };
 		02DC162C2B8A225F007D45AF /* ProfileSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC162B2B8A225F007D45AF /* ProfileSettingsView.swift */; };
@@ -34,8 +34,13 @@
 		4DC026522B8DF0C5005A1291 /* ChatsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026472B8DF0C4005A1291 /* ChatsDetailView.swift */; };
 		4DC026532B8DF0C5005A1291 /* ChatsTextMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026482B8DF0C4005A1291 /* ChatsTextMessageModel.swift */; };
 		4DC026542B8DF0C5005A1291 /* ChatsToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC026492B8DF0C4005A1291 /* ChatsToolbarView.swift */; };
-		4DC026562B8DF0C5005A1291 /* ChatsDetailLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC0264B2B8DF0C5005A1291 /* ChatsDetailLoad.swift */; };
-		4DE136442B8F526B000507ED /* ChatsContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE136432B8F526B000507ED /* ChatsContentViewModel.swift */; };
+		B08899AA30A6703F7D52BF74 /* Pods_Loch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE818DBF8D2ADDB87D8A81E /* Pods_Loch.framework */; };
+		E175F27C2BC614FA00524358 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175F27B2BC614FA00524358 /* SessionManager.swift */; };
+		E175F27E2BC6153400524358 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175F27D2BC6153400524358 /* LoginView.swift */; };
+		E175F2802BC6155500524358 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175F27F2BC6155500524358 /* SignUpView.swift */; };
+		E175F2822BC6156C00524358 /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175F2812BC6156C00524358 /* ConfirmationView.swift */; };
+		E175F2842BC6157B00524358 /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175F2832BC6157B00524358 /* SessionView.swift */; };
+		E175F2862BC616B500524358 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175F2852BC616B500524358 /* Authenticator.swift */; };
 		E18669942B68853500FEDDD9 /* LochApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669932B68853500FEDDD9 /* LochApp.swift */; };
 		E18669962B68853500FEDDD9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18669952B68853500FEDDD9 /* ContentView.swift */; };
 		E18669982B68853800FEDDD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E18669972B68853800FEDDD9 /* Assets.xcassets */; };
@@ -70,10 +75,10 @@
 
 /* Begin PBXFileReference section */
 		025FC94B2B9F1B5A006F59D9 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
-		025FC94D2B9F1FA0006F59D9 /* ForumAddPostSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumAddPostSheetView.swift; sourceTree = "<group>"; };
-		0263AD5B2B81F98000F2C72F /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		02DC161F2B8A2141007D45AF /* ConnectSendDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectSendDetailView.swift; sourceTree = "<group>"; };
-		02DC16212B8A216D007D45AF /* ConnectReceiveDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectReceiveDetailView.swift; sourceTree = "<group>"; };
+		02C69DCB2BE6409C003B222C /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = amplifyconfiguration.json; path = Loch/amplifyconfiguration.json; sourceTree = "<group>"; };
+		02C69DCC2BE6409C003B222C /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = awsconfiguration.json; path = Loch/awsconfiguration.json; sourceTree = "<group>"; };
+		02CADFD02BAFBCF9000973DD /* ChatsContentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsContentViewModel.swift; sourceTree = "<group>"; };
+		02CADFD22BAFBD74000973DD /* ForumAddNewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumAddNewView.swift; sourceTree = "<group>"; };
 		02DC16272B8A21F8007D45AF /* ForumHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumHeadView.swift; sourceTree = "<group>"; };
 		02DC16292B8A2205007D45AF /* ForumTailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumTailView.swift; sourceTree = "<group>"; };
 		02DC162B2B8A225F007D45AF /* ProfileSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsView.swift; sourceTree = "<group>"; };
@@ -94,8 +99,17 @@
 		4DC026472B8DF0C4005A1291 /* ChatsDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsDetailView.swift; sourceTree = "<group>"; };
 		4DC026482B8DF0C4005A1291 /* ChatsTextMessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsTextMessageModel.swift; sourceTree = "<group>"; };
 		4DC026492B8DF0C4005A1291 /* ChatsToolbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsToolbarView.swift; sourceTree = "<group>"; };
-		4DC0264B2B8DF0C5005A1291 /* ChatsDetailLoad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsDetailLoad.swift; sourceTree = "<group>"; };
-		4DE136432B8F526B000507ED /* ChatsContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsContentViewModel.swift; sourceTree = "<group>"; };
+		6E8EFB1C5C0AFE381219DBF1 /* Pods-Loch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loch.release.xcconfig"; path = "Target Support Files/Pods-Loch/Pods-Loch.release.xcconfig"; sourceTree = "<group>"; };
+		983C9DE4CE04067C68F21D7A /* Pods_Loch_LochUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loch_LochUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEE818DBF8D2ADDB87D8A81E /* Pods_Loch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C639B247E19C3D6670F92D0F /* Pods-Loch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loch.debug.xcconfig"; path = "Target Support Files/Pods-Loch/Pods-Loch.debug.xcconfig"; sourceTree = "<group>"; };
+		DA055A398E3291B9B2BF4756 /* Pods-Loch-LochUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loch-LochUITests.release.xcconfig"; path = "Target Support Files/Pods-Loch-LochUITests/Pods-Loch-LochUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E175F27B2BC614FA00524358 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		E175F27D2BC6153400524358 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E175F27F2BC6155500524358 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		E175F2812BC6156C00524358 /* ConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
+		E175F2832BC6157B00524358 /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
+		E175F2852BC616B500524358 /* Authenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
 		E18669902B68853500FEDDD9 /* Loch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18669932B68853500FEDDD9 /* LochApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LochApp.swift; sourceTree = "<group>"; };
 		E18669952B68853500FEDDD9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -190,6 +204,29 @@
 			path = "Chat Group";
 			sourceTree = "<group>";
 		};
+		C554A0CAA34604FB968E903F /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				02C69DCB2BE6409C003B222C /* amplifyconfiguration.json */,
+				02C69DCC2BE6409C003B222C /* awsconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			sourceTree = "<group>";
+		};
+		E175F2782BC6148500524358 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				E175F27B2BC614FA00524358 /* SessionManager.swift */,
+				E175F27D2BC6153400524358 /* LoginView.swift */,
+				E175F27F2BC6155500524358 /* SignUpView.swift */,
+				E175F2812BC6156C00524358 /* ConfirmationView.swift */,
+				E175F2832BC6157B00524358 /* SessionView.swift */,
+				E175F2852BC616B500524358 /* Authenticator.swift */,
+			);
+			name = Authentication;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		E18669872B68853500FEDDD9 = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +236,8 @@
 				E18669912B68853500FEDDD9 /* Products */,
 				0263AD582B81F82500F2C72F /* Frameworks */,
 				E18669DD2B807CCB00FEDDD9 /* GoogleService-Info.plist */,
+				4C90F38E8D06CFF76CABED2E /* Pods */,
+				C554A0CAA34604FB968E903F /* AmplifyConfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -215,6 +254,12 @@
 		E18669922B68853500FEDDD9 /* Loch */ = {
 			isa = PBXGroup;
 			children = (
+				025281872BAED53700046300 /* ColorExtensions.swift */,
+				E175F2782BC6148500524358 /* Authentication */,
+				E18669932B68853500FEDDD9 /* LochApp.swift */,
+				E18669952B68853500FEDDD9 /* ContentView.swift */,
+				02EDC2592B80710A00F63A29 /* LoginView2.swift */,
+				025FC94B2B9F1B5A006F59D9 /* ViewExtensions.swift */,
 				E18669992B68853800FEDDD9 /* Preview Content */,
 				0263AD5B2B81F98000F2C72F /* UserModel.swift */,
 				025FC94B2B9F1B5A006F59D9 /* ViewExtensions.swift */,
@@ -385,9 +430,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02C69DCE2BE6409C003B222C /* awsconfiguration.json in Resources */,
 				E186699B2B68853800FEDDD9 /* Preview Assets.xcassets in Resources */,
 				E18669982B68853800FEDDD9 /* Assets.xcassets in Resources */,
 				E18669DE2B807CCB00FEDDD9 /* GoogleService-Info.plist in Resources */,
+				02C69DCD2BE6409C003B222C /* amplifyconfiguration.json in Resources */,
+				02CADFD12BAFBCF9000973DD /* ChatsContentViewModel.swift in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,7 +659,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Loch/Preview Content\"";
-				DEVELOPMENT_TEAM = 8WQXU256NM;
+				DEVELOPMENT_TEAM = M4M438699Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -640,7 +688,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Loch/Preview Content\"";
-				DEVELOPMENT_TEAM = 8WQXU256NM;
+				DEVELOPMENT_TEAM = M4M438699Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

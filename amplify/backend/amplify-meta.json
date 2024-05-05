@@ -1,0 +1,55 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-loch-dev-ab75c-authRole",
+      "UnauthRoleArn": "arn:aws:iam::381491839821:role/amplify-loch-dev-ab75c-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::381491839821:role/amplify-loch-dev-ab75c-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-loch-dev-ab75c-deployment",
+      "UnauthRoleName": "amplify-loch-dev-ab75c-unauthRole",
+      "StackName": "amplify-loch-dev-ab75c",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:381491839821:stack/amplify-loch-dev-ab75c/7067aff0-09ec-11ef-abb5-0a9993f4408f",
+      "AmplifyAppId": "d32wg4r0x2n0k2"
+    }
+  },
+  "auth": {
+    "lochd8734160": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "output": {
+        "UserPoolId": "ap-southeast-2_Qd5MemNT1",
+        "AppClientIDWeb": "4713b7ddhg9hm8ha0od32avo7c",
+        "AppClientID": "33he8pd03689sebvo7v6i7vfo2",
+        "IdentityPoolId": "ap-southeast-2:187c3adb-61f5-42d8-8b74-635ea331fda9",
+        "UserPoolArn": "arn:aws:cognito-idp:ap-southeast-2:381491839821:userpool/ap-southeast-2_Qd5MemNT1",
+        "IdentityPoolName": "lochd8734160_identitypool_d8734160__dev",
+        "UserPoolName": "lochd8734160_userpool_d8734160"
+      },
+      "lastPushTimeStamp": "2024-05-04T09:53:36.449Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-loch-dev-ab75c-deployment/amplify-cfn-templates/auth/lochd8734160-cloudformation-template.json",
+        "logicalId": "authlochd8734160"
+      }
+    }
+  }
+}
