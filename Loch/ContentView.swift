@@ -45,6 +45,12 @@ struct ContentView: View {
                         Image(systemName: "person.fill")
                         Text("Profile")
                     }
+                chatView()
+                    .tabItem{
+                        Image(systemName: "person.fill")
+                        Text("sockets")
+                    }
+                
             }
         }
         .padding()

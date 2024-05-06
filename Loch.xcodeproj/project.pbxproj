@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		021D7F212BE8AD360032C788 /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021D7F202BE8AD360032C788 /* SocketManager.swift */; };
 		023C2D0C2BAD4F72003D237C /* ConnectTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023C2D0B2BAD4F72003D237C /* ConnectTestView.swift */; };
 		025281882BAED53700046300 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025281872BAED53700046300 /* ColorExtensions.swift */; };
 		025FC94C2B9F1B5A006F59D9 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025FC94B2B9F1B5A006F59D9 /* ViewExtensions.swift */; };
@@ -84,6 +85,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		021D7F202BE8AD360032C788 /* SocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketManager.swift; sourceTree = "<group>"; };
 		023C2D0B2BAD4F72003D237C /* ConnectTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectTestView.swift; sourceTree = "<group>"; };
 		025281872BAED53700046300 /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		025FC94B2B9F1B5A006F59D9 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
@@ -95,7 +97,7 @@
 		02EDC2592B80710A00F63A29 /* LoginView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView2.swift; sourceTree = "<group>"; };
 		154A82FA4C7654D2E06A9DB5 /* Pods-LochTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LochTests.release.xcconfig"; path = "Target Support Files/Pods-LochTests/Pods-LochTests.release.xcconfig"; sourceTree = "<group>"; };
 		17E31757D2B645201118284C /* Pods-LochTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LochTests.debug.xcconfig"; path = "Target Support Files/Pods-LochTests/Pods-LochTests.debug.xcconfig"; sourceTree = "<group>"; };
-		226250C1A126D465B9A088E0 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; lastKnownFileType = text.json; name = amplifyconfiguration.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		226250C1A126D465B9A088E0 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		37D22C749CA7DBB0DCAA8661 /* Pods_LochTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LochTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		497B1D089705295C7B993F59 /* Pods-Loch-LochUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loch-LochUITests.debug.xcconfig"; path = "Target Support Files/Pods-Loch-LochUITests/Pods-Loch-LochUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4D312E2E2B99BDFE0008A896 /* ChatsHeadTextSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsHeadTextSearchView.swift; sourceTree = "<group>"; };
@@ -134,7 +136,7 @@
 		E18669C52B688B9700FEDDD9 /* ProfileMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainView.swift; sourceTree = "<group>"; };
 		E18669CD2B69BD5400FEDDD9 /* ContactsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDetailView.swift; sourceTree = "<group>"; };
 		E18669DD2B807CCB00FEDDD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		ECDEC17D16526DCE58E37741 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; lastKnownFileType = text.json; name = awsconfiguration.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		ECDEC17D16526DCE58E37741 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		021D7F1F2BE8AD1A0032C788 /* Websockets */ = {
+			isa = PBXGroup;
+			children = (
+				021D7F202BE8AD360032C788 /* SocketManager.swift */,
+			);
+			path = Websockets;
+			sourceTree = "<group>";
+		};
 		0263AD582B81F82500F2C72F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,6 +293,7 @@
 		E18669922B68853500FEDDD9 /* Loch */ = {
 			isa = PBXGroup;
 			children = (
+				021D7F1F2BE8AD1A0032C788 /* Websockets */,
 				025281872BAED53700046300 /* ColorExtensions.swift */,
 				E175F2782BC6148500524358 /* Authentication */,
 				E18669932B68853500FEDDD9 /* LochApp.swift */,
@@ -604,6 +615,7 @@
 				4DC0264F2B8DF0C5005A1291 /* ChatsMainView.swift in Sources */,
 				E18669962B68853500FEDDD9 /* ContentView.swift in Sources */,
 				E175F2862BC616B500524358 /* Authenticator.swift in Sources */,
+				021D7F212BE8AD360032C788 /* SocketManager.swift in Sources */,
 				4DC026532B8DF0C5005A1291 /* ChatsTextMessageModel.swift in Sources */,
 				023C2D0C2BAD4F72003D237C /* ConnectTestView.swift in Sources */,
 				02EDC25A2B80710A00F63A29 /* LoginView2.swift in Sources */,
