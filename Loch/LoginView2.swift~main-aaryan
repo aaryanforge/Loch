@@ -11,54 +11,76 @@
 
 import SwiftUI
 
-struct ButtonInit: View {
-    var todo: () -> Void
-    var actionName: String
-    var bgColor: Color
+// struct ButtonInit: View {
+//     var todo: () -> Void
+//     var actionName: String
+//     var bgColor: Color
 
-    var body: some View {
-        Button {
-            self.todo()
-        } label: {
-            ZStack{
-                RoundedRectangle(cornerRadius: 10, style: .continuous)
-                    .fill(bgColor)
-                    .frame(width: 120, height: 80)
+//     var body: some View {
+//         Button {
+//             self.todo()
+//         } label: {
+//             ZStack{
+//                 RoundedRectangle(cornerRadius: 10, style: .continuous)
+//                     .fill(bgColor)
+//                     .frame(width: 150, height: 80)
 
-                Text(actionName)
-                    .font(.system(size: 25 ,weight: .semibold, design: .default))
-            }
-        }
-        .padding()
-    }
+//                 Text(actionName)
+//                     .font(.system(size: 25 ,weight: .semibold, design: .default))
+//                     .foregroundColor(.white)
+//             }
+//         }
+//         .padding()
+//     }
     
-}
+// }
+
 
 struct LoginView: View {
-    
-    @State private var isSignedOn = true
+    @State private var isSignedOn = false
+    @State private var username: String = ""
+    @State private var password: String = ""
+
     var body: some View {
         
         ZStack {
-            LinearGradient(colors: [.green, .blue], startPoint: .topLeading, endPoint: .bottomTrailing)
+            LinearGradient(colors: [.green, .teal], startPoint: .topLeading, endPoint: .bottomTrailing)
             
             //details
             VStack {
-                Text("Loch")
-                    .font(.system(size: 45 ,weight: .bold, design: .default))
+                Spacer()
+                Text("Login")
+                    .font(.system(size: 50 ,weight: .bold, design: .default))
                     .padding()
-                
-                //replace with logo
-                ProfilePictureCircle(imageLink: "Connecting Image",size: 250, hasBorder: true )
+                    .foregroundColor(.white)
                 
                 Spacer()
                 
-                //sign up button
-                ButtonInit(todo: {
-                    print("signup")
-                }, actionName: "Sign Up", bgColor: .teal)
+                TextField(
+                    "Username", 
+                    text: $username,
+                    prompt: Text("Username")
+                )
+                    .padding(20)
+                    .foregroundColor(.black)
+                    .background(.white.opacity(0.2), in: RoundedRectangle (cornerRadius: 20, style: .continuous))
+                    .disableAutocorrection(true)
+                    .textInputAutocapitalization(.never)
+
+                SecureField(
+                    "Password", 
+                    text: $password,
+                    prompt: Text("Password")
+                )
+                    .padding(20)
+                    .foregroundColor(.black)
+                    .background(.white.opacity(0.2), in: RoundedRectangle (cornerRadius: 20, style: .continuous))
+                    .disableAutocorrection(true)
+                    .textInputAutocapitalization(.never)
+
+
                 //log in button
-                ButtonInit(todo: {isSignedOn.toggle()}, actionName: "Log In", bgColor: .green)
+                AuthButton(todo: {isSignedOn.toggle()}, actionName: "Log In", bgColor: .green)
             }
             .padding()
         }
