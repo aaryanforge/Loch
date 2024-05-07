@@ -33,32 +33,34 @@ struct ContactsMainView: View {
     @State private var isAddingUser = false
 
     var body: some View {
-
-        HStack {
-            Text("Contacts")
-            .padding(10)                
-            .font(.system(size: 25,weight: .bold, design: .default))
-            .foregroundColor(.white)
-            .edgesIgnoringSafeArea(.top)
-        }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .padding()
-        .background(.green)
-
-        //bloop here is a change please update
-    
-
-        VStack (spacing: 0) {
-            ScrollView ([.vertical]) {
-                ContactItem()
-                ContactItem()
-                ContactItem()
-                ContactItem()
-                ContactItem()
-                ContactItem()
+        
+        VStack {
+            HStack {
+                Text("Contacts")
+                    .padding(10)                
+                    .font(.system(size: 25,weight: .bold, design: .default))
+                    .foregroundColor(.white)
+                    .edgesIgnoringSafeArea(.top)
             }
-            .padding([.top], 10)
-
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding()
+            .background(.green)
+            
+            //bloop here is a change please update
+            
+            
+            VStack (spacing: 0) {
+                ScrollView ([.vertical]) {
+                    ContactItem()
+                    ContactItem()
+                    ContactItem()
+                    ContactItem()
+                    ContactItem()
+                    ContactItem()
+                }
+                .padding([.top], 10)
+                
+            }
         }
     }
 }

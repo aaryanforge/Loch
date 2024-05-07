@@ -21,6 +21,7 @@ struct ChatsHeadView: View {
     // TODO: as messages from every person is cached, figure out a way to filter messages of the current person user is talking to
     
     var body: some View {
+        
         HStack {
             ProfilePictureCircle(size: 30, hasBorder: true)
                 .padding(6)
@@ -82,7 +83,8 @@ struct ChatsHeadView: View {
                     ChatsToolbarViewPM()
             })
             .onTapGesture{
-                isOn.toggle()
+                isSettings.toggle()
+//                isOn.toggle()
             }
         }
         .frame(maxWidth:.infinity, maxHeight: 65, alignment: .leading)
@@ -169,6 +171,8 @@ struct ChatsDetailView: View {
                 TheirMessage(message: "Placeholder")
                 YourMessage(message: "I want food")
             }
+            
+            chatView()
 
             // mark was here - loading the messages
             // ForEach(messages) { message in

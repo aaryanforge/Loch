@@ -22,7 +22,8 @@ struct chatView: View {
             TextField("message", text: $message)
                 .onSubmit {
                     print("message submitted")
-                    manager.send(msg: message)
+//                    manager.send(msg: message)
+                    manager.send(msg: message, sender: "Pala", roomId: "12345", timestamp: "00", ind: "1")
                     message = ""
                 }
         }
@@ -49,13 +50,10 @@ class SocketManager: NSObject, URLSessionWebSocketDelegate {
         websocket!.resume()
     }
     
-    func send(msg: String) {
-//        let jsonString = """
-//            {
-//                "message": \(msg),
-//                "action": "sendText"
-//            }
-//        """
+    func send(msg: String, sender: String, roomId: String, timestamp: String, ind: String) {
+        let jsonString = """
+            {"Username":"\(sender)","Message":"\(msg)","Timestamp":"\(timestamp)","Index":"\(ind)","Initialise":"False"}
+        """
 //
 //        let jsonData = Data(jsonString.utf8)
 //
@@ -64,11 +62,25 @@ class SocketManager: NSObject, URLSessionWebSocketDelegate {
 //                print("error sending message: \(e)")
 //            }
 //        })
+        
         if self.connectionOpen == false {
             print("tried to send, but connection closed")
             return
         }
-        websocket?.send(.string(msg), completionHandler: { err in
+//        struct Dog: Codable {
+//            var name: String
+//            var owner: String
+//        }
+//
+//        // Encode
+//        let dog = Dog(name: "Rex", owner: "Etgar")
+        
+//        let message = MessageObject(body: "hello from pala", sender: "pala", roomId: 12345, timestamp: 00, index: 1)
+//        let jsonEncoder = JSONEncoder()
+//        let jsonData = try jsonEncoder.encode(message)
+//        let json = String(data: jsonData, encoding: String.Encoding.utf8)
+    
+        websocket?.send(.string(jsonString), completionHandler: { err in
             if let e = err {
                 print("error sending message: \(e)")
             }
@@ -103,11 +115,11 @@ class SocketManager: NSObject, URLSessionWebSocketDelegate {
         print("connection established")
         self.connectionOpen = true
 //        self.send(msg: "donkey")
-        websocket?.send(.string("hi from xcode"), completionHandler: { err in
-            if let e = err {
-                print("error sending message: \(e)")
-            }
-        })
+//        websocket?.send(.string("hi from xcode"), completionHandler: { err in
+//            if let e = err {
+//                print("error sending message: \(e)")
+//            }
+//        })
         self.receive()
     }
     
@@ -119,7 +131,7 @@ class SocketManager: NSObject, URLSessionWebSocketDelegate {
     
     func changeMsg(msg: String) {
         if self.connectionOpen == true {
-            self.send(msg: msg)
+//            self.send(msg: msg)
             self.receive()
         }
     }
@@ -139,4 +151,9 @@ class HelperObject: ObservableObject {
 struct MessageObject: Codable {
     var body: String
     var sender: String
+    var roomId: Int
+    var timestamp: Int
+    var index: Int
 }
+
+

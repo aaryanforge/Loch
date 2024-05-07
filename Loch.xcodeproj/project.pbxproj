@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0201B12D2BE997BC00C6CEA2 /* GroupChatsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0201B12A2BE997BC00C6CEA2 /* GroupChatsDetailView.swift */; };
+		0201B12E2BE997BC00C6CEA2 /* ChatCallScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0201B12B2BE997BC00C6CEA2 /* ChatCallScreen.swift */; };
+		0201B12F2BE997BC00C6CEA2 /* GroupChatAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0201B12C2BE997BC00C6CEA2 /* GroupChatAdd.swift */; };
 		021D7F212BE8AD360032C788 /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021D7F202BE8AD360032C788 /* SocketManager.swift */; };
 		023C2D0C2BAD4F72003D237C /* ConnectTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023C2D0B2BAD4F72003D237C /* ConnectTestView.swift */; };
 		025281882BAED53700046300 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025281872BAED53700046300 /* ColorExtensions.swift */; };
@@ -85,6 +88,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0201B12A2BE997BC00C6CEA2 /* GroupChatsDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupChatsDetailView.swift; sourceTree = "<group>"; };
+		0201B12B2BE997BC00C6CEA2 /* ChatCallScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCallScreen.swift; sourceTree = "<group>"; };
+		0201B12C2BE997BC00C6CEA2 /* GroupChatAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupChatAdd.swift; sourceTree = "<group>"; };
 		021D7F202BE8AD360032C788 /* SocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketManager.swift; sourceTree = "<group>"; };
 		023C2D0B2BAD4F72003D237C /* ConnectTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectTestView.swift; sourceTree = "<group>"; };
 		025281872BAED53700046300 /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
@@ -223,6 +229,9 @@
 		4DC026582B8DF0D3005A1291 /* Chat Group */ = {
 			isa = PBXGroup;
 			children = (
+				0201B12B2BE997BC00C6CEA2 /* ChatCallScreen.swift */,
+				0201B12C2BE997BC00C6CEA2 /* GroupChatAdd.swift */,
+				0201B12A2BE997BC00C6CEA2 /* GroupChatsDetailView.swift */,
 				02CADFD02BAFBCF9000973DD /* ChatsContentViewModel.swift */,
 				4DC026472B8DF0C4005A1291 /* ChatsDetailView.swift */,
 				4DC026432B8DF0C3005A1291 /* ChatsHeadView.swift */,
@@ -612,6 +621,7 @@
 				4DC026542B8DF0C5005A1291 /* ChatsToolbarView.swift in Sources */,
 				E175F2842BC6157B00524358 /* SessionView.swift in Sources */,
 				025281882BAED53700046300 /* ColorExtensions.swift in Sources */,
+				0201B12D2BE997BC00C6CEA2 /* GroupChatsDetailView.swift in Sources */,
 				4DC0264F2B8DF0C5005A1291 /* ChatsMainView.swift in Sources */,
 				E18669962B68853500FEDDD9 /* ContentView.swift in Sources */,
 				E175F2862BC616B500524358 /* Authenticator.swift in Sources */,
@@ -629,6 +639,7 @@
 				4DC026502B8DF0C5005A1291 /* ChatsTailView.swift in Sources */,
 				E175F2822BC6156C00524358 /* ConfirmationView.swift in Sources */,
 				02CADFD32BAFBD74000973DD /* ForumAddNewView.swift in Sources */,
+				0201B12F2BE997BC00C6CEA2 /* GroupChatAdd.swift in Sources */,
 				4DC026522B8DF0C5005A1291 /* ChatsDetailView.swift in Sources */,
 				025FC94C2B9F1B5A006F59D9 /* ViewExtensions.swift in Sources */,
 				02DC162C2B8A225F007D45AF /* ProfileSettingsView.swift in Sources */,
@@ -636,6 +647,7 @@
 				E175F27E2BC6153400524358 /* LoginView.swift in Sources */,
 				4D6632812B9D51E3002E71A4 /* ForumPostCommentsModel.swift in Sources */,
 				4DC0264E2B8DF0C5005A1291 /* ChatsHeadView.swift in Sources */,
+				0201B12E2BE997BC00C6CEA2 /* ChatCallScreen.swift in Sources */,
 				E175F2802BC6155500524358 /* SignUpView.swift in Sources */,
 				02DC16282B8A21F8007D45AF /* ForumHeadView.swift in Sources */,
 				E18669C02B688B7600FEDDD9 /* ForumMainView.swift in Sources */,
