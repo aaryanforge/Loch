@@ -110,7 +110,8 @@ struct GroupChatsHeadView: View {
                     ChatsToolbarViewGC()
             })
             .onTapGesture{
-                isOn.toggle()
+//                isOn.toggle()
+                isSettings.toggle()
             }
         }
         .frame(maxWidth:.infinity, maxHeight: 65, alignment: .leading)

@@ -1,0 +1,6 @@
+framework module Pods_Loch_LochUITests {
+  umbrella header "Pods-Loch-LochUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_LochTests {
+  umbrella header "Pods-LochTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
