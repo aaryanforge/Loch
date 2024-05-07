@@ -10,12 +10,12 @@ import SwiftUI
 
 struct chatView: View {
     @State private var message = ""
-//    @ObservedObject private var helper = HelperObject(helper: helper)
-    private var manager = SocketManager()
+    @StateObject private var helper = HelperObject()
+    private var manager = SocketManager(helper: helper)
     
     var body: some View {
         VStack {
-            Text("")
+            Text(helper.latestMessage)
                 .task {
                     manager.start()
                 }
@@ -33,7 +33,11 @@ struct chatView: View {
 class SocketManager: NSObject, URLSessionWebSocketDelegate {
     private var websocket: URLSessionWebSocketTask?
     var connectionOpen: Bool = false
-//    var helper: HelperObject
+    @ObservedObject var helper: HelperObject
+    
+    init(helper: HelperObject) {
+        self.helper = helper
+    }
 //    @Published private var latestMessage = "nothin gyet"
     
     func start() {
@@ -100,7 +104,7 @@ class SocketManager: NSObject, URLSessionWebSocketDelegate {
 //                } catch {
 //                    print("Error decoding JSON: \(error.localizedDescription)")
 //                }
-                
+                helper.latestMessage = "new one"
                 print("received message: \(msg)")
 //                latestMessage = msg
                 
@@ -140,11 +144,15 @@ class SocketManager: NSObject, URLSessionWebSocketDelegate {
 
 
 class HelperObject: ObservableObject {
-    @Published private var latestMessage = "nothin gyet"
+    @Published var latestMessage: String
     
-    func updateMsg(msg: String) {
-        self.latestMessage = msg
+    init() {
+        self.latestMessage = "nothin gyet"
     }
+    
+//    func updateMsg(msg: String) {
+//        self.latestMessage = msg
+//    }
 }
 
 
