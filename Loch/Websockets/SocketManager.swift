@@ -11,14 +11,13 @@ import SwiftUI
 struct chatView: View {
     @State private var message = ""
     @StateObject private var helper = HelperObject()
-    private var manager = SocketManager(helper: helper)
+    private var manager = SocketManager()
     
     var body: some View {
         VStack {
-            Text(helper.latestMessage)
-                .task {
-                    manager.start()
-                }
+            ForEach(0..<helper.latestMessages.count, id:\.self) { ind in
+                Text(helper.latestMessages[ind])
+            }
             TextField("message", text: $message)
                 .onSubmit {
                     print("message submitted")
@@ -27,21 +26,27 @@ struct chatView: View {
                     message = ""
                 }
         }
+            .task {
+                manager.start(helper)
+            }
     }
 }
 
 class SocketManager: NSObject, URLSessionWebSocketDelegate {
     private var websocket: URLSessionWebSocketTask?
-    var connectionOpen: Bool = false
-    @ObservedObject var helper: HelperObject
+    private var connectionOpen = false
+    private var latestMsg = ""
+    var helper: HelperObject?
     
-    init(helper: HelperObject) {
-        self.helper = helper
-    }
+//    init(helper: HelperObject) {
+//        self.helper = helper
+//    }
 //    @Published private var latestMessage = "nothin gyet"
     
-    func start() {
+    //
+    func start(_ help: HelperObject) {
         
+        self.helper = help
         let session = URLSession(
             configuration: .default,
             delegate: self,
@@ -93,18 +98,30 @@ class SocketManager: NSObject, URLSessionWebSocketDelegate {
     
     func receive() {
         if self.connectionOpen == false {
+            print("tried to receive, but connection closed")
             return
         }
         websocket?.receive(completionHandler: { [weak self] res in
             switch res {
+            
             case .success(let msg):
-//                do {
-//                    let messageObject = try JSONDecoder().decode(MessageObject.self, from: json)
-//
-//                } catch {
-//                    print("Error decoding JSON: \(error.localizedDescription)")
-//                }
-                helper.latestMessage = "new one"
+                switch msg {
+                case .string(let latest):
+                    
+                    //                do {
+                    //                    let messageObject = try JSONDecoder().decode(MessageObject.self, from: json)
+                    //
+                    //                } catch {
+                    //                    print("Error decoding JSON: \(error.localizedDescription)")
+                    //                }
+                    print("recieved string: \(latest)")
+                    self?.helper?.latestMessages.append(latest)
+                case .data(let data):
+                    self?.helper?.latestMessages.append(String(decoding: data, as: UTF8.self))
+
+                    print("recieved data: \(data)")
+                }
+//                (self.helper!).latestMessage = "new one"
                 print("received message: \(msg)")
 //                latestMessage = msg
                 
@@ -133,22 +150,22 @@ class SocketManager: NSObject, URLSessionWebSocketDelegate {
         self.connectionOpen = false
     }
     
-    func changeMsg(msg: String) {
-        if self.connectionOpen == true {
-//            self.send(msg: msg)
-            self.receive()
-        }
-    }
+//    func changeMsg(msg: String) {
+//        if self.connectionOpen == true {
+////            self.send(msg: msg)
+//            self.receive()
+//        }
+//    }
     
 }
 
 
 class HelperObject: ObservableObject {
-    @Published var latestMessage: String
+    @Published var latestMessages: [String] = []
     
-    init() {
-        self.latestMessage = "nothin gyet"
-    }
+//    init() {
+//        self.latestMessage = "nothin gyet"
+//    }
     
 //    func updateMsg(msg: String) {
 //        self.latestMessage = msg
