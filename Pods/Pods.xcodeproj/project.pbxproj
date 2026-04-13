@@ -1223,7 +1223,7 @@
 		0DEB1B8F67075A543EA672D55DA7A042 /* AWSPluginsCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSPluginsCore-umbrella.h"; sourceTree = "<group>"; };
 		0E8E04AD5961531CFC65920F557546D3 /* AWSURLRequestRetryHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSURLRequestRetryHandler.m; path = AWSCore/Serialization/AWSURLRequestRetryHandler.m; sourceTree = "<group>"; };
 		0EB68C855287E28C4A97542D0C490ACF /* RetryableGraphQLOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryableGraphQLOperation.swift; path = Amplify/Categories/API/Operation/RetryableGraphQLOperation.swift; sourceTree = "<group>"; };
-		0EE43DB79A61A342E00A4CF8900D76E9 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = AWSCognitoIdentityProvider/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		0EE43DB79A61A342E00A4CF8900D76E9 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = AWSCognitoIdentityProvider/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		0F0252C66900DC64F6D92CB64D5508D0 /* AWSMobileClientBehavior.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AWSMobileClientBehavior.swift; path = AmplifyPlugins/Auth/AWSCognitoAuthPlugin/Service/AWSMobileClient/AWSMobileClientBehavior.swift; sourceTree = "<group>"; };
 		0F29926C8BCC41998535AE0245421C23 /* AWSCognitoIdentityProviderSrpHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoIdentityProviderSrpHelper.h; path = AWSCognitoIdentityProvider/Internal/AWSCognitoIdentityProviderSrpHelper.h; sourceTree = "<group>"; };
 		0F89D8AA9AA41184EABE1CE7D626960A /* AmplifyOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AmplifyOperation.swift; path = Amplify/Core/Support/AmplifyOperation.swift; sourceTree = "<group>"; };
@@ -1303,7 +1303,7 @@
 		2170082740A254B3CA38686600EDFE11 /* MutationEvent+MutationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MutationEvent+MutationType.swift"; path = "Amplify/Categories/DataStore/Subscribe/MutationEvent+MutationType.swift"; sourceTree = "<group>"; };
 		21F565F0C8323F84AA999D4E8C98C9B6 /* AWSCognitoIdentityProvider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSCognitoIdentityProvider-prefix.pch"; sourceTree = "<group>"; };
 		220C759201A3E8985030ED0E79E8CC92 /* AWSDDOSLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSDDOSLogger.m; path = AWSCore/Logging/AWSDDOSLogger.m; sourceTree = "<group>"; };
-		227D36D8EF9D8323AFF3C7099AF19B8D /* tommath.c */ = {isa = PBXFileReference; includeInIndex = 1; name = tommath.c; path = AWSCognitoIdentityProvider/Internal/JKBigInteger/LibTomMath/tommath.c; sourceTree = "<group>"; };
+		227D36D8EF9D8323AFF3C7099AF19B8D /* tommath.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = tommath.c; path = AWSCognitoIdentityProvider/Internal/JKBigInteger/LibTomMath/tommath.c; sourceTree = "<group>"; };
 		22CBD8E3FF92973BA5EA129F59F4FBC0 /* NSError+AWSMTLModelException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+AWSMTLModelException.h"; path = "AWSCore/Mantle/NSError+AWSMTLModelException.h"; sourceTree = "<group>"; };
 		232DD4D9BEFF66B285DEF4A729E6AA42 /* AWSMobileClientAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AWSMobileClientAdapter.swift; path = AmplifyPlugins/Auth/AWSCognitoAuthPlugin/Service/AWSMobileClient/AWSMobileClientAdapter.swift; sourceTree = "<group>"; };
 		23300E4C1DDFC8FD3745349702FA257C /* AWSNSCodingUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSNSCodingUtilities.m; path = AWSCore/Utility/AWSNSCodingUtilities.m; sourceTree = "<group>"; };
@@ -1317,7 +1317,7 @@
 		2623D914779D55DA0FE0DA26F46C56E9 /* Amplify */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Amplify; path = Amplify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2651305F8EF272DE1DBEBDD13D8F84F6 /* NSValueTransformer+AWSMTLPredefinedTransformerAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValueTransformer+AWSMTLPredefinedTransformerAdditions.m"; path = "AWSCore/Mantle/NSValueTransformer+AWSMTLPredefinedTransformerAdditions.m"; sourceTree = "<group>"; };
 		268DBFC647F142609C1FD01B983E3E27 /* GraphQLOperationRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLOperationRequest.swift; path = Amplify/Categories/API/Request/GraphQLOperationRequest.swift; sourceTree = "<group>"; };
-		26954DAB7F8B7F0EC9C7DA6DDA1F0A57 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = AWSAuthSDK/Sources/AWSMobileClient/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		26954DAB7F8B7F0EC9C7DA6DDA1F0A57 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = AWSAuthSDK/Sources/AWSMobileClient/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		2703271CD187F6B4520ED98345EE2639 /* _AWSMobileClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _AWSMobileClient.m; path = AWSAuthSDK/Sources/AWSMobileClient/Internal/_AWSMobileClient.m; sourceTree = "<group>"; };
 		271C8B65D440F49FA9879CE22C89ABA8 /* ResourceBundle-AWSCognitoIdentityProvider-AWSCognitoIdentityProvider-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-AWSCognitoIdentityProvider-AWSCognitoIdentityProvider-Info.plist"; sourceTree = "<group>"; };
 		271F2D42E3CDA775C4F361DDA2CAEE72 /* AWSMobileClientLogging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AWSMobileClientLogging.swift; path = AWSAuthSDK/Sources/AWSMobileClient/Helpers/Logging/AWSMobileClientLogging.swift; sourceTree = "<group>"; };
@@ -1678,7 +1678,7 @@
 		7F28400715E4C33AC803E5B06B317113 /* DataStoreError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataStoreError.swift; path = Amplify/Categories/DataStore/DataStoreError.swift; sourceTree = "<group>"; };
 		7F7E7463B6EDF752A76C7B6DE99C3B3A /* AWSSTS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSSTS.h; path = AWSCore/STS/AWSSTS.h; sourceTree = "<group>"; };
 		8032EF270C4DE1059CBEC1CE086541F1 /* AWSDDContextFilterLogFormatter+Deprecated.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "AWSDDContextFilterLogFormatter+Deprecated.m"; path = "AWSCore/Logging/Extensions/AWSDDContextFilterLogFormatter+Deprecated.m"; sourceTree = "<group>"; };
-		809836B7AED00BFE56CE7BDE5006A7F6 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = AWSCognitoIdentityProviderASF/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		809836B7AED00BFE56CE7BDE5006A7F6 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = AWSCognitoIdentityProviderASF/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		80A048D8485D6DA39F289850FC5EDA61 /* HubCategory+CategoryConfigurable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HubCategory+CategoryConfigurable.swift"; path = "Amplify/Categories/Hub/Internal/HubCategory+CategoryConfigurable.swift"; sourceTree = "<group>"; };
 		80B7702B8D6ADBC511DE524E1C5C3782 /* AWSAuthUpdateUserAttributesOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AWSAuthUpdateUserAttributesOperation.swift; path = AmplifyPlugins/Auth/AWSCognitoAuthPlugin/Operations/UserOperations/AWSAuthUpdateUserAttributesOperation.swift; sourceTree = "<group>"; };
 		80C9CFA15726B31B51B80BBB19B55346 /* ConcurrentDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConcurrentDispatcher.swift; path = Amplify/DefaultPlugins/AWSHubPlugin/Internal/ConcurrentDispatcher.swift; sourceTree = "<group>"; };
@@ -1787,7 +1787,7 @@
 		9C3D89FAB21F4545761F4E4E1717004F /* MutationSync.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutationSync.swift; path = AmplifyPlugins/Core/AWSPluginsCore/Sync/MutationSync/MutationSync.swift; sourceTree = "<group>"; };
 		9CA3104653F9BB53FA891A72DD11B182 /* Pods-Loch */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Loch"; path = Pods_Loch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D0C6CF0B7460467FB9EDB0D4A2B22F1 /* DeliveryDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeliveryDestination.swift; path = Amplify/Categories/Auth/Models/DeliveryDestination.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DA1914A16FF6E4BF9BF93809415800F /* AmplifyOperation+Hub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AmplifyOperation+Hub.swift"; path = "Amplify/Core/Support/AmplifyOperation+Hub.swift"; sourceTree = "<group>"; };
 		9DDD017CB16793AD6ABF59D1E5E79E6F /* Operation+StoragePublishers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Operation+StoragePublishers.swift"; path = "Amplify/Categories/Storage/Operation/Operation+StoragePublishers.swift"; sourceTree = "<group>"; };
 		9DED56F0202E95B4544EF88C540C6E46 /* AmplifyAPICategory+GraphQLBehavior+Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AmplifyAPICategory+GraphQLBehavior+Combine.swift"; path = "Amplify/Categories/API/ClientBehavior/AmplifyAPICategory+GraphQLBehavior+Combine.swift"; sourceTree = "<group>"; };
@@ -1852,7 +1852,7 @@
 		AAF29EA20F383363013EA0C876135ED2 /* AuthCategoryDeviceBehavior+Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AuthCategoryDeviceBehavior+Combine.swift"; path = "Amplify/Categories/Auth/AuthCategoryDeviceBehavior+Combine.swift"; sourceTree = "<group>"; };
 		AAF822FEECFDDF79407531A1D260EA50 /* GraphQLRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLRequest.swift; path = Amplify/Categories/API/Request/GraphQLRequest.swift; sourceTree = "<group>"; };
 		AB3F50B1ED7072DCC2E2851E4ACF922C /* AWSAuthSignInOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AWSAuthSignInOperation.swift; path = AmplifyPlugins/Auth/AWSCognitoAuthPlugin/Operations/AWSAuthSignInOperation.swift; sourceTree = "<group>"; };
-		AB91A14E9F700927EAA4F666D716FC02 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = AWSAuthSDK/Sources/AWSAuthCore/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		AB91A14E9F700927EAA4F666D716FC02 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = AWSAuthSDK/Sources/AWSAuthCore/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		ABA2E3C45A2D446DABBB7AA661DDB62D /* NSData+AWSCognitoIdentityProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+AWSCognitoIdentityProvider.h"; path = "AWSCognitoIdentityProvider/Internal/NSData+AWSCognitoIdentityProvider.h"; sourceTree = "<group>"; };
 		AC2134B039C591A9C660F77966C9F156 /* Celebrity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Celebrity.swift; path = Amplify/Categories/Predictions/Models/Celebrity.swift; sourceTree = "<group>"; };
 		ACD84DDE8984AFAC1250FA47857C688E /* RESTOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RESTOperation.swift; path = Amplify/Categories/API/Operation/RESTOperation.swift; sourceTree = "<group>"; };
@@ -1974,7 +1974,7 @@
 		CEC746198F34DAB684B649BC744FEB5E /* AWSKSReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSKSReachability.h; path = AWSCore/KSReachability/AWSKSReachability.h; sourceTree = "<group>"; };
 		CED5CFB9CE61796F32CC85C48B1B04AD /* AWSUICKeyChainStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSUICKeyChainStore.h; path = AWSCore/UICKeyChainStore/AWSUICKeyChainStore.h; sourceTree = "<group>"; };
 		CF3CFB9D387FBF8DE8EF3FBDD8189181 /* Pods-Loch-LochUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Loch-LochUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CF4460D9B59AC9DEC0032F996CC5FA3A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = AWSCore/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		CF4460D9B59AC9DEC0032F996CC5FA3A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = AWSCore/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		CF74170F0C87434831C888A27E36BDB1 /* JSONValueHolder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONValueHolder.swift; path = Amplify/Categories/DataStore/Model/JSONHelper/JSONValueHolder.swift; sourceTree = "<group>"; };
 		CF8E03B120D30CF5FF6C632304CAA320 /* AuthCategoryPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthCategoryPlugin.swift; path = Amplify/Categories/Auth/AuthCategoryPlugin.swift; sourceTree = "<group>"; };
 		D006B91A6F4CBE5DFFAE02411258B16B /* AuthUpdateUserAttributeRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthUpdateUserAttributeRequest.swift; path = Amplify/Categories/Auth/Request/AuthUpdateUserAttributeRequest.swift; sourceTree = "<group>"; };
@@ -2502,7 +2502,6 @@
 				D5E80189AA1E3A619882821987394C13 /* Resources */,
 				C1937DD6AC60498C888B81031C37F32F /* Support Files */,
 			);
-			name = AWSCore;
 			path = AWSCore;
 			sourceTree = "<group>";
 		};
@@ -2555,7 +2554,6 @@
 				A30CCE97F00D5713050AAD7AB4ED0E4A /* Resources */,
 				1659F240F9D1C433836FCFC3A0C34CFB /* Support Files */,
 			);
-			name = AWSCognitoIdentityProvider;
 			path = AWSCognitoIdentityProvider;
 			sourceTree = "<group>";
 		};
@@ -2752,7 +2750,6 @@
 				4940D56EB2B077983B9A29346E850E61 /* SubscriptionSelectionSetBehavior.swift */,
 				00DC06F2BB6DDA28BE6CBF55956A9C82 /* Support Files */,
 			);
-			name = AWSPluginsCore;
 			path = AWSPluginsCore;
 			sourceTree = "<group>";
 		};
@@ -2773,7 +2770,6 @@
 				D7E75E1B0451C71E2246376E2A8DECFC /* Resources */,
 				EF859A6F5239AA55B4F27B59C9B4BA42 /* Support Files */,
 			);
-			name = AWSAuthCore;
 			path = AWSAuthCore;
 			sourceTree = "<group>";
 		};
@@ -2797,7 +2793,6 @@
 				81738F27DA5201AE1C0CD4E5971188D3 /* Resources */,
 				7D0DA7DE4C2D585B2F16F6573B3726E2 /* Support Files */,
 			);
-			name = AWSCognitoIdentityProviderASF;
 			path = AWSCognitoIdentityProviderASF;
 			sourceTree = "<group>";
 		};
@@ -2915,7 +2910,6 @@
 				BA3C705082BAE6E85AAC152C626462A7 /* Resources */,
 				CA98AA6C37E9311257DCD721E393D44B /* Support Files */,
 			);
-			name = AWSMobileClient;
 			path = AWSMobileClient;
 			sourceTree = "<group>";
 		};
@@ -3363,7 +3357,6 @@
 				03B5E879A2EC480B8BB1BEDE6608E204 /* VoiceType.swift */,
 				C34850C7395690769EFD446E08DEA135 /* Support Files */,
 			);
-			name = Amplify;
 			path = Amplify;
 			sourceTree = "<group>";
 		};
@@ -3495,7 +3488,6 @@
 				35DA8F9D9B2D5B7923C0DDF70157FC74 /* AWSCognitoAuthPlugin */,
 				E8A3D7C0CFAA462447F3D777BA169C5C /* Support Files */,
 			);
-			name = AmplifyPlugins;
 			path = AmplifyPlugins;
 			sourceTree = "<group>";
 		};
@@ -4237,7 +4229,7 @@
 			name = "[CP-User] Default";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"no-op\"";
+			shellScript = "echo \"no-op\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

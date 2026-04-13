@@ -14,7 +14,6 @@
 		023C2D0C2BAD4F72003D237C /* ConnectTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023C2D0B2BAD4F72003D237C /* ConnectTestView.swift */; };
 		025281882BAED53700046300 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025281872BAED53700046300 /* ColorExtensions.swift */; };
 		025FC94C2B9F1B5A006F59D9 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025FC94B2B9F1B5A006F59D9 /* ViewExtensions.swift */; };
-		02CADFD12BAFBCF9000973DD /* ChatsContentViewModel.swift in Resources */ = {isa = PBXBuildFile; fileRef = 02CADFD02BAFBCF9000973DD /* ChatsContentViewModel.swift */; };
 		02CADFD32BAFBD74000973DD /* ForumAddNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CADFD22BAFBD74000973DD /* ForumAddNewView.swift */; };
 		02DC16282B8A21F8007D45AF /* ForumHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC16272B8A21F8007D45AF /* ForumHeadView.swift */; };
 		02DC162C2B8A225F007D45AF /* ProfileSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC162B2B8A225F007D45AF /* ProfileSettingsView.swift */; };
@@ -95,7 +94,6 @@
 		023C2D0B2BAD4F72003D237C /* ConnectTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectTestView.swift; sourceTree = "<group>"; };
 		025281872BAED53700046300 /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		025FC94B2B9F1B5A006F59D9 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
-		02CADFD02BAFBCF9000973DD /* ChatsContentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsContentViewModel.swift; sourceTree = "<group>"; };
 		02CADFD22BAFBD74000973DD /* ForumAddNewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumAddNewView.swift; sourceTree = "<group>"; };
 		02DC16272B8A21F8007D45AF /* ForumHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumHeadView.swift; sourceTree = "<group>"; };
 		02DC162B2B8A225F007D45AF /* ProfileSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsView.swift; sourceTree = "<group>"; };
@@ -232,7 +230,6 @@
 				0201B12B2BE997BC00C6CEA2 /* ChatCallScreen.swift */,
 				0201B12C2BE997BC00C6CEA2 /* GroupChatAdd.swift */,
 				0201B12A2BE997BC00C6CEA2 /* GroupChatsDetailView.swift */,
-				02CADFD02BAFBCF9000973DD /* ChatsContentViewModel.swift */,
 				4DC026472B8DF0C4005A1291 /* ChatsDetailView.swift */,
 				4DC026432B8DF0C3005A1291 /* ChatsHeadView.swift */,
 				4DC026442B8DF0C4005A1291 /* ChatsMainView.swift */,
@@ -480,7 +477,6 @@
 				E186699B2B68853800FEDDD9 /* Preview Assets.xcassets in Resources */,
 				E18669982B68853800FEDDD9 /* Assets.xcassets in Resources */,
 				E18669DE2B807CCB00FEDDD9 /* GoogleService-Info.plist in Resources */,
-				02CADFD12BAFBCF9000973DD /* ChatsContentViewModel.swift in Resources */,
 				A560C9DB6B19EB5B37D2E666 /* awsconfiguration.json in Resources */,
 				8F0509FA308C43F2442838CC /* amplifyconfiguration.json in Resources */,
 			);
